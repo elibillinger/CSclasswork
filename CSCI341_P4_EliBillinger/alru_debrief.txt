@@ -1,0 +1,10 @@
+1. Eli Billinger CSCI341 Program 4 12/9/2020
+2.I spent about 5 hours on this assignment.
+3.To solve this assignment I first started with main, then I initalized the state. Next, I creatd the procedure that printed the most recently used order, then I created the procedure that updates the state.
+I followed this appraoch for the entire assignemnt using the debugger to solve problems as they occured.
+4. I got no help outside of the course material.
+5. I would want to improve the proecude that prints because I believe it could be written more efficently.
+6. I am most pleased with the procedure that updates the state.
+7. To test the code I first tested that it would exit correctly by testing with the values 1,4,7,9 for the inital state input and with 0,1,2,3,5,-1 for the entry accessed input.
+To test that it was printing out the correct values for the inital state I figured out what it should out put and tried 0,1,2,3,4,5,6,and 7 to make sure it was always initalizing the state correctly.
+To test if it was updating correctly I used 3 for inital and then tried a variety of 0,1,2,3 in different orders to make sure it printed out the correct value.

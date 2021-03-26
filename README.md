@@ -1,1 +1,1 @@
-# OtherCSclasswork
+Projects from Other CS courses

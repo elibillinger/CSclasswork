@@ -1,0 +1,6 @@
+Bush - Drawable only piece does nothing
+Archer Tower - Hits player if they get within 2 blocks of it does not move
+Key - Point piece collect 2 of it to advance to next level
+Teleporter - If player steps on it they advance to next level
+Wolf- Moves randomly across board and hits player if they are in the same space
+Murderer - Kills player if they are in the same space  moves 1-2 blocks to the right every turn

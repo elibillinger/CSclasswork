@@ -1,0 +1,3 @@
+One good practice for exceptions is to have descriptive messages when throwing an exception.
+Another good practice is to catch to most specific exception first instead of the less specific ones first.
+Another good practice is to not ignore exceptions.

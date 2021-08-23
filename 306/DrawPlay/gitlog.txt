@@ -1,0 +1,41 @@
+commit 8d000a8cc839ffc477b7e321e8cffd9f980bbaf0
+Author: Alek Engstrom <alekengstrom@gmail.com >
+Date:   Mon Feb 18 13:31:34 2021 -0700
+
+    changed cat mouth color to blue
+
+commit e04afb5e229e68df39a67af8f3c6a0f196c52d45
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Mon Feb 18 13:29:30 2021 -0700
+
+    Changed eye height to 30 and eye width to 20
+
+commit d9dec114c757d82087c39e436acff4006c80a275
+Author: Alek Engstrom <alekengstrom@gmail.com >
+Date:   Mon Feb 18 13:23:26 2021 -0700
+
+    changed the location on frame where cat is drawn to 100,100
+
+commit e2669db6091cc35466c3ba8ab7be762d4f5de368
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Mon Feb 18 13:21:22 2021 -0700
+
+    Changed color of cat eyes to red
+
+commit 95e0d26c10e1d03c474f8e43dbdc6794a5882967
+Author: Alek Engstrom <alekengstrom@gmail.com >
+Date:   Mon Feb 18 13:19:53 2021 -0700
+
+    changed the head dimension to 200
+
+commit 9dfbfaa273610ee6e306614239ff52fbb174bd75
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Thu Feb 18 13:14:13 2021 -0700
+
+    Added Cat.java and MyDrawing.java files
+
+commit 29e9c99e8f9af2fb929fe7fe809e1ac72cf9781f
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Thu Feb 18 12:51:46 2021 -0700
+
+    Initial commit

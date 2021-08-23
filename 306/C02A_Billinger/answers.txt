@@ -1,0 +1,6 @@
+Eli Billinger
+CSCI 306 CO2A
+
+1. File->Revert reverts all changes to the file.
+2. When you walk through the loop in showPeople it goes through each iteration of the loop and does that action.
+3. What is output by the program is are references to locations in the array.

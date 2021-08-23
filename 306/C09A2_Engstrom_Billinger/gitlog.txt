@@ -1,0 +1,43 @@
+All work done wiht pair programming with Eli Billinger doing the git log for the assignment
+commit ba324937f0803eda6b32906b6e20f8ecbf12623f
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 19:44:08 2021 -0700
+
+    Added movement Test for Murder Piece
+
+commit 5bfc69598ec79c956dac2bb701be66eacbfeb9cc
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 19:12:37 2021 -0700
+
+    Created TestMovingPieces and added test for movement of wolf piece
+
+commit 7735f1421a04e055ca51d1a2298aacdee7c28783
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 18:47:03 2021 -0700
+
+    Added test for Wolf Piece
+
+commit 4ed82f02aacba8c1c72ef5286b0bd1b1063e78fd
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 18:46:11 2021 -0700
+
+    Added test for Teleporter piece
+
+commit a929fce37f71d23f461e6bfab273210fd403ccae
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 18:45:01 2021 -0700
+
+    Added tests for Murderer Piece
+
+commit 5046162cd51ca316b40e6aa2142511e6e39f6f8a
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 18:44:15 2021 -0700
+
+    Added tests for Key piece
+
+commit e2b9afd63d6408f06aaf63a456f0ceabd06d99b0
+Author: Eli Billinger <eebillin@hotmail.com>
+Date:   Wed Feb 10 18:42:34 2021 -0700
+
+    Created TestInteractions test with Archer Tower
+

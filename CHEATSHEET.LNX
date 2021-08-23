@@ -1,0 +1,259 @@
+Basic Command Line {
+	* man - ($ man [COMMAND NAME]) used to display the user manual of any command that can be run on the terminal
+	* apropos - ($ apropos [OPTION] KEYWORD) helps when you don't remember exact command
+}
+Files and Directories {
+	* pwd - ($ pwd - L/P) Prints working directory
+	* cd - ($ cd [DIRECTORY]) change the current working directroy
+	* less - ($ less FILENAME) used to read contents of a text file one page(screen) at a time
+	* mkdir - ($ mkdir [OPTIONS] [DIRECTORY]) allows the user to create directories
+	* rmdir - ($ rmdir [-p][-v| --verbose][--ignore-fail-on-non-empty] directories
+	* mv - ($ mv [OPTION] source destination - move files or directories
+	* cp - ($ cp [OPTION]source destination - copy fioes, groups of iles or directoriers
+	* ls - ($ ls [-y,-1,-l,-h,-d] - lists directory contents of files and directories	
+
+	Aliases - replaces one string with another ($ alias name="value")
+		alias -p (prints all defined aliases)
+		remove an exisiting alias ($  unalias [ALIAS  Name])
+	Interrogating Files
+		touch - creates, changes and modify timestamps of  a file, creates a file without content
+			$ touch [OPTIONS] FILENAME
+		rm - removes objects such as files, directoires, and more
+			$ rm [OPTIONS] FILE
+		find - used to find files or directories and perfom operations on them (search by file,folder,name,creation date, modification date, owner, and permissions)
+			$ find [where to start searching from][EXPRESSION to find] [OPTIONS][what to find]
+		file - used to determine type of file based 3 sets of test: filesystem, magic, and language test
+			$ file [OPTION] FILENAME
+		stat - gives info about file (size,inode number, access permissions, time of last acces or modification, and more)
+			$ stat  [OPTION] FILE
+		df - display amount of disk space available of the file system
+			$ df [OPTION][FILENAME}
+		wc - (word count) used to find the muber of  lines, word count, bytes and charater count in a file
+			$ wc [OPTION] FILENAME
+
+	File Sharing
+		Archived file is a file comprised of one or more files along with metadata. Used to collect multiple files together for easy portability and storage
+			tar - (tap archive) used to create Archive and extract archive file
+				$ tar [OPTIONS][archive-FILE][file or directry to be archived]
+				compressed file - $ tar cvf [list of FILES]
+				uncompress file - $ tar xvf FILE.tar
+}
+I/O Manipulation
+	echo - used to display line  of text that is passed as an argument
+		$ echo [OPTIONS] [TEXT]
+	cat - reads date from the file give theri content as output (helps create,view and concatenate files)
+		$ cat [OPTIONS][FILE]
+Data Streams
+	stdin = standard input stream; accepts text as input (symbol 0<)
+	stdout = standard output stream; treminal should be device accepting output (symbol 1>)
+	stderr = error  stream (symbol 2>)
+Redirection
+	Divert output to a file
+		command > file = output will be written to the file
+		command >> ffile = append output to existig file
+	Divert input from a file
+		command < file = input redirected from a file
+	Error messages can be filtered to their own output file
+		command 2> fileERROR = filter out error messages and save them to a file
+		command 2>> fileError = filter out error messages and append them to exisiting file
+Quotes
+	"" - used to enclose vaibale or use shell expansion inside a sting; all  character interperted as regular except $ or ` which will be expanded on the shell
+	'' - all character within sinlge quotes are interpreted as a string character
+Globbing
+	* - matches one or more occurrences of any character, including no character
+	? - represents or matches a single occurence of any character
+	[] - matches any occurrence of character enclosed in the brackets. can be numbers,letters,other special characters etc.
+	{} - terms are separated by commas and each term must be the name of something 
+	! - negates a set of characters
+
+Control Signals
+	Ctrl + C = interrput/lill what is running
+	Ctrl + I = Clear the screen
+	Ctrl + s = stop output to the stirng
+	Ctrl + q = Allow outptu to the screen if previously stopped
+	Ctrl + D = Send an EOF marker, unless disabled, this will clsoe the shell(EXIT)
+	Ctrl + Z = Send the signal SIGTSTP to the current task, which suspends it; to return to it later enter fg 'process name'
+
+Command Line Arguments
+	$0 - filename of the current script
+	$n - these variables correspond to the arguments with which a script was invoked.
+	$# - the number of arguments supplied to a script
+	$* all the arguments are double quoted. if a script recieves 2 arguments ,  $* is equivalent to $1 $2
+	$@ -all the argumetns are individually double quoted, if a script recieves 2 arguments than same as above
+	$$ - the process number of the current shell. for shell scripts this is the process ID
+	$! = the process number of the last background command
+Boolean
+	&& - and
+	|| - or
+Conditional Statements
+	if statement
+		if [expression]
+		then
+			statement
+		fi
+
+	if-else
+		if [expression]
+		then
+			statement1
+		else
+			statement2
+		fi
+
+	if elif else fi statement
+		if [expression]
+		then
+			statement1
+			statement2
+			.
+		elif [expression2]
+		then 
+			statement 3
+			statement 4
+			.
+		else
+			statement 5
+		fi
+
+	if then else if the fi fi
+		if [expression]
+		then
+			statement1
+			statement2
+			.
+		else
+			if[expression2]
+			then
+				statement3
+				.
+			fi
+		fi
+
+	switch statement
+		case in
+			Pattern 1) Statement 1;;
+			Pattern n) Statemetn n;;
+		esac
+
+	true command- always returns 0
+	false command- fails with no output and exit status as 1
+
+Case Statement (similar to switch in C) Pattern-centric Control
+	case expression in
+		pattern 1 )
+			statements ;;
+		pattern 2 )
+			statements ;;
+		...
+	esac
+
+Looping Statements
+
+while statement:
+	while command
+	do
+		statement to be executed
+	done
+
+for statement:
+	for var in word1 word2 ... wordn
+	do
+		statement to be executed
+	done
+
+until statement:
+	until [CONDITION]
+	do
+		[COMMANDS]
+	done
+
+select statement:
+	select var in <list>
+	do
+		<commands>
+	done
+
+break statement exits the loop
+continue statement resumes next interatoin of an enclosed loop
+
+Background - appending an & to the command runs the job in the background 
+Background Commands
+	Ctrl + Z - suspends the current foreground job
+	bg - resumes the shell's notion of the "current" suspended job in the background
+	jobs - list out the backgorund jobs with the command
+	fg - bring a background job to hte foreground
+	top - displays processor activity of your linux box and also displays tasks managed by the kernel in real-time
+	ps - by default, the pc command producs  a list of all processes associated with the current user and terminal session
+	pgrep - quick way of getting the PID of a process
+	kill - to attempt to kill a process
+	pkill - almost exactly the same way as kill, but it operates on a process name instead
+	killall - to kill every instance of a certain process
+	
+Piping 
+	Pipe is used to combine two or more commands 
+	command_1 | command_2 | command_3 | . . . | command_N
+
+Common Pipeline Utilites 
+	grep - searches the named input file or stdin for lines containing a match to the given pattern
+		grep [options] pattern [files]
+	head - print the top N number of data of the given input
+		head [OPTION] ... [FILE] ...
+	tail - print the bottom N number of data of the given input
+		tail [OPTION] ... [FILE] ... 
+	sort - used to sort a file, arranging the records in a particular order. Follows these features as stated below
+		1. Lines starting with a number will appear before lines starting with a letter
+		2. Lines starting with a litter that appears earlier in the alphabet will appear before lines starting with a letter that appears later in the alphabet
+		3. Lines starting with a lowercase letter will appear before lines starting with the same letter in uppercase
+	tee - reads the standard input and writes it to both the standard output and one or more files
+		tee [OPTIONS] ... [FILE} ...
+	uniq - reports or filtres out the repeated lines ina file; by default, writes to standard output
+		$uniq [OPTION] [INPUT[OUTPUT]]
+	tr - (translate) used for translating or deleting characts
+		tr [OPTION] SET1 [SET2]
+
+Permissions
+	With Files:
+		r - (read) you may view the contents of the file
+		w - (write) you may change the contents of the file
+		x - (execute) yoy=u may execute or run the file
+	With Directories:
+		r - you have the ability to read the contents of the directory
+		w - you have the ability to write into the directory
+		x - you have the ability to enter that directory
+	3 types of set of people for permissions
+		owner - a single person who owns the file
+		group - every file belongs to a single group of people
+		others - everyone else who is not in the group or the owner
+	Commands
+		chmod - used to change the permissions of files or directories
+		chown - changes the owner and group
+		id - prints user and group information for the specified USERNAME or current user
+			id [OPTION] ... [USER]
+		users - prints the names of all users currently logged in to the host
+			users [OPTION] ... [FILE]
+		who - prints informaiton about alll users who are currently logged in
+		whoami - to display system's username
+		w - to dispaly list of users and thier activities
+		sudo - allows a useer with proper permissions to execute a command as another user, sucha as the superuser
+		gropuadd - creates a new group (need to be superuser or root)
+		groupdel - is used bya superuser or root to remove a group
+		gpassed - change password for a group
+		newgrp - allws a user to log in to a new group (must be file's owner or root)
+		chgrp - changes gropu ownership of a file or files
+		useradd - creates a new user account using the options specified on the command line plus the default values specified in the /ect/default/useradd file
+		userdel - delet user account
+		passwd - change password of a user
+		su - change the current user ID to that of the superuser or another user
+		sg - executes commands as a different group ID
+	
+inode - (index node) is a data structure on a traditional file system. It  stroes basifc information about a file, directory, or other file system object.
+	inode has follwing attributes stored in it:
+		File type, group,  file deletion time, permissions, file size, number of links, owner, file access, change and modification time, and  access control list
+	each inode has a unique inode number
+		ls -i to see inode number of a file
+	stat - gives inode number and attibutes of a file
+
+Links
+	Hard Link - created using the ln command (ln ./file1 ./file2) cannot link directories
+	Soft Link - creadted using the ln -s command (ln -s ./file1 ./file2) link is broken when the source is changed or removed
+			

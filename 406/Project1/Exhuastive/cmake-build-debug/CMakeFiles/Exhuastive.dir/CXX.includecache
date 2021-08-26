@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/Algorithms/Project1/Exhuastive/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+cmath
+-
+chrono
+-
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/CSCI 262/APT2/main.cpp
+iostream
+-
+queue
+-
+string
+-
+set
+-
+map
+-
+algorithm
+-
+

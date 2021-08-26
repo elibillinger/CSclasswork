@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/CSCI 262/lab2/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/Users/elibillinger/CSCI 262/lab2/lodepng.h
+iostream
+-
+lodepng.h
+/Users/elibillinger/CSCI 262/lab2/lodepng.h
+
+/Users/elibillinger/CSCI 262/lab2/mondrian.cpp
+cstdlib
+-
+ctime
+-
+mondrian.h
+/Users/elibillinger/CSCI 262/lab2/mondrian.h
+
+/Users/elibillinger/CSCI 262/lab2/mondrian.h
+string
+-
+picture.h
+/Users/elibillinger/CSCI 262/lab2/picture.h
+
+/Users/elibillinger/CSCI 262/lab2/picture.h
+lodepng.h
+/Users/elibillinger/CSCI 262/lab2/lodepng.h
+string
+-
+vector
+-
+

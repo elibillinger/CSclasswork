@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/CSCI 262/APT4/main.cpp
+iostream
+-
+string
+-
+vector
+-
+queue
+-
+ctype.h
+-
+

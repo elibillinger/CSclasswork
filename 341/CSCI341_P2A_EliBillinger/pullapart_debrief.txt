@@ -1,0 +1,13 @@
+1. Eli Billinger CSCI 341 Program 2A 9/9/2020
+
+2. I spent about 3 hours on this assignment
+
+3. I apprached this probelm by doing each part seperatly. First I figured out how to print using syscall. Then I got the users integer and saved it. 
+I then worked on shifting the integer to find the sign bit which took a couple of tries. Lastly I shifted the bites to isolate each byte and save that byte in a register.
+
+4. I used http://courses.missouristate.edu/KenVollmar/Mars/Help/SyscallHelp.html since it had all of the syscall codes that I needed. Other than this
+I only used the lecture slides and zybooks to solve the rest of the assignment.
+
+5. All of my code works for what it needs to do. With further learining I would like to simplifiy it so it is not as repetative.
+
+6. I am most please with the byte section since for me that was the hardest out of all of the parts of this assignment.

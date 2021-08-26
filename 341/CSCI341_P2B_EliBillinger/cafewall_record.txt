@@ -1,0 +1,15 @@
+Mars Messages
+Assemble: assembling /Users/elibillinger/Comp Org/cafewall.s
+
+Assemble: operation completed successfully.
+
+Go: running cafewall.s
+
+Error in /Users/elibillinger/Comp Org/cafewall.s line 110: Runtime exception at 0x00400140: address out of range 0x511a0000
+
+Go: execution terminated with errors.
+
+
+Run I/O
+Enter a size for the square in pixels: 20
+Enter the number of paris of squares/rows: 5

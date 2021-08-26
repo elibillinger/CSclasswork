@@ -1,0 +1,8 @@
+1. Eli Billinger CSCI341 Program 2B 9/23/2020
+2. I spent about 10 hours on this assignment
+3. To start this program I followed the assignemtn guide and solved each part then went to the next part. In order to solve issues that occured I had to add code
+to print out values in the code to find issues. I also had to hand write on paper some code nad outputs to solve issues.
+4. For help with this project I used the rectangle.s code to figure out how to draw the square at the start. For the next steps I only used 
+MIPS green card and the MAL reference cheets. I did use http://people.cs.pitt.edu/~xujie/cs447/Mips/cond.html for a refernce of implementing the if statemetn I used.
+5. One part of the code I would like to change is that it produces "Runtime exception at 0x00400140: address out of range 0x511a0000". Other than this the code works good and this error does not effect the bitmap display and what is displayed there.
+6. I am most pleased about the nested loops that printout the rows of squares.

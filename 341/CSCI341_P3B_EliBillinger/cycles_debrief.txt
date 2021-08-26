@@ -1,0 +1,9 @@
+1. Eli Billinger CSCI 341 Program 3B 11/2/2020
+2. I spent about 5 hours on this assignment.
+3. To solve this problem I created this program in steps by making the loop of asking input, then adding those to an array, then making tostring, then longest , then overhead, and at the end making it all loop until a negative number is entered.
+This approach did not change at any point while I was working on this problem. To solve issues I used the debugger to find the issue.
+4. I needed help with how to make an array and access values for an array in MIPS. I used the sources in the write up for this assignment and  this website http://pages.cs.wisc.edu/~smoler/cs354/onyourown/arrays.html
+5. All parts of my program work and I don't think any of it could use improvement.
+6. I am most pleased that overhead works correctly since it was the most difficult part of this assignment.
+7. My code follows the procedure calling conventions since the procedures all arguments are saved in a0 for the procedure and the returned values are saved in v0.
+Also all of the callee only procedures use $s0-$s7, while the other procedure which is both used $t0-$t9 for its values.

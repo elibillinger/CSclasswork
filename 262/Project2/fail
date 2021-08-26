@@ -1,0 +1,131 @@
+//for (int i = 0; i < 9; i++) {
+//        current_board[i] = 'X';
+//        possible_boards.insert(current_board);
+//        string temp,temp1,temp2,temp3,temp4,temp5,temp6;
+//        for (int k = 0; k < 9; k++) {
+//            temp = current_board;
+//            if(current_board[k] == ' ') {
+//                current_board[k] = 'O';
+//                possible_boards.insert(current_board);
+//                temp1 = current_board;
+//                for (int j = 0; j < 9; j++) {
+//                    if (current_board[j] == ' ') {
+//                        current_board[j] = 'X';
+//                        possible_boards.insert(current_board);
+//                        temp2 = temp1;
+//                        for (int i1 = 0; i1 < 9; i1++) {
+//                            if (current_board[i1] == ' ') {
+//                                current_board[i1] = 'O';
+//                                possible_boards.insert(current_board);
+//                                temp3 = temp2;
+//                                for (int i2 = 0; i2 < 9; i2++) {
+//                                    if (current_board[i2] == ' ') {
+//                                        current_board[i2] = 'X';
+//                                        possible_boards.insert(current_board);
+//                                        temp4 = temp3;
+//                                        for (int i3 = 0; i3 < 9; i3++) {
+//                                            if (current_board[i3] == ' ') {
+//                                                current_board[i3] = 'O';
+//                                                possible_boards.insert(current_board);
+//                                                temp5 = temp4;
+//                                                for (int i4 = 0; i4 < 9; i4++) {
+//                                                    if (current_board[i4] == ' ') {
+//                                                        current_board[i4] = 'X';
+//                                                        possible_boards.insert(current_board);
+//                                                        temp6 = temp5;
+//                                                        for (int i5 = 0; i5 < 9; i5++) {
+//                                                            if (current_board[i5] == ' ') {
+//                                                                current_board[i5] = 'O';
+//                                                                possible_boards.insert(current_board);
+//                                                                string temp7 = temp6;
+//                                                                for (int i6 = 0; i6 < 9; i6++) {
+//                                                                    if (current_board[i6] == ' ') {
+//                                                                        current_board[i6] = 'X';
+//                                                                        possible_boards.insert(current_board);
+//                                                                        temp6 = temp7;
+//                                                                    }
+//                                                                }
+//                                                                current_board = temp6;
+//                                                            }
+//                                                        }
+//                                                        current_board = temp5;
+//                                                    }
+//                                                }
+//                                                current_board = temp4;
+//                                            }
+//                                        }
+//                                         current_board = temp3;
+//                                    }
+//                                }
+//                                current_board = temp2;
+//                            }
+//                        }
+//                        current_board = temp1;
+//                    }
+//                }
+//                }
+//                current_board = temp;
+//            }
+//        current_board = empty_board;
+//        }
+
+
+
+
+
+
+   working for 2x2 tic tac toe board
+//      for (int i = 0; i < 4; i++) {
+//         temp = current_board;
+//        if(current_board[i] == ' ') {
+//            current_board[i] = 'O';
+//            possible_boards.insert(current_board);
+//            temp1 = current_board;
+//            for (int j = 0; j < 4; j++) {
+//                if (current_board[j] == ' ') {
+//                    current_board[j] = 'X';
+//                    possible_boards.insert(current_board);
+//                    temp2 = temp1;
+//                    for (int i1 = 0; i1 < 4; i1++) {
+//                        if (current_board[i1] == ' ') {
+//                            current_board[i1] = 'O';
+//                            possible_boards.insert(current_board);
+//                            temp1 = temp2;
+//                        }
+//                    }
+//                    current_board = temp1;
+//                }
+//            }
+//            current_board = temp;
+//        }
+
+
+
+
+
+
+
+if ((current_board[0] == 'X' || current_board[0] == 'O') && (current_board[0] == current_board[4]) && (current_board[4] == current_board[8])){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[0] == 'O' || current_board[0] == 'X') && (current_board[0] == current_board[1]) && (current_board[1] == current_board[2])){
+//                test_possible(current_board);
+//            }
+//            if (((current_board[0] == 'O' || current_board[0] == 'X') && (current_board[3] == current_board[4]) && (current_board[4] == current_board[5]))){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[6] == 'O' || current_board[6] == 'X') && (current_board[6] == current_board[7]) && (current_board[7] == current_board[8])){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[6] == 'O' || current_board[6] == 'X') && (current_board[6] == current_board[4]) && (current_board[4] == current_board[3])){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[0] == 'O'|| current_board[0] == 'X') && (current_board[0] == current_board[3]) && (current_board[3] == current_board[6])){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[1] == 'O' || current_board[1] == 'X') && (current_board[1] == current_board[4]) && (current_board[4] == current_board[7])){
+//                test_possible(current_board);
+//            }
+//            if ((current_board[2] == 'O' || current_board[2] == 'X') && (current_board[2] == current_board[5]) && (current_board[5] == current_board[8])){
+//                test_possible(current_board);
+//            }

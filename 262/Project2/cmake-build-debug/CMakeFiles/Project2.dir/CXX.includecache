@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/CSCI 262/Project2/main.cpp
+tictactoe.h
+/Users/elibillinger/CSCI 262/Project2/tictactoe.h
+chrono
+-
+
+/Users/elibillinger/CSCI 262/Project2/tictactoe.h
+string
+-
+set
+-
+

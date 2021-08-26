@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elibillinger/CSCI 262/Project5/map_model.cpp
+map_model.h
+/Users/elibillinger/CSCI 262/Project5/map_model.h
+queue
+-
+
+/Users/elibillinger/CSCI 262/Project5/map_model.h
+iostream
+-
+string
+-
+map
+-
+model.h
+/Users/elibillinger/CSCI 262/Project5/model.h
+
+/Users/elibillinger/CSCI 262/Project5/model.h
+string
+-
+vector
+-
+

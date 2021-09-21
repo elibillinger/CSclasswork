@@ -1,0 +1,58 @@
+For your first assignment, you'll need to make a webpage all about you OR some topic you find interesting.  This page should contain real information, not just lorem ipsum (Links to an external site.).
+
+Video
+You might want to first watch this short video that demonstrates the program. NOTE: for this and all assignment videos, you may want to adjust the resolution so the image is not blurry. After you click the link, click on the gear icon, and select a higher resolution, such as 291 kbps.
+
+Requirements
+Name the page aboutme.html.  Your page will need to display a number of HTML elements, as specified below.
+
+Notice that this list is in the format of an HTML comment. You should include this comment in your html file, just after the </head> tag. As you add elements to your page, fill out the comment with a brief description with parentheses (e.g.,  A title for your document (Cyndi is Learning... ) ).
+
+This comment section should help both you and the grader ensure all requirements are met.
+
+<!--
+    Correct HTML structure and doctype
+    A title for your document ( )
+    At least two meta tags (1- , 2-)
+    At least two levels of headers (1- , 2-)
+    At least one paragraph, probably more [no comment needed, this should be obvious)
+    At least three text formats. Do not use <b> or <i>. (1- , 2- , 3- )
+    At least one quotation or other item from Quotation and Citation page ( )
+    At least one hyperlink to an external site, open in new window/tab ( )
+    At least one mailto ( )
+    At least one list ( )
+    At least one image, placed inside folder named images ( )
+    - use the style attribute to specify size (can be just width or height)
+    At least one HTML code snippet ( )
+    At least one line break ( )
+    At least one horizontal rule ( )
+    At least one HTML entity or symbol, can be part of code snippet ( )
+    At least one HTML symbol ( )
+
+-->
+
+Note: no need to add any styling, we'll look at CSS in the next unit.
+
+Validation
+In addition to all of the above, be sure to be following our style guidelines and make sure your page passes validation (Links to an external site.). Take a screenshot of the successful validation to submit along with your html.
+
+Example Figure 
+This figure shows my page. Yours, of course, will look very different.
+
+HTML Basics Screen
+
+Submission
+Submit a single zip file containing:
+
+aboutme.html
+validation page
+images/
+all images used
+Grading
+Your submission will be graded according to the following rubric:
+
+Category	Points
+Page Content	10 
+HTML, including comment for grading (~2 points each)	80 
+Passes Validation Service	10 
+Total	100 

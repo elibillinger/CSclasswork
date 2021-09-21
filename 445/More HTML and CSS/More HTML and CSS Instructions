@@ -1,0 +1,107 @@
+We're going to create a styled "About Me" page that will look similar to the example figures below.
+
+Getting Started
+Start by downloading this zip  Download this zip, which contains templates for the HTML and two CSS files. Watch this video that shows the completed program, and this video that explains the structure of the files I provided.
+
+Part 1 - Page Styling
+In this section you will add content to the HTML page and style it using the  aboutme.css file.
+
+HTML Requirements
+First, notice that the HTML file contains a variety of content in [brackets]. You should fill in your own info. For example, my page (in the figure) has links for hiking trails and pictures of cats... some of you may not even like cats - inconceivable! You may use content from your original aboutme.html OR new content. For simplicity, you can use the table data as is (or not, your choice. We style the tables in part 2).
+
+In addition to the content, you should update the HTML to:
+
+Use an icon (e.g., I used the google bug_report icon)
+Use a different cursor (note that the cursor might not relate to the content... e.g., you may use a resize cursor with nothing to resize... the goal is just for you to be aware of how to change the cursor)
+Specify images for the image gallery. I suggest you use the same height for both images.
+Feel free to make additional changes to the HTML file as you see fit.
+
+CSS Requirements
+For this part of the assignment, I generally specify either
+
+what to style, but allow you to choose how (e.g., what color, font, size, etc.), OR
+a feature to use, but you decide where.
+The aboutme.css template includes comments that should help ensure you meet these requirements. For example, under the comment
+
+/* Style the header */
+
+you should put your CSS related to h1. NOTE: The grader will be looking at the code within these comments to ensure the requirements are met. So please do place your styles in the correct location! 
+
+Style the header
+Add some color to the page. I added color to the "intro" div, along with a repeating image (cats, of course). You may choose other styling and/or style other components as you desire. This requirement just reviews topics from last week, and allows you to be a little creative.
+Style the anchor (e.g., I removed the underline, it's good to know how to do that)
+Style each of the following pseudo-classes differently
+link
+visited
+hover
+active
+Use a pseudo-element (e.g., see the letter T in my first paragraph)
+Use inline-block (e.g., see how I styled the word pets)
+Style the image gallery
+style the gallery and desc
+try to use relative units (e.g., rem or em) rather than px where appropriate
+change the opacity of the image when the mouse hovers
+Part 2 - Tables
+In this part we will explore the HTML and CSS related to tables. Be sure you understand the HTML items in the list below. We will style three different tables. If you want to create your own table data, be sure to meet the content requirements in parentheses (if you use my data, the content requirements are met).
+
+caption (include for every table)
+thead, tbody  (include at least once)
+tfoot (include in a table with numeric data)
+th, tr, td (include in every table)
+colspan & rowspan (each need to be used in at least one table)
+Table Styling
+Put your styles in the tables.css file. Notice the comments at the top of the file. To assist the grader (and to help you ensure requirements are met), fill in the comments with either YES (for yes/no prompts like tables should "be centered") or with a table number (for prompts under "For at least one table...").
+
+Minimum requirements (explore more if desired):
+
+All three tables should be styled differently.  
+Tables should be centered, with a top margin to provide space between tables and a specified width (I used 80%, in case you're interested)
+Tables captions should be styled
+Each table should have a different border (explore various types, colors and widths).
+Each table should have different header styles (background/text colors should be different, explore other options as desired)
+Each of these styles must be represented in at least one table:
+
+Header and footer are different colors (background & text). See my Party Expenses table.
+Dashed bottom border for some td element (do not overlap other borders. See my Study Group Leaders table. 
+Special styling for either first or last element  (hint: use last-of-type or first-of-type pseudo-class). Notice the bold styling and different color for the first row of my Schedule table.
+Background color for alternating rows (hint: nth-of-type pseudo-class) See my Party Expenses table.
+One of the captions should appear below the table. See my Party Expenses table.
+Feel free to experiment with other styling as you see fit.
+
+Part 3 - CSS validation
+Run your file through the CSS validation service: https://jigsaw.w3.org/css-validator/ (Links to an external site.) 
+
+Assuming it passes, add the CSS validation icon to the top of your HTML
+
+when successful, the validator will provide code for this icon
+stylinAboutMe.html has a comment to show where to place the icon
+use the style "float right" so that the icon displays on the right hand side of the page (see my figure) 
+Validation services can sometimes flag items that are actually OK. For example, I've seen this validator flag colors that are fine. If you get a warning or message that you think is incorrect, post on piazza. If I agree that your code is fine, you will just put a comment at the bottom of your aboutme.css file, so the grader knows.
+
+Example Figures
+ 
+
+Top of styled about me page  
+
+Styled tables  
+
+ 
+
+Submission
+Submit a single zip file containing:
+
+stylinAboutMe.html
+aboutme.css
+tables.css
+images/
+all images used 
+Grading
+Your submission will be graded according to the following rubric:
+
+Category	Points
+HTML content (includes images)	20  
+HTML icon and cursor	10  
+aboutme.css styles (~3 pt each)	30  
+tables.css styles (~3 pt each)	30  
+CSS validation	10  
+Total	100  

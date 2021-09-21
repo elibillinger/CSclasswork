@@ -1,0 +1,127 @@
+There are 4 parts to this assignment:
+
+Apply HTML5 semantics to a page I provide (html5ify.html)
+Apply CSS styling to the page
+Update the html5ify page with navigation and responsive design (hamburger menu)
+Create a new page (tutorials.html) and explore another technique for responsive design
+Watch this full-screen version of the program, then this reduced-screen version.
+
+Part 0: Getting Started
+First download and extract HTML5_CSS3.zip  Download HTML5_CSS3.zipinto a folder.
+
+Then from Unit 2-CSS copy basicsEx.html, basicsEx.css, spacingEx.html, spacingEx.css, positionEx.html and positionEx.css into your folder. These files will not be modified, but we will use them in Parts 3 and 4 as navigation targets.
+
+Part 1: HTML 5 Semantics
+The provided html5ify.html file includes some simple content. Prior to HTML5, a common technique was to use <div> tags with either an id or class to indicate the semantics (meaning) of various parts of the page. For example, the page heading might be indicated by <div id="header">. As you know, HTML5 provides a number of tags with predefined semantics. Continuing the example, modern web pages would instead use the tag <header>.
+
+Your task in Part 1 is to convert the <div> tags to appropriate HTML5 tags. In Part 2 you will apply styling to the HTML5 tags and other parts of the page.
+
+Most of the conversions should be as obvious as the example. If you have questions, feel free to ask on piazza (the goal is for you to think about the tag meanings, NOT a test to see if you can guess what I intended). As you read on the Hello HTML5 page, the new tags do not replace all uses of <div>, and you will see that in html5ify (i.e., one div used for styling, not meaning).
+
+One issue we didn't cover on the Hello HTML5 page was the use of <h1> tags. Previously the convention was exactly on <h1> per page, but best practices have changed a bit. Take a few minutes to read: https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824 (Links to an external site.) 
+
+It may be hard when you're first learning, but with any language or technology it's good to consider best practices. These can change over time, and there may not be universal agreement... but your reputation as a coder will certainly be enhanced if you strive for elegant code, rather than just getting something to work. For this assignment, do you think any of the <h2> tags should be <h1>? If yes, feel free to modify the html.
+
+Part 2: Style your Page
+Create a file named html5ify.css. My styled page is shown below (Example Figure - Part 2), but in general you can apply styles as you see fit. There are three specific requirements:
+
+The sidebar (<aside>) should be on the right side of the page. I used a fixed position for this, but float right should also work (with appropriate content sizing).
+You should use at least 10 CSS styles, including at least 2 from your CSS3 reading.
+In the aboutMeSidebar, replace [YOUR NAME] with your name.
+Also in the sidebar, replace [YOUR LIST HERE] with the list of CSS features you used. Put an * beside the new CSS3 features (should be at least 2, more if you prefer). The figure below lists my CSS features as an example.
+Page should have a reasonable appearance, with some color scheme (i.e., not just random colors) and readable text/spacing/etc. This is not a graphic design course, so I don't expect polished pages (mine certainly isn't!) ... but at least give some thought to visual aesthetics.
+By now I hope that the basic CSS syntax and styles are becoming pretty comfortable.
+
+Example Figure - Part 2
+Styled html5ify
+
+Part 3: Navigation and Responsive Design (hamburger)
+We will begin this part by reading some example code from w3schools:
+
+https://www.w3schools.com/css/css_navbar_horizontal.asp (Links to an external site.) 
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp (Links to an external site.) 
+Our code will be similar to this. It's always good to ensure we fully understand code that we intend to use/modify. Create a readme.txt file and answer these questions (related to 2nd link, click Try It Yourself):
+
+With your screen wide enough so all menu items are displayed, what happens if you comment out float: left for the topnav anchors?
+Continuing, what happens if you comment out both float: left and display: block?
+Shrink the width of your page. Why is the hamburger icon only displayed when the screen is small? (i.e., explain what lines of CSS do this... cut-and-paste lines of code as needed)
+Why does only the Home menu option display when the screen is small? (again, the CSS code)
+Although we haven't yet studied JavaScript, take a look at the JS code and try to explain what that code is doing. Do NOT just copy the comment line... be more specific. Ask on piazza if needed.
+Now that you understand the example, we will add a nav menu and hamburger option to our program. Specifically:
+
+Add menu items within the <nav> section of the page to link to the 3 tutorials from Unit 2
+Apply CSS styles so that the page is responsive (i.e., uses the hamburger icon). Modify the colors to match your color scheme. Put this CSS code in a file named nav.css, and update the html file to include it.
+When the screen is small, modify the <aside> so that it is no longer on the right side of the screen (see figure below).
+Also when the screen is small, make sure the main content takes up most of the screen width (depending on what other styles you used, this may or may not be something you need to explicitly code).
+Example Figures - Part 3
+This figure shows the page when the screen width is wide. Notice all four menu options are displayed.
+
+Nav bar full screen
+
+ 
+
+This figure shows the hamburger menu that displays when the screen size is small.
+
+Hamburger icon  
+
+This figure shows that the sidebar (<aside>) is now just above the footer (rather than on the right).
+
+54.jpg  
+
+This figure shows the menu that displays when the hamburger icon is clicked.
+
+Dropdown menu when hamburger is clicked  
+
+Part 4 - More Responsive Design (vertical "buttons")
+For this part, instead of displaying a hamburger icon we will convert the menu to look like buttons. Start by reading about vertical navigation bars:
+
+https://www.w3schools.com/css/css_navbar_vertical.asp (Links to an external site.) 
+Notice that this example uses the common technique of placing menu items in an unordered list. That's the strategy we will use, although our styling will be different (described below).
+
+First create a new HTML file named tutorials.html containing the content shown in the figure below. Specifically:
+
+Include a nav bar that lists our 3 tutorials. As mentioned, we'll use <ul> this time, rather than <div>s.
+Include a header (CSCI-445 CSS Tutorials)
+Include a section that has a header (Welcome) and a paragraph (Welcome to.... ). Feel free to modify paragraph text as desired. Should the section header by <h1> or <h2>? For this small page, it made sense to me to be <h2>.
+Include a footer that has one paragraph (Questions or ...). Include your name/mailto, and modify text as desired. The footer should also have a repeating image. I used Siamese cats, you should pick some image that makes you smile.
+Now create the file tutorials.css to style the page. I suggest you play with colors and borders. In case you're interested, I used an inset border within my section and used mediumseagreen, steelblue and mintcream colors.
+
+The final step is to add CSS so that the menu is displayed horizontally if full screen, but vertically when the screen is small. Add styling so that the menu items *look like* buttons on the small screen. Google or post on piazza if you need ideas on how to do this (hint: there's no new CSS). 
+
+This figure shows the page with a wide screen.
+
+Tutorials page, full screen  
+
+This figure shows the page on a small screen. Note the menu items are now displayed vertically and look like buttons (just styling; these are still just links).
+
+Buttons appear on small screen 
+
+Submission
+Submit a single zip file containing:
+
+html5ify html & css, and nav.css
+tutorials html & css
+basicsEx html & css
+spacingEx html & css
+positionEx html & css
+readme.txt
+images/
+all images used 
+Grading
+Your submission will be graded according to the following rubric:
+
+Category	Points
+Part 1: Semantic tags	10  
+Part 2: CSS 10+ styles, aside on right, reasonable appearance (colors, spacing, etc) 
+
+15 
+Part 3: Readme answers	5 
+Part 3: Nav menu connects to examples (5)
+
+wide screen: shows all menu items (5)
+
+small screen: hamburger with just Home (5), show drop-down menu when click icon (5), aside moves to bottom and all content has reasonable width (10)
+
+30
+Part 4: Tutorials page with specified content, using semantic tags (20), nav menu changes to look like vertical row of buttons when screen is small (20)	40 
+Total	100  

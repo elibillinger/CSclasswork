@@ -1,0 +1,38 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+h2.excited {
+	text-shadow: 2px 2px blue;
+	text-transform: uppercase;
+}
+#knowSelectors {
+	color: purple;
+	font-style: italic;
+	font-size: 2em;
+}
+.warning{
+	color:  red;
+	font-family: "Papyrus", "Copperplate", fantasy;
+}
+#remember{
+	font-family: Verdana, Arial, sans-serif;
+	background-color: yellow;
+}
+.standout{
+	font-weight: bold;
+	border-top-style: dashed;
+  	border-right-style: solid;
+ 	border-bottom-style: dashed;
+  	border-left-style: solid;
+  	border-color: blue;
+  	border-width: 2px 2px 5px 2px; 
+  	border-radius: 5px;
+}
+ul {
+	background-color: #ff9999;
+}
+ul li {
+	background-color: #ffe5e5;
+	list-style: square;
+}

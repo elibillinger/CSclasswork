@@ -1,0 +1,86 @@
+*{
+	/* background color for the entire page */
+	background-color: #f4ffe4;
+	/* a complementary color for the text (#333333) */
+	color: #333333;
+	/* reasonable snas-serif font for the text */
+	font-family: Verdana, Arial, sans-serif;
+}
+header{
+	/* headers should use a serif font and generic family */
+	font-family: "Georgia","Garamond",serif;
+	/* the company name is centered */
+	text-align: center;
+	/* backgound color (#d5edb3) */
+	background-color: #d5edb3;
+	font-weight: bold;
+	/* the company name has a shadow below and to the right */
+	text-shadow: 2px 2px 5px #333333;
+	/* a rounded border */
+	border: 2px solid #333333;
+	border-radius: 15px;
+	/* turtle logo dispalyed on the right side */
+	background-image: url(turtle2.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+h1{
+	background-color: transparent;
+}
+/* the list of services should have a line spacing of 1.5 and should have square bullets */
+ul li{
+	list-style: square;
+	padding: 1.5px;
+}
+/* introduction paragraph should be indented */
+#intro{
+	text-indent: 30px;
+}
+
+/* company name should always be bold */
+.company_name{
+	font-weight: bold;
+}
+
+a{
+	/* set nav menu background color*/
+	background-color: #98bf21;
+	/* set text color and border for nav menu*/
+	color: #333333;
+	border: 1px solid #333333;
+	/* links do not have underlines */
+	text-decoration: none;
+	/* menu options are displayed in bold */
+	font-weight: bold;
+}
+nav{
+	text-indent: 30px;
+	background-color: white;
+}
+
+.motto{
+	/* the company motto is italicized and centered */
+	font-style: italic;
+	text-align: center;
+	/* a ridge border with an extra thick left border and color */
+	border-style: ridge;
+	border-left-width: 20px;
+	border-color: #99aa33;
+}
+
+#wrapper, #content *{
+	/* the wrapper is centered and takes 80% of space */
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	/* the wrapper background color is white */
+	background: white;
+	/* round corners of wrapper */
+	border-radius: 25px;
+	padding: 0px 5px 5px 5px;
+}
+/* the wrapper background color is white */
+#wrapper, #content {
+	background-color: white;
+}

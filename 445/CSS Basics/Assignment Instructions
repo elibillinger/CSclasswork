@@ -1,0 +1,322 @@
+CSS Part 1 - Basics
+The assignment for this module is divided into four parts. All four parts will be submitted at the same time. The first three parts are simple exercises to explore specific CSS features. In the final part you will style an actual home page (for a pretend company).
+
+Getting Started
+Watch this BasicsEx video.
+
+For all four parts, you will be styling HTML files that I provide. You are not permitted to edit the HTML; only CSS files will be submitted.
+
+First, download this zip  Download this zipcontaining the HTML files for all four parts and images for part 4.
+
+Then create a file named basicsEx.css. This is the external stylesheet for Part 1.
+
+CSS Basics
+When you have completed all the requirements, your styled page should look like the figure below. I will be fairly specific about the styles, but you may want to play with some of the options. The goal is for you to explore and begin to understand CSS, not to mindlessly mimic my page. Feel free to use other colors, border styles, etc. as desired.
+
+Header level 1
+
+Centered with blue text.
+Header level 2 ("excited" header)
+
+Transformed to all upper case, with a 2px blue shadow
+Paragraph with the id knowSelectors
+
+Italic style, purple, font size is 2em
+Elements with the class warning (there are two)
+
+Red with either a cursive or fantasy font (your choice)
+Paragraph with the id remember
+
+Yellow background with a sans-serif font
+Paragraph with the class standout
+
+Border in blue, top and bottom are dashed, right and left are solid
+Border has radius of 5 px, 5px width on the bottom, 2 px everywhere else
+Font is bold
+Unordered list
+
+has a background color of #ff9999 (or your choice)
+Unordered list items
+
+square list style type
+background color of #ffe5e5 (or your choice, as long as not the same as above)
+Example Figure
+ 
+
+Final product
+
+Rubric
+This part is worth 25 points, approximately 3 points per requirement.
+
+CSS Part 2 - Box Model
+Watch the SpacingEx video.
+
+This exercise explores the elements of the Box Model. As in part 1, you will create an external stylesheet for HTML I have provided. You are NOT allowed to edit the html file. Name your file spacingEx.css.
+
+The output of this exercise is three sets of styled "boxes" (divs), as shown in the figure below. As in part 1, I will be fairly specific about the requirements.
+
+NOTE: Although the diagram of the Box Model seems easy to understand, it can sometimes be tricky when dealing with more complex layouts to determine what effect margins, padding, etc. will have. Mindlessly following the requirements for this assignment will NOT aid your understanding much. I suggest you play with different values, to ensure you understand the effect of each CSS statement.
+
+Feel free to use whatever colors you like (as long as all items have different colors). The colors just help us see what's being styled.
+
+Requirements
+Entire page (hint: use the universal selector *)
+
+set all margins and padding to 0
+This overrides default margins/padding for elements so that you have control and can better see the effect of your statements.
+Elements with the class container
+
+set the background to pink, padding 1rem (play with this! and other numbers)
+NOTE: In some cases there are several CSS selector options that will work. For example, I only use class container for divs. So you could specify this as .container OR as div.container - either is fine (i.e., as with most coding, there's not one exact answer)
+
+Elements with the class outer
+
+set the height to 20vh, background to #D1ECFF
+include a 3px dashed border with color black
+Elements with class inner
+
+set the width to 30% and background to #FFFFFF
+include a 3px double border with color blue
+Paragraphs within class inner
+
+set the text color to green and background to orange
+Item with id outer1
+
+set width to 50%, padding to 1em, padding-top to 2em (example of cascading... browser will set all padding to 1em, then override top)
+Item with id inner1
+
+set height to 50% and margin to auto - what effect does this have?
+Item with id para1
+
+Set font size to 1.1rem, top margin is .5em, right margin is 1em, left margin is 2em (what happens if you change the font size?)
+Item with id outer2
+
+Set width to 50vw (compare to 50% - viewport includes the scrollbar, % does not)
+Set padding to 25px, top padding to 10px, bottom margin to 20px
+Item with id inner2
+
+Set bottom padding to 1em
+Use float right
+Item with id para2
+
+Set margins top(15), right (5), bottom (10), and left(30). You might try the shorthand syntax (all on one line).
+Item with id outer3
+
+Set width to 50%, height to 25vh, top margin to 30px
+Item with id inner3
+
+Set height to 50% and padding to .5em
+Float left
+Include an outline, solid 10px, color #4CAF50
+Item with id para3
+
+Include padding of 1em
+Example Figure
+Your spacing may look different, due to screen resolution etc.
+
+42.jpg
+
+Rubric
+This part is worth 25 points (approximately 2 points per requirement).
+
+ CSS Part 3 - Position
+First review the Example Figures and watch the videos below (there are two videos, corresponding to the two parts of this assignment).
+
+This exercise explores the commands used to position elements on the page. I have provided two HTML files with the same content. You will create two CSS files (positionEx.css and positionEx2.css) to show two different layouts (similar to Zen Garden, but much less polished). See the example figures.
+
+As in the prior exercises, you are NOT allowed to modify the HTML, and I will provide fairly specific requirements. For simplicity, most of the specifications will be in px. As in part 2, feel free to use different colors, and be sure to play with the spacing to increase your understanding.
+
+Requirements - positionEx
+Element with id sidebar
+
+fixed position (top 20px, left 5px). What happens if you scroll?
+max-width 80px
+color is blue, background is cyan
+h1
+
+relative position, left 80px
+what happens if you don't make this relative?
+paragraph with id shy
+
+no styles applied. You might want to experiment with z-index to see if you can get the shy paragraph to appear on top of the sidebar.
+div with class not-important
+
+set width 110px, height 100px and background color #00FF00
+set overflow hidden
+div with class more-important
+
+set width 200, height 80, background color pink
+position relative (top -40px, left 80px)
+set overflow visible
+z-index -1
+div with id lotsaText
+
+position relative (left 50px)
+background color orange
+max-width 600px
+div with class important
+
+width 150px and height 100px, background color yellow
+position absolute (NOTE: fixed is relative to viewport; absolute is relative to nearest positioned ancestor, which in this case is lotsaText)
+left 300px (300 px is from beginning of lotsaText, NOT from end of lotsText. Try to change this to 5 px to see for yourself)
+top 0px. Basically aligned with the top of lotsaText
+overflow scroll
+Reflection question: is there any reason these divs should have a class rather than an id? No, in fact since there's only one of each, an id may have been a better option. If I were to refactor (remember from Software Engineering: improve code quality without changing functionality), I would probably make that change.
+
+Requirements - positionEx2
+Element with id sidebar
+
+position fixed (top 65px, right 8px)
+max-width 80px, color blue, background cyan
+h1
+
+position sticky (including -webkit-sticky; /* Safari */)
+top 0
+height 40px
+background color green, border 2px solid #4CAF50
+paragraph with id shy
+
+float right
+Element with id lotsaText
+
+position relative (left 500px)
+background color orange and max-width 100px
+Element with class important
+
+position absolute (right 200px, top 0). Remember this has an absolute offset from the ancestor (lotsText). Since we specify right, this is 200 px from the right of lotsaText. Try changing the max-width of lotsaText (and also the right value of important) to see this
+Background color yellow, height 100px, width 150px, overflow scroll
+Element with class more-important
+
+background-color pink
+position relative (left 30px, top -15px)
+width 200px
+First see how this appears (this is a dynamic exercise, you may want to watch the video if you haven't already).
+
+Then set display:none. The more-important div no longer displays - AND no longer takes any space (so lotsaText etc. move up)
+Comment out display: none and set visibility: hidden. Notice that lotsaText etc. move down (i.e., the div still takes space, even though it doesn't display). You may submit with either display:none or visibility: hidden.
+Keeping an element at the bottom of the page
+A common requirement is to have a footer that stays below all content. There are various ways to do this, but first read this blog that describes the problem and one solution:
+
+how to keep your footer where it belongs (Links to an external site.)
+
+We want to keep the div with class not-important at the bottom. To accomplish this, we will make use of two divs (page-container and content-wrap).
+
+page-container
+
+styled exactly the same as the example
+content-wrap
+
+similar to example, but let's make our bottom padding 3rem
+give a background color of purple (so we can see what's included)
+NOTE: There's white space around the content... remember the universal selector? See what happens when you include that (with margin and padding set to 0)
+div with class not-important
+
+this is similar to #footer in the example
+position absolute (bottom 0) and width 100%
+height 3rem (should match bottom padding of content wrap)
+background color #00FF00
+paragraph inside not-important
+
+We can use a combinator for this: div.not-important > p 
+Set the color to red, top margin to .1em, bottom margin to 2em
+Example Figures and Videos
+Position Ex
+
+Watch the positionEx video.
+
+This is how the html appears using positionEx.css. As in prior exercises, your spacing may be slightly different (and there are more lines of lotsaText not shown).
+
+ 
+
+program using positionEx.css
+
+ 
+
+Position 2
+
+Watch the position2 video.
+
+Here's an image of the HTML using positionEx2.css
+
+Program using positionEx2.css
+
+with some text always at the bottom (had to scroll, and I also reduced my screen height... notice the effect on the sticky header)
+
+Text at bottom of page
+
+Rubric
+This part is worth 25 points (10 points for positionEx, 15 position2Ex, approximately 2-3 points per requirement).
+
+Part 4
+Watch the turtleCoders video.
+
+The goal for this exercise is to style a home page for a pretend company (Turtle Coders). See figure below.
+
+Create a file named turtlecoders.css. Add comments in the css file to indicate where requirements are met (this should help you as well as the grader, and commenting your CSS is good practice).
+
+CSS comments
+
+Your goal is to try to match my home page (spacing may vary somewhat). The requirements are listed below, but are not quite as specific as in the first 3 parts, and there are a few more things for you to figure out (ask on piazza if needed).
+
+To style the nav bar, it might help you to read about styling links. (Links to an external site.) 
+
+Requirements
+Apply the following styling:
+
+A background color (#f4ffe4) for the entire page
+A complementary color for the text (#333333)
+A reasonable sans-serif font for the text.  Be sure to include a generic family
+Headers should use a reasonable serif font and generic family
+The company name should always be bold
+The introduction paragraph should be indented.  Other paragraphs should not.
+The list of services should have a line spacing of 1.5 and should have square bullets
+Styling the header:
+A background color (#d5edb3)
+The company name is centered
+The company name has a shadow below and to the right.
+A rounded border (I used a color of #333333 and rounded 15px)
+Turtle logo is displayed on the right side
+You'll need to research how to add a background image in CSS
+Styling the nav menu:
+A background color (#98bf21)
+Matching text and border (#333333)
+Border is 1px (common opinion: px is OK for border width)
+Links do not have underlines
+Menu options are displayed in bold
+The entire menu is indented to be visually appealing (~2rem)
+There is some white space between the menu items
+Styling the company motto:
+is italicized and centered
+a ridge border with an extra thick left border and color (#99aa33)
+Styling the wrapper and content:
+The wrapper is centered and takes 80% of the space
+The wrapper background color is white
+The wrapper should not be visible above the corners of header (hint: try rounding - with a border radius)
+There is some space between the the content area text and the wrapper border
+Example Figure
+Your final page should look similar to mine:
+
+Turtle Coders Web Page
+
+ 
+
+Part 4 Rubric
+This part is worth 25 points (each individual requirement worth approximately 1 point).
+
+Submission
+Submit a single zip file containing:
+
+turtlecoders.css
+positionEx.css
+positionEx2.css
+spacingEx.css
+basicsEx.css
+Grading
+Your submission will be graded according to the following rubric:
+
+Category	Points
+Part 1	25  
+Part 2 	25  
+Part 3	25  
+Part 4	25  
+Total	100  

@@ -1,0 +1,95 @@
+/* 
+All tables should (yes/no)
+	 be centered:yes
+	 have top margin (so space between tables):yes
+	 have specified width (may be same or different):yes
+	 have captions styled appropriately: yes
+
+All three tables should be styled differently. 
+	each table should have a different border 
+	- type and/or size and/or color
+	each table should have different header styles
+	- background color with complementary font color
+
+For at least one table (specify table 1, 2 or 3)
+	Dashed bottom border for some td element: 3
+	- do not overlap other borders!
+	Special styling for either first or last element: 1
+	- hint: use last-of-type or first-of-type pseudo-class
+	Background color for alternating rows: 2
+	- hint: nth-of-type pseudo-class
+	One caption should be below the table 3
+	- hint: google this
+
+*/
+table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+}
+caption{
+	font-weight: bold;
+	padding: 5px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 125%;
+}
+#schedule{
+	border: 5px solid blue;
+	border-collapse: collapse;
+	width: 400px;
+}
+#schedule th, #schedule td{
+	border: 2px solid blue;
+	padding: 5px;
+	text-align: right;
+}
+#schedule th{
+	background-color: cyan;
+	color: black;
+}
+#schedule td:first-of-type{
+	color: red;
+}
+#study_group{
+	border: 10px ridge #ffd700;
+	border-collapse: collapse;
+	width: 500px;
+}
+#study_group th, #study_group td{
+	border: 2px ridge #ffd700;
+	padding: 5px;
+	text-align: right;
+}
+
+#study_group th{
+	background-color: #E6E6FA;
+	color: #4b0082
+}
+#expenses{
+	border: 7px double purple;
+	border-collapse: collapse;
+	width: 50px;
+	caption-side: bottom;
+}
+#expenses th{
+	border: 2px solid purple;
+	padding: 5px;
+	text-align: right;
+}
+#expenses td{
+	border-right: 2px solid purple;
+	border-left: 2px solid purple;
+	border-bottom: 2px dashed purple;
+	padding: 5px;
+	text-align: right;
+}
+#expenses th{
+	background-color: #AFEEEE;
+	color: #8B0000;
+}
+#expenses tfoot{
+	background-color: #E6E6FA;
+}
+#study_group tr:nth-of-type(2n){
+	background-color: #DCDCDC;
+}

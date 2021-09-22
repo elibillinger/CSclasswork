@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>We're learning CSS!</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Eli Billinger">
+	<link rel="stylesheet" href="tables.css">
+	<link rel="stylesheet" href="aboutme.css">
+	<!-- use font awesome, bootstrap, or other icon library as desired -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div id="intro">
+	<div id="headerImage"></div>
+	<h1>Stylin About Me</h1>
+	<!-- after CSS validation, your icon will go here (part 3) -->
+	<p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+			src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+		</a>
+	</p>
+	<p class="silly">Some of my favorite movies are: </p>
+	<ul>
+		<li> <a href="https://www.imdb.com/title/tt0468569/" target="_blank"> The Dark Knight </a> </li>
+		<li> <a href="https://www.imdb.com/title/tt6723592/" target="_blank">Tenet</a> </li>
+		<li> <a href="https://www.imdb.com/title/tt0107290/" target="_blank">Jurassic Park</a></li>
+		<li> <a href="https://www.imdb.com/title/tt3741700/" target="_blank">Godzilla: King of Monsters</a></li>
+	</ul>
+	<p>
+</div>
+<i class="material-icons">games</i>
+<span style="cursor:crosshair">I enjoy playing video games like Apex and Rocket Leauge.</span> 
+</p>
+<h2>Dogs</h2>
+<p>Life is better with <span class="dog">dogs</span>. </p>
+<div class="gallery">
+   <img src="images/mia.jpg" alt="mia" height="250px">
+   <div class="desc">Picture of my dog Mia</div>
+</div>
+
+<div class="gallery">
+   <img src="images/auggie.jpg" alt="auggie" height="250px">
+   <div class="desc">Picture of my dog Auggie</div>
+</div>
+
+<h2 style="clear:left">Tables</h2>
+	<table id="schedule">
+		<caption>My Schedule</caption>
+		<thead>
+			<tr>
+				<th>Course</th>
+				<th colspan=2>When</th>
+				<th>Where</th>
+				<th>Who</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>CSCI-262</td>
+			<td>MWF</td>
+			<td >11-11:50 am</td>
+			<td >MZ22</td>
+			<td >Smith</td>
+		</tr>
+		<tr>
+			<td>CSCI-341</td>
+			<td >TR</td>
+			<td >2-3:15 pm</td>
+			<td >BBW250</td>
+			<td >Jones</td>
+		</tr>
+		</tbody>
+	</table>
+	<table id="study_group">
+		<caption>Study Group Leaders</caption>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="2">Who</th>
+					<td>Frodo Baggins</td>
+					<td>Winnie T. Pooh</td>
+					<td>Donald Duck</td>
+			</tr>
+			<tr>
+				<td class="email">fbaggins@mines.edu</td>
+				<td class="email">winnie@mines.edu</td>
+				<td class="email">duck@mines.edu</td>
+			</tr>
+			<tr>
+				<th scope="row">What</th>
+				<td>Rings</td><td>Honey</td><td>Quackery</td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="expenses">
+		<caption>Party Expenses</caption>
+		<thead> 
+			<tr>
+				<th>Item</th>
+				<th>Cost</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Clown</td>
+				<td>60.00</td>
+			</tr>
+			<tr>
+				<td>Food</td>
+				<td>150.00</td>
+			</tr>
+			<tr>
+				<td>Decorations</td>
+				<td>20.00</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td>230.00</td>
+			</tr>
+		</tfoot>
+	</table>
+
+         
+</body>
+</html>

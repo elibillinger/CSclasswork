@@ -1,0 +1,18 @@
+body{
+    background-color: #dbe5e8;
+}
+table,th,td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+td {
+    text-align: center;
+    padding: 5px;
+}
+h3{
+    margin-left: 10px;
+    margin-top: 5px;
+}

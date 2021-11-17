@@ -1,0 +1,74 @@
+body{
+	margin: 0px;
+	display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto ;
+    grid-gap: 0px;
+}
+p{
+	font-size: 1.5vw;
+}
+h2{
+	font-size: 2vw;
+}
+header {
+	grid-area: 1/1/span 1/span 6;
+	text-align: center;
+	background-color: lightgray;
+	font-size: 1.3vw;
+}
+main {
+	grid-area: 2/1/span 2/span 4;
+	background-color: lightblue;
+	border: 5px darkblue solid;
+}
+#question{
+	background-color: whitesmoke;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+#answerBox{
+	background-color: whitesmoke;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+#categoryButtons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: slategrey;
+	padding-bottom: .5em;
+	padding-top: .5em;
+}
+
+aside {
+	grid-area: 2/5/span 2/span 2;
+	background-color: lightblue;
+}
+#gameEndBox{
+	width:200px;
+	height:80px;
+	display: none;
+	background-color: lightgreen;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+}
+
+footer {
+	grid-area: 4/1/span 1/span 6;
+	text-align: center;
+	background-color: lightgray;
+}
+
+@media only screen and (max-width: 700px) {
+	header {grid-area: 1/1/1/span 6;}
+	main { grid-area: 2/1/span 2/span 6; }
+	aside { grid-area: 4/1/span 2/span 6; }
+	footer { grid-area: 6/1/span 2/span 6; }
+}

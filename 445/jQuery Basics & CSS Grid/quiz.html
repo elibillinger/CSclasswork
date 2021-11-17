@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JQuery Basics</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Eli Billinger">
+	<link rel="stylesheet" href="quiz.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>COD Zombies Quiz</h1>
+</header>
+<main>
+	<p>Question (select a category below)</p>
+	<div id = "question">
+		<p>the question</p>
+	</div>
+	<p>Answer:</p>
+	<div id="answerBox">
+		<div>
+			<input type="radio" id="true" name="answer" value="true" onchange="enableCheck()">
+		<label for ="true">True</label>
+		</div>
+		<div>
+			<input type="radio" id="false" name="answer" value="false" onchange="enableCheck()">
+		<label for ="false">False</label>
+		</div>
+		<div id="checkButton">
+			<button type="button" id="checkAnswer" onclick="checkAnswer()" disabled>Check Answer</button>
+		</div>
+		<p>Test</p>
+	</div>
+	<div id = "categoryButtons">
+		<button type="button" id="B0" onclick="showQuestion('1')">Perks</button>
+		<button type="button" id="B1" onclick="showQuestion('2')">Wonder Weapons</button>
+		<button type="button" id="B2" onclick="showQuestion('3')">Maps</button>
+		<button type="button" id="B3" onclick="showQuestion('4')">Story</button>
+	</div>
+</main>
+<aside>
+	<h2>Questions History</h2>
+	<ul>
+	</ul>
+	<div id="gameEndBox">GAME OVER!</div>
+</aside>
+<footer>
+	<p>Created By Eli Billinger</p>
+</footer>
+<script src="quiz.js"></script>
+</body>
+</html>

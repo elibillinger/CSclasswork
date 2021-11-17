@@ -1,0 +1,84 @@
+body {
+    background-color: #dbe5e8;
+}
+#main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+form{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: groove;
+    border-color: #8FBABF;
+    width: 400px;
+    grid-column: 1/span 2;
+}
+h2{
+    font-size: large;
+}
+#productInfo{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+}
+#quantity {
+    width: 50px;
+}
+select{
+    width: 300px;
+}
+#personal{
+    display: table;
+    
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+}
+#fname{
+    float: right;
+    width: 175px;
+}
+#lname{
+    float: right;
+    width: 175px;
+}
+#email{
+    float: right;
+    width: 175px;
+}
+input[type=radio]{
+    margin-left: 25px;
+}
+input[type=submit]{
+    background-color: #031240;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+}
+#product{
+    margin-top: 70px;
+    border-color: #8FBABF;
+    border-style: dashed;
+    height: 300px;
+    width: 300px;
+    grid-column: 3/ span 2;
+}
+#product > p{
+    color: #8FBABF;
+    text-align: center;
+    font-size: smaller;
+    float: left;
+}

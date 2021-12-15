@@ -1,0 +1,6 @@
+1.
+2. A not good way to deal with forgotten passwords would be to let the user input an email and send an email to reset the password for what id they were trying to log in to.
+A good way to deal with forgotten passwords to be to email teh email connected to the account that is trying to be logged in to. (https://www.authgear.com/post/authentication-security-password-reset-best-practices-and-more)
+3. When implementing "Remember me" functinoality is is essentail to remember to not store the login data directly in a cookie to save it but to use an auth cookie instead. Also you should not make it last forever since it would increase the potential of it being compromised. (https://www.troyhunt.com/how-to-build-and-how-not-to-build/)
+4. Some best practices for cookies are to only retain the data as long as it is needed for its purpose and to make sure it does not contain sensitive data. (https://trustarc.com/blog/2011/12/02/best-practices-for-using-cookies/)
+5. HTTPS is the secure version of http and makes sure that the website is legitimate. (https://www.howtogeek.com/181767/htg-explains-what-is-https-and-why-should-i-care/)

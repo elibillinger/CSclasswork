@@ -1,0 +1,93 @@
+body {
+    background-color: #dbe5e8;
+}
+#main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 500px;
+}
+form{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: groove;
+    border-color: #8FBABF;
+    padding: 10px;
+    width: 400px;
+    grid-column: 3/span 2;
+}
+h2{
+    font-size: large;
+}
+#validation{
+    color: red;
+}
+#partform{
+    display: table;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 30px;
+}
+#pname{
+    float: right;
+    width: 175px;
+}
+#pimage{
+    float: right;
+    width: 175px;
+}
+#quantity{
+    float: right;
+    width: 175px;
+}
+#price{
+    float: right;
+    width: 175px;
+}
+#inactive{
+    float: right;
+    width: 175px;
+}
+
+input[type=checkbox]{
+    margin-left: 25px;
+}
+#addPart,#updatePart{
+    background-color: #031240;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+}
+#deletePart{
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+}
+#product{
+    margin: 100px 75px 200px 100px;
+    height: 300px;
+    width: 300px;
+    grid-column: 1/ span 2;
+}
+
+table,th,td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+td {
+    text-align: center;
+}

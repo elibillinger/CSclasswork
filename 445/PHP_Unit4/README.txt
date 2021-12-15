@@ -1,0 +1,4 @@
+1. The issue with $_SERVER["PHP_SELF"] is that a script can be added to teh end of the url that it reutrns and that would run that potentially harmful script.
+To prevent it you should use htmlspecialchars() to convert it to html so a script cannot be added to the end of the url.
+2. Server side validation is needed in order to protect the database from invalid data from being entered that could mess up parts that use the data from the database.
+It is good to have both client and server side validation in order to prevent any wrong inputs from teh client not filling something out and protecting the database.

@@ -1,0 +1,81 @@
+Python Assignment: Week 2 (September 2nd, 2019)
+        Part A: due by end of class
+        Part B: due Thursday, September 5th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 2 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 2 CSCI 102 Assignment page.
+
+We will have one problem from Rosalind this week (the online platform for learning bioinformatics and Python), which you will have CHECKed during your 102 class, and one problem that you will do on your own time (and submit to Canvas).
+Part A (due by end of class, the week of September 3rd): 4 points
+Go to the Rosalind and get logged in.
+After you are logged in, go to the Rosalind Problems page (for Python Village).
+Click on "Strings and Lists" and read the problem specification. It's a bit confusing, so we discuss more below.
+Notice the link "click to expand" next to the title of the problem. Most Rosalind problems have this link, which provides programming assistance. We encourage you to expand the details as you begin to solve each Rosalind problem.
+Load up your Python Interpreter (your IDLE program) and:
+ask the user to input a string (save the string by assigning the input to a string variable, e.g., the_str)
+ask the user to input the four numbers discussed (a, b, c, and d)
+print out the slice (or piece) of the string from indices a through b and c through d, inclusively
+read the "Strings and Lists" problem specification again; hopefully it makes more sense now
+Save your code in the directory you are using use to store/manage all your Python Labs this semester (e.g., CSCI102/Assignments). Save this file as Week2A-listslice.py.
+Get your program working correctly in IDLE (or whatever Python interface you are using) with the sample dataset given on the Rosalind "Strings and Lists" page (e.g., where you input 22 for a). Use copy (ctrl-C) to grab that long HumptyDumpty string and paste (ctrl-V) to add it as input to your program.
+After you are convinced your program is working correctly, click the "Download dataset" button in Rosalind. Rosalind will provide you with a different long string AND four values (the five of which you should use as input when you execute your code).
+Run your Week2A-listslice.py program with the dataset provided by Rosalind, and then enter the output of your code in the "Answer Submission" box on Rosalind's site.
+If your program works correctly, you will see "Congratulations You solved this problem." Continue working on this problem until you receive this Congratulations message. Feel free to click "Download dataset" a second (or third!) time and verify your Python code works with other datasets provided.
+Click on "Introductory Exercises" (upper right corner) and notice the "Strings and Lists" link is now green (illustrating you have completed this problem). Woo hoo!
+Part A: Example Execution
+Enter your string: HumptyDumptysatonawallHumptyDumptyhadagreatfall
+Enter a: 22
+Enter b: 27
+Enter c: 6
+Enter d: 11
+Humpty Dumpty
+
+
+Submission of Part A (due by end of class, the week of September 2nd)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor
+Your Rosalind Problems page (for Python Village), which illustrate you have completed the "Strings and Lists" problem.
+Your code for Week2A-listslice.py.
+You can now either leave the classroom OR begin working on Part B (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, September 5th, by 11:45pm): 6 points
+Introduction
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Week2B-simple_calculator.py.
+Assignment
+The purpose of this lab is to create a program that prints the results of basic math operations, specifically addition, subtraction, multiplication, and division.
+Declare operand_one and operand_two variables, initializing each to 0.0.
+Declare the variables sum, difference, product, quotient and remainder, and initialize each to 0.0.
+Prompt the user to input a real number as the first operand, assigning it to your operand_one variable.
+Prompt the user to input a real number as the second operand, assigning it to your operand_two variable.
+Calculate the sum of the two operands, assigning it to your sum variable.
+Calculate the difference, product, quotient and remainder of the two operands, assigning each to the respective variable you've declared.
+Output the result of each calculation.
+Hint: For division, use operand_one as the dividend and operand_two as the divisor.
+Lab I/O Format
+Thoughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: FIRST> and SECOND>.
+Your output should be VERY similar to the provided example below, which will make your grader's life easier!
+You are welcome to have other output lines that differ from the example. Just be sure your output is easy to understand, and follows a similar format.
+
+Example Execution
+Input the first operand.
+FIRST> 27
+Input the second operand.
+SECOND> 12
+
+The sum of 27 and 12 is: 39
+The difference of 27 and 12 is: 15
+The product of 27 and 12 is: 324
+The quotient of 27 and 12 is: 2
+The remainder of 27 and 12 is: 3
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section E
+        #   Week 2 - Part B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week2B and upload Week2B-simple_calculator.py.
+
+To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

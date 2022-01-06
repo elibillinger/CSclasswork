@@ -1,0 +1,147 @@
+Python Assignment: Week 3 (September 9th, 2019)
+        Part A: due by end of class
+        Part B: due by end of class
+        Part C: due Thursday, September 12th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 3 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 3 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of September 9th): 2 points
+Assignment: Enhanced Calculator
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Week3A-enhanced_calculator.py.
+
+Consider our Simple Calculator from Week 2 - Part B, which asks the user for two real numbers, calculates four operations, and outputs five numbers. In this lab, your program should only complete a single operation (i.e., an operation chosen by the user).
+Declare operand_one and operand_two variables, initializing each to 0.0.
+Declare the variables sum, difference, product, quotient and remainder, and initialize each to 0.0.
+Prompt the user to input a real number as the first operand, assigning it to your operand_one variable.
+Prompt the user to input a real number as the second operand, assigning it to your operand_two variable.
+Ask the user which operation they would like to have performed.
+Calculate the result of the operation.
+Output the result based on the user's choice.
+Hint: As before, for division, use operand_one as the dividend and operand_two as the divisor.
+Lab I/O Format
+Thoughout this semester we will often use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: FIRST>, SECOND> and OPERATION>.
+Your output should be VERY similar to the provided example below (which will make your grader's life easier!).
+You are welcome to have other output lines that differ from the example. Just be sure your output is easy to understand, and follows a similar format.
+Example Execution #1
+Welcome to our Enhanced Calculator!
+Input the first operand.
+FIRST> 3.14
+Input the second operand.
+SECOND> 2.72
+
+Choose one of the following operations:
+  1 - addition
+  2 - subtraction
+  3 - multiplication
+  4 - division
+OPERATION> 2
+
+result: 0.420000
+Thank you for using our calculator.
+
+
+Example Execution #2
+Welcome to our Enhanced Calculator!
+Input the first operand.
+FIRST> 12
+Input the second operand.
+SECOND> 5
+
+Choose one of the following operations:
+  1 - addition
+  2 - subtraction
+  3 - multiplication
+  4 - division
+OPERATION> 4
+
+quotient: 2
+remainder: 2
+Thank you for using our calculator.
+
+
+Part B (due by end of class, the week of September 9th): 3 points
+Assignment: Three Siblings
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Lab3B-siblings.py.
+
+There are three siblings named Jimmy, Jared, and Josephine. All three siblings are aspiring mathematicians, and all three only like one type of number.
+Jimmy will only work with odd numbers.
+Jared will only work with numbers greater than 10 but less than 100 (inclusive).
+Josephine will only work with double digit numbers whose digits add up to 8.
+The parents are a little worried about their children’s numerical pickiness, but are willing to humor them for the time being. Write a program that asks the user for a positive number, and then outputs the names of which sibling(s) will work with that number.
+Lab I/O Format
+Throughout this semester we will often use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: NUMBER>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution #1
+Input a positive number for the siblings to consider:
+NUMBER> 40
+The sibling(s) who will work with 40 follow:
+OUTPUT Jared
+
+Example Execution #2
+Input a positive number for the siblings to consider:
+NUMBER> 35
+The sibling(s) who will work with 35 follow:
+OUTPUT Jimmy
+OUTPUT Jared
+OUTPUT Josephine
+
+
+Submission of Part A and Part B (due by end of class, the week of September 9th)
+After you have both Part A and Part B completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Week3A-enhanced_calculator.py.
+Your code for Lab3B-siblings.py.
+NEW: After you are checked by the TA, please upload the .py file for each assignment to Canvas.
+You can now either leave the classroom OR begin working on Part C (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part C (due by Thursday, September 12th, by 11:45pm): 6 points
+Assignment: Amino Acids
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Week3C-AminoAcid.py.
+
+In this lab, you will determine one of six amino acids based on the elements that compose its chain. Here is a table that shows the six amino acids you will distinguish between, and the elements in their chemical formula: Carbon (C), Hydrogen (H), Nitrogen (N), Oxygen (O), and Sulfur (S).
+
+Amino Acid	C  	H   	N   	O   	S    
+Alanine - plays a key role in glucose	3	7	1	2	0
+Arginine - enhanced immunity, boost your arginine with pumpkin seeds	6	14	4	2	0
+Asparagine - first discovered in asparagus, non-essential amino acid in humans    	4	8	2	3	0
+Cysteine - semi-essential amino acid that is found in hog hair	3	7	1	2	1
+Histidine - important for children, as may help immune system	6	9	3	2	0
+Glutamine - important amino acid for bodybuilders	5	10	2	3	0
+
+
+You can assume the input to your program is always valid (e.g., oxygen input will only be 2 or 3 in this case). The output of your program should be the Amino Acid that matches the input information. For efficiency, your solution must use nested if statements.
+
+We suggest the algorithm in your program is:
+Prompt the user for the number of elements of each amino acid.
+Determine which amino acid matches.
+Create the chemical formula string for the amino acid (see string concatenation in zyBook 16.1).
+Output the amino acid name and its chemical formula string to the user.
+Lab I/O Format
+Thoughout this semester we will often use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, one WORD in this lab would be: CARBON>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution
+Input the chemical elements of the amino acid:
+CARBON>5
+HYDROGEN>10
+NITROGEN>2
+OXYGEN>3
+SULFER>0
+The amino acid for C_5H_10N_2O_3S_0 is Glutamine
+OUTPUT C_5H_10N_2O_3S_0
+OUTPUT Glutamine
+
+
+        #   Tracy Camp
+        #  ​CSCI 102 – Section E
+        #   Week 3 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week3C and upload Week3C-AminoAcid.py.
+
+Note: this lab is worth 5 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

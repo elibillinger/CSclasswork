@@ -1,0 +1,79 @@
+Python Assignment: Week 10
+        Part A: due by end of class
+        Part B: due Thursday, November 7th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 10 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week f10 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of November 4th): 3 points
+Assignment: Rolling a Die (Again)
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week10A-rolling_die_again.py.
+
+The goal of this lab is to create two functions. The input to the first function is a list. The function should loop through the list and output the (1) current index (+1) and (2) the value at that index. You should add one to the index as the 0th index will actually be tracking the number of times a rolled die displays 1. For example when the iterator i is 4, the output should be:
+OUTPUT 4 occured 6 times
+if your die rolling experiment saw 4 occur 6 times.
+
+The input to the second function is an integer, which represents the number of times (say n) to roll a die. Sound familiar? That's right, in this function we will implement the same logic from Lab8A.
+
+The output to your second function is a list, where index i represents the number of times that (i+1) was rolled in n rolls. In other words, this function should return a list that represents the number of times each number on a die occurred in n rolls.
+
+Lastly, in addition to the two functions, your main program should setup the random number generator, ask the user for the number of rolls to make, and then call something like function1(function2(numRolls)). (Consider using more appropriate function names!)
+Lab I/O Format
+Thoughout this semester we use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORDs in this lab might be: NUMBER>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution 1:
+Input the number of rolls to make:
+NUMBER> 600000
+
+Your 600000 rolls follow:
+OUTPUT 1 occurred 99835 times
+OUTPUT 2 occurred 100147 times
+OUTPUT 3 occurred 100356 times
+OUTPUT 4 occurred 99828 times
+OUTPUT 5 occurred 100015 times
+OUTPUT 6 occurred 99819 times
+
+
+Note: while the above output is the same as Lab8A, the implementation of the code should be quite different.
+Submission of Part A (due by end of class, the week of November 4th, by 11:45pm)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Week10A-rolling_die_again.py
+The execution of your code
+After you are checked by the instructor/mentor, please upload your Week10A-rolling_die_again.py file to Canvas.
+You can now either leave the classroom OR begin working on the other parts of this assignment (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, November 7th): 5 points
+Assignment: Function Practice!
+To get started, open the linked Lab10B-functions.py file. We suggest you immediately save this file in the directory managing all your Python Labs this semester.
+Assignment
+The purpose of this lab is to create the following five functions (with the function names listed) in the linked file above.
+PrintOutput - The input to this function is a string. The output of the function is the word "OUTPUT" followed by the input string. Here's an example of using this function:
+>>> PrintOutput("Hello World")
+OUTPUT Hello World
+TriangleArea - The input to this function is two numerical values, which represent the height and width of a triangle respectively. The function should then call your PrintOutput function to output the area of the triangle (two decimal places). Here are two examples of using this function:
+>>> TriangleArea(3,4)
+OUTPUT 6.00
+>>> TriangleArea(4.2,7.8)
+OUTPUT 16.38
+FeetToMeters - The input to this function is a number that represents the number of feet. The function should then (1) convert the number of feet to meters and (2) call your PrintOutput function to print the result (three decimal places). Here's an example of using this function:
+>>> FeetToMeters(10)
+OUTPUT 3.048
+PolarCoords - The input to this function is two vales (x,y) representing cartesian coordinates. The function should then (1) convert the coordinates to the equivalent location in polar coordinates (search Google for this conversion, if needed) and (2) call your PrintOutput function (twice) to print the result (one decimal place). Note: Be sure to output your degrees in deg (not radians). Here's an example of using this function:
+>>> PolarCoords(12,5)
+OUTPUT r: 13.0
+OUTPUT theta: 22.6
+EurosToDollars - The input to this function is the amount something costs in Euros. The function should then (1) convert the amount to dollars (round down to two decimal places) and (2) call your PrintOutput function to print the result. Assume one Euro is worth $1.12. Here's an example of using this function:
+>>> EurosToDollars(10)
+OUTPUT 11.20
+
+Notes:
+The code you submit to Canvas should only contain your created functions.
+Our test script will call your functions with the function names listed above. You will not receive credit for a function call if your function name does not match the name above.
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week10B and upload Lab10B-functions.py.
+
+To receive full credit, your code must execute in Python 3 and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

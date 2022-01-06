@@ -1,0 +1,123 @@
+Python Assignment: Week 7
+        Part A: due by end of class
+        Part B: due Thursday, October 10th, by 11:45pm
+        Part C: due Thursday, October 10th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 7 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 7 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of October 7th): 3 points
+Assignment: Reverse Reverse
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Week7A-reverse.py. We practice reversing lists in this lab.
+
+To begin:
+Ask the user for a value N (0 ≤ N < 10)
+Create a 2-D list in an N X N structure with integers 1-(N*N)
+Print the list created
+Reverse the list such that (1) each list in the 2D list is reversed and (2) the order of each list in the outer list is reversed (see example)
+Print the reversed list
+Lab I/O Format
+We usually use a specific Lab Input/Output Format. In this assignment, you need to follow the input format but do not need to follow the output format exactly.
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORD in this lab might be: N>.
+For the output, try and follow the example below as closely as you are able to do. You will not lose points if your output doesn't follow the example format exactly.
+Example Execution
+What size 2D list would you like to create?
+N> 3
+
+The original list is:
+[ [1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+]
+
+The reversed list is:
+[ [9, 8, 7],
+[6, 5, 4],
+[3, 2, 1]
+]
+
+Implementation
+To receive full credit on this assignment, you must implement the code in two different ways. You should:
+Use the .reverse() list function in one solution.
+NOT Use the .reverse() list function in the other solution (i.e., you should manipulate the 2D list manually).
+Please put BOTH solutions in your one Week7A-reverse.py file, i.e., when you execute Week7A-reverse.py, it should print out the example execution twice.
+Submission of Part A (due by end of class, the week of October 7th)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Week7A-reverse.py that uses the .reverse() function.
+Your code for Week7A-reverse.py that does NOT use the .reverse() function.
+The execution of your code (showing output, as in the example, for both implementations).
+After you are checked by the instructor/mentor, please upload your Week7A-reverse.py file to Canvas.
+You can now either leave the classroom OR begin working on the other parts of this assignment (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, October 10th): 4 points
+Assignment: Autori
+Great scientific discoveries are often named by the last names of scientists that made them. For example, the most popular asymmetric cryptography system, RSA was discovered by Rivest, Shamir and Adleman. Another notable example is the Knuth-Morris-Pratt algorithm (or KMP algorithm), developed by Knuth, Morris and Pratt.
+
+Scientific papers often reference earlier works and it’s not uncommon for one document to use two different naming conventions: the short variation (e.g. KMP), which only uses the first letters of the authors last names, and the long variation (e.g. Knuth-Morris-Pratt), which uses complete last names separated by hyphens.
+
+Considering style, mixing two naming conventions in one paper is aesthetically unpleasing. Thus, in this assignment, you will write a program that transforms any long variation into a short variation. Please save your file with the following name: Week7B-autori.py.
+Input
+The input contains at most 100 characters, where these characters represent the long variation of naming discussed (i.e., the characters will only be uppercase letters, lowercase letters, and hyphens (-)). The first character will always be an uppercase letter, and hyphens will always be followed by an uppercase letter. All other characters will be lowercase letters. You may assume the input always follow this format.
+Output
+The output should contain the appropriate short variation of naming discussed.
+Lab I/O Format
+Throughout this semester we will usually use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: NAMES>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution 1:
+What are your author names?
+NAMES> Knuth-Morris-Pratt
+OUTPUT KMP
+
+
+Example Execution 2:
+What are your author names?
+NAMES> Mirko-Slavko
+OUTPUT MS
+
+
+Example Execution 3:
+What are your author names?
+NAMES> Pasko-Patak
+OUTPUT PP
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section B
+        #   Week 7 - Part B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week7B and upload Week7B-autori.py.
+
+To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.
+Part C (due by Thursday, October 10th): 4 points
+Assignment: Complement Strand
+Bioinformatics is the science of collecting and analyzing complex biological data such as genetic codes. Part C this week is the following problem from Rosalind (the online platform for learning bioinformatics and Python): Complementing a Strand of DNA. We encourage you to use the Rosalind site to receive datasets that you can use to test your code.
+
+In DNA strings, symbols 'A' and 'T' are complements of each other, as are 'C' and 'G'. Also, the reverse complement of a DNA string s is the string sc, formed by reversing the symbols of s and then taking the complement of each symbol. For example, the reverse complement of "GTCA" is "TGAC".
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week7C-complement.py. The input to your code is a DNA string s (of length at most 1000 characters). The output of your code should be the reverse complement of the input s, i.e., sc.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: S>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution
+Enter a DNA string:
+S> AAAACCCGGT
+The reverse complement of the above string is:
+OUTPUT ACCGGGTTTT
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section G
+        #   Week 7 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week7C and upload Week7C-complement.py.
+
+To receive full credit, your code must execute in Python 3 and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

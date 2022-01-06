@@ -1,0 +1,83 @@
+Python Assignment: Week 9
+        Part A: due by end of class
+        Part B: due Thursday, October 31st, by 11:45pm
+Introduction
+Welcome to your assignment for Week 9 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 9 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of October 28th): 3 points
+Assignment: Cag'd
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week9A-caged.py.
+
+We practice file input/output in this lab, in remembrance of our favorite memeable National Treasure character. You are to input a Nicholas Cage ASCII art file, modify it, and then output the file with the correct conversions. Specifically, your job is to:
+Open the file Caged.txt.
+Read the file, character by character.
+Write a new file called caged_converted.txt that coverts characters in the input file in the following way:
+convert each & to %
+convert each % to &
+convert each / to ~
+We suggest you download the Caged.txt file to the same folder/directory as your Python code for this lab.
+Submission of Part A (due by end of class, the week of October 21st)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Week9A-caged.py
+The execution of your code (showing the output file created)
+After you are checked by the instructor/mentor, please upload your Week9A-caged.py file to Canvas.
+You can now either leave the classroom OR begin working on the other parts of this assignment (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, October 31st): 6 points
+Assignment: Grade Calculator
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab9B-grades.py.
+Assignment
+Many tasks, such as calculating a student's total grade based on individual assignments, are automated by computers. In this assignment, you are to develop a program that calculates a student's grade from a file that contains several grades. The input to your program is: (1) the name of a file that contains grades for many students (in CSV format) and (2) a student's name. Your program should then search the CSV file to find the student, read in that student's scores, and then calculate/print the following values from the student's scores in the file:
+the student's average grade
+the student's maximum grade
+the student's minimum grade
+The output to your program should be in the order listed above and should go to both the screen AND to an output file named output.txt. The output file should be structured as a CSV file that only contains the student's name and the values calculated. (See example shown below.) If the student is not found in the file, your program should print "Student not found" (and no output file should be created).
+
+We suggest you put the input file in the same folder/directory as your Python code for this lab.
+Lab I/O Format
+Thoughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: FILE and STUDENT>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Input File
+Suppose the file grades.csv has the following contents:
+Jill Johnson,100,100,90,70,100
+Some Student,30,50,30,50,100
+John Doe,80,85,70,100,90
+
+Example Execution #1
+Please enter the CSV file name with student grades:
+FILE> grades.csv
+Please enter the name of the student to calculate grades:
+STUDENT> Jill Johnson
+The average grade for Jill Johnson is: 92
+OUTPUT 92
+The maximum grade for Jill Johnson is: 100
+OUTPUT 100
+The minimum grade for Jill Johnson is: 70
+OUTPUT 70
+
+Example Output File
+With the grades.csv listed previously and the Example Execution #1 shown, your program should create the file output.txt with the following content:
+
+Jill Johnson,92,100,70
+Example Execution #2
+Please enter the CSV file name with student grades:
+FILE> grades.csv
+Please enter the name of the student to calculate grades:
+STUDENT> Dr. Camp
+Student not found. No output file created
+OUTPUT error
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section A
+        #   Week 9 - Part B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week9B and upload Lab9B-grades.py.
+
+To receive full credit, your code must execute in Python 3 and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

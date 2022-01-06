@@ -1,0 +1,132 @@
+Python Assignment: Week 5 (September 23rd, 2019)
+        Part A: due by end of class
+        Part B: due by end of class (EXTRA CREDIT)
+        Part C: due Thursday, September 26th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 5 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by Thursday 11:45pm. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 5 CSCI 102 Assignment page.
+
+We will have one problem from Rosalind this week (the online platform for learning bioinformatics and Python); for this week, you will submit your Rosalind code to Canvas by Thursday (not checked in class). You will also have two other problems to be CHECKed during your 102 class.
+Part A (due by end of class, the week of September 23rd): 2 points
+Part A Introduction
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Lab5A-marble_row.py. In the previous labs, we've discussed looping using while. In this lab we will be furthering our knowledge of loops by using for loops. What will we be doing with these loops you may ask? Finding our marbles of course!
+Problem Statement: Lost Marbles
+We've lost our marbles! And, unfortunately for us, the lights went out at the same time! Thus, we are having trouble finding all our marbles. One thing we do know is that the marbles have fallen onto a grid of X's and we can use a small bit of code to help us discover where all our marbles are.
+
+In this lab, you need to find the location of all Marbles (O's) that are in a string of X's and O's. (Note: O as is the letter O not the number 0). An X means "no marble here" and an O means "marble here" (i.e., the X's and O's represent locations of marbles, not hugs and kisses nor Ex's and Oh's)
+
+A sample input may look something like: XOXXXOOXXXXOOOOXXXXXXXOOOOOOX. You can assume that the input is always uppercase X and uppercase O. (Reminder: B != b to a computer; the letters are the same, but their ASCII values are different.)
+
+Your program may be structured as follows:
+Prompt the user for a "random" string of X's an O's. Capture the string into a variable.
+Create an integer to keep track of the index of the string as you iterate over it.
+Create an empty list to store your identified marble locations.
+Iterate over the input string:
+Use a conditional/branching statement that checks:
+If value at the current index of the string is a Marble, then store that index in your running list of marble locations.
+Otherwise the value is an X, so do nothing.
+Increment your index counter.
+When the loop completes, you should have a running list of all the locations of your marbles.
+Display that list and the number of marbles found back to the user with a witty message.
+Lab I/O Format
+Throughout this semester we will often use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: MARBLES>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer.
+You are welcome (and should!) have other output lines that are informational to the user of the program.
+Example Execution
+Enter a string of X's and O's:
+MARBLES> XXOOXOXOXOXOXXXXOO
+Hi Lazy, I found your marbles for you. They are at [2, 3, 5, 7, 9, 11, 16, 17]
+Your Marbles are at the following indices:
+OUTPUT [2, 3, 5, 7, 9, 11, 16, 17]
+
+Part B (due by end of class, the week of September 23rd): 3 points (extra credit!)
+Part B Introduction
+Part A was nice, as it assumed we dropped all our marbles onto a grid with only one row. What happens when we really lose our marbles?? They go all over!
+
+To get started with Part B, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Lab5B-marble_grid.py. We provide less structure to the design of your lab this time; we encourage you to write out pseudocode!
+Problem Statement: Lost Marbles AGAIN
+For Part B of this Lab, you need to create and iterate over a 2D (2 dimensional) list!! Understanding how to use 2D lists is valuable in things like image processing, image recognition, and matrices. We encourage you to practice using for lists on multi-dimensional data!
+
+The Goal for Part B is the same as Part A, except you will be working in both the x and y direction. We will skip user input this time, as one wrong letter could mess with the construction of our 2D list. Instead you will create a random grid of X's and O's. For simplicity, you can assume the grid size is always 5x5; however, for an extra credit point, allow the user to decide the size of the grid (assume maximum 10x10 rows/columns).
+
+Conceptually, a 2D list is a list, where all of its values are also lists. The following shows a 5x5 example of what you are trying to construct conceptually:
+X X X O X
+X X X X X
+X X X X X
+X X O O X
+X O X X X
+
+
+Based on Part A, you know how to use a for loop to search through a string and find values within. For Part B, you'll need a second for loop, i.e., a nested for, for traversing your grid (i.e., search through each row by searching each column in that row). Be sure to keep track of your indices correctly.
+
+To create the random grid, generate a random integer of either 1 or 2. If the integer generated is a 1, assume "no marble" (X). If the integer generated is a 2, assume "yes marble" (O). You can generate a random number (which is assigned to random_num) with the following code. (We will discuss random number generation soon. Promise!)
+import random
+random.seed()
+# do code above ONCE (at top of your program); do code below for each random number
+random_num = random.randint(1,2)
+
+
+You will need to create a tuple (a collection which is ordered and unchangeable) that contains the x,y position of a marble found within the 2D array. You will then add that tuple to a list that will be printed out to the user when the program is done executing. Tuples can be created with:
+x = 5
+y = 6
+t = (x,y)
+print(t)
+
+> (5, 6)
+
+Example Execution
+Given the following 5x5 grid:
+
+O X O O X
+X O X X X
+X X X X X
+X O X X X
+X X X X O
+
+Your marbles are at the following locations in row column major:
+[(0, 0), (0, 2), (0, 3), (1, 1), (3, 1), (4, 4)]
+
+Submission of Part A and Part B (due by end of class, the week of September 23rd)
+After you have both Part A and Part B completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Lab5A-marble_row.py.
+Your code for Lab5B-marble_grid.py.
+After you are checked by the instructor/mentor, please upload each .py file for each assignment to Canvas.
+You can now either leave the classroom OR begin working on Part C (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part C (due by Thursday, September 26th): 5 points
+Assignment: Counting/Transcribing DNA
+Bioinformatics is the science of collecting and analyzing complex biological data such as genetic codes. In order to broaden your horizons and show that the concepts you have been learning can be applied almost anywhere, you will write for loops in this lab that work with DNA strings. Specifically, Part C this week combines TWO problems from Rosalind (the online platform for learning bioinformatics and Python), and both problems are related to DNA strings: Counting DNA Nucleotides and Transcribing DNA into RNA. We encourage you to use the online Rosalind site to test your code. That is, once your code is developed for the counting/transcribing DNA piece of the problem, test that code by using the Rosalind datasets that are available.
+
+DNA is a string of genetic code composed of the characters A, C, G, and T (the symbols represent the bases adenine, cytosine, guanine, and thymine). An example of a DNA string with 21 length is "ATGCTTCAGAAAGGTCTTACG." In this assignment, the input is a DNA string of maximum length 1000.
+
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Week5C-DNA.py.
+
+Your first task (the Counting DNA Nucleotides task) is to print four integers (separated by spaces) that represent the number of times that the symbols 'A', 'C', 'G', and 'T' occur in the input string. The Rosalind page for this task provides examples/datasets.
+
+Your second task (the Transcribing DNA into RNA task) is to transcribe the DNA string input to an RNA string. An RNA string is composed of the characters A, C, G, and U (the symbols represent the bases adenine, cytosine, guanine, and uracil). Thus, to transcribe the input string, you need to replace each 'T' with a 'U'. Again, the Rosalind page for this task provides examples/datasets.
+
+Lastly, in this assignment, you need to verify that your input string only contains the characters A, C, G, and T. If the user includes a character in the string that cannot be recognized (and thus, not possible to count/transcribe), then you should tell the user there was an error in the input string. Hint: the break keyword and a variable that "flags" the error may be useful here.
+Example Execution #1
+Enter a DNA String (of length < 1000):
+STRING> AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+OUTPUT 20 12 17 21
+OUTPUT AGCUUUUCAUUCUGACUGCAACGGGCAAUAUGUCUCUGUGUGGAUUAAAAAAAGAGUGUCUGAUAGCAGC
+
+
+Example Execution #2
+Enter a DNA String (of length < 1000):
+STRING> ATCGTTCBTCGTTAATTCC
+OUTPUT DNA string not valid
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section B
+        #   Week 5 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week5C and upload Week5C-DNA.py.
+
+To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

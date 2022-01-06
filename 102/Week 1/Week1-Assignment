@@ -1,0 +1,85 @@
+Python Assignment: Week 1 (August 26th, 2019)
+        Part A: due by end of class
+        Part B: due by end of class
+        Part C: due Thursday, August 29th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 1 of CSCI 102! Each week, you will have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 1 CSCI 102 Assignment page.
+
+Python is used widely in many fields, including bioinformatics (the area of computer science that explores and manipulates the data associated with molecular biology). Rosalind is an online platform for learning bioinformatics through problem solving, and offers an engaging way to learn Python (while simultaneously exploring bioinformatics). Our assignments this semester will include 1-2 Rosalind assignments each week, illustrating the power of programming in another field.
+Part A (due by end of class, the week of August 26th): 1 point
+Go to the Rosalind site and register an account (see Register link in the upper right corner). Please use your Mines username as your account name (e.g., tcamp for Tracy Camp).
+After you are logged in, go to the Rosalind Problems page (for Python Village).
+Click on "Installing Python" and read the problem specification.
+Load up your Python Interpreter (your IDLE program) and execute the command import this (execute either at the IDLE prompt OR place the command in a file and "Run module").
+Read the Zen of Python.
+In Rosalind, click the "Download dataset" button and copy the Zen of Python into the space provided (in the "Answer Submission" box).
+If the steps above were followed correctly, you will see "Congratulations You solved this problem." (See image below.) Continue working on this problem until you receive this Congratulations message.
+Click on "Introductory Exercises" (upper right corner) and notice the "Installing Python" link is now green (illustrating you have completed this problem).
+You will show you completed this problem to an instructor/mentor in the classroom after you complete Part B.
+
+
+
+Part B (due by end of class, the week of August 26th): 4 points
+Go to the Rosalind Problems page (for Python Village).
+Click on "Variables and Some Arithmetic" and read the problem specification.
+Notice the link ""click to expand" next to the title of the problem. Most Rosalind problems have this link, which provides programming assistance. We encourage you to expand the details as you begin to solve each Rosalind problem.
+Load up your Python Interpreter (your IDLE program), create a new file, and write a program that:
+Asks the user to enter a positive integer (a).
+Asks the user to enter a second positive integer (b).
+Assigns c to be the square of the hypotenuse of the right triangle with leg lengths a and b.
+Prints c.
+Save your file in some directory you create that you will use to store/manage all your Python Labs this semester (e.g., CSCI102/Assignments). Save this file as Week1B-hypotenuse.py.
+After you are convinced your program is working correctly, click the "Download dataset" button in Rosalind. Rosalind will provide you with two values (for a and b).
+Run your Week1B-hypotenuse.py program and enter the result provided by IDLE in the "Answer Submission" box on Rosalind's site.
+If your program works correctly, you will see "Congratulations You solved this problem." Continue working on this problem until you receive this Congratulations message. Feel free to click "Download dataset" a second (or third!) time and verify your Python code works with other datasets provided.
+Click on "Introductory Exercises" (upper right corner) and notice the "Variables and Some Arithmetic" link is now green (illustrating you have completed this problem).
+You should now show your completed Part A and Part B to an instructor/mentor in the classroom.
+Submission of Part A and Part B (due by end of class, the week of August 26th)
+After you have both Part A and Part B completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor
+Your Rosalind Problems page (for Python Village), which illustrate you have completed both the "Installing Python" and "Variables and Some Arithmetic" problems.
+Your code for Week1B-hypotenuse.py.
+You can now either leave the classroom OR begin working on Part C (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part C (due by Thursday, August 29th, by 11:45pm): 5 points
+Introduction
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the CSCI102 directory managing all your Python Labs this semester. Please save this file with the following name: Week1C-BMIcalculator.py.
+Assignment
+The Body-Mass Index of a person is a value derived from their weight and height. More specifically, it may be computed using the formula:
+m⁄h2
+where m is the mass in kilograms, and h is the height in meters of the person.
+
+The purpose of this lab is to write a program that calculates the BMI of a user given weight and height. Your program should follow the following algorithm.
+Asks the user for their weight in pounds. Store the value entered as a variable, and make sure to convert to an integer. You may assume that the user will only enter a positive, whole-valued number of pounds.
+Asks the user for their height in inches. Store the value entered as a second variable. Again, you may assume that the user will only enter a positive, whole-valued number of inches.
+Converts their weight from pounds to kilograms by multiplying by 0.454.
+Converts their height from inches to meters by multiplying by 0.0254.
+Calculates the user's BMI.
+Prints the BMI calculation to the console.
+When you are done, try calculating a BMI and compare to an online calculator. Was the BMI calculated correctly? Ask for help if you need!
+
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: WEIGHT> and HEIGHT>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome to have other output lines that do not begin with OUTPUT; our grading script will ignore these.
+
+Example Execution
+Input your weight, in pounds.
+WEIGHT> 165
+Input your height, in inches.
+HEIGHT> 69
+Your Body-Mass Index is:
+OUTPUT 24.4
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section B
+        #   Week 1 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week1C and upload Week1C-BMIcalculator.py.
+
+To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

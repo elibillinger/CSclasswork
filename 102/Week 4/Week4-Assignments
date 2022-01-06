@@ -1,0 +1,140 @@
+Python Assignment: Week 4 (September 16th, 2019)
+        Part A: due by end of class
+        Part B: due by end of class
+        Part C: due Thursday, September 19th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 4 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 4 CSCI 102 Assignment page.
+
+We will have one problem from Rosalind this week (the online platform for learning bioinformatics and Python), which you will have CHECKed during your 102 class, a second problem to be CHECKed during your 102 class, and a third problem that you will do on your own time (and submit to Canvas).
+Part A (due by end of class, the week of September 16th): 1 point
+Assignment: Adding Odds
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Lab4A-adding_odds.py.
+
+Go to the Rosalind and get logged in. After you are logged in, go to the Rosalind Problems page (for Python Village). Then click on "Conditions and Loops" and read the problem specification.
+
+Here's a summary of the problem: suppose you are given two positive integers, a and b, where (a < b < 10000). Create a program that asks the user for the values of these two inputs, and then returns the sum of all odd integers between a and b (inclusively).
+
+On the Rosalind site:
+Notice the link "click to expand" next to the title of the problem. Most Rosalind problems have this link, which provides programming assistance. We encourage you to expand the details as you begin to solve each Rosalind problem.
+Get your program working correctly in IDLE (or whatever Python interface you are using) with the sample dataset given on the Rosalind "Conditions and Loops" page (e.g., where you input 100 and 200 for a and b).
+After you are convinced your program is working correctly, click the "Download dataset" button in Rosalind. Rosalind will provide you with different values for a and b (which use as input when you execute your code).
+Run your Lab4A-adding_odds.py program with the dataset provided by Rosalind, and then enter the output of your code in the "Answer Submission" box on Rosalind's site.
+If your program works correctly, you will see "Congratulations You solved this problem." Continue working on this problem until you receive this Congratulations message. Feel free to click "Download dataset" a second (or third!) time and verify your Python code works with other datasets provided.
+Click on "Introductory Exercises" (upper right corner) and notice the "Conditions and Loops" link is now green (illustrating you have completed this problem). Woo hoo!
+Part B (due by end of class, the week of September 16th): 3 points
+Assignment: Todo List
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Lab4B-todo-list.py.
+
+In this lab, you will help a busy (or not-so-busy) Mines student stay organized by asking them to enter items into a todo list. The user should be allowed to enter as many items as they want into the list. When done, the student should indicate that they have finished by entering the word DONE.
+
+The output of your program should be the number of items that the student has to do, as well as a message telling the user how busy they are. For efficiency, your solution must use a while loop.
+
+We suggest the algorithm in your program is:
+Declare the variable number_of_tasks and initialize it to 0.
+Declare the variable task to save the user-inputted string.
+Declare the variables lots_to_do and not_much_to_do, and initialize them to 7 and 4, respectively.
+Indicate to the user how to exit the program when they have finished adding tasks to the list (i.e., by typing DONE).
+Prompt the user to add an item to the todo list.
+Continue to ask the user to add items until they have entered DONE, keeping track of how many tasks they have entered using the number_of_tasks variable.
+Output the number of tasks that the user entered.
+Output a message telling the user how busy they are.
+If they entered more than lots_to_do tasks, tell them they are very busy (keyword: BUSY).
+If they entered less than not_much_to_do tasks, tell them they are not busy (keyword: FREE).
+If they entered between lots_to_do and not_much_to_do tasks (inclusive), tell them they are moderately busy (keyword: MODERATELY).
+Lab I/O Format
+Throughout this semester we will often use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: TASK>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution #1
+Welcome to the TODO List tracker! Please enter the tasks that you need to do this week. To stop entering tasks, enter "DONE" (without quotation marks).
+TASK> Wash car
+TASK> Clean kitchen
+TASK> Buy books
+TASK> Write lab report
+TASK> Finish calc homework
+TASK> Buy Heelys
+TASK> Return the Ring to Mordor
+TASK> Plant flowers
+TASK> Write code
+TASK> DONE
+You have 9 tasks to do. You have a lot to do! You better get to work!
+OUTPUT 9
+OUTPUT BUSY
+
+Example Execution #2
+Welcome to the TODO List tracker! Please enter the tasks that you need to do this week. To stop entering tasks, enter "DONE" (without quotation marks).
+TASK> Go to Mines Market
+TASK> Eat Skittle pancakes
+TASK> DONE
+You have 2 tasks to do. You don't have much to do, enjoy a break!
+OUTPUT 2
+OUTPUT FREE
+
+
+Submission of Part A and Part B (due by end of class, the week of September September 16th)
+After you have both Part A and Part B completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your Rosalind Problems page (for Python Village), which illustrate you have completed the "Conditions and Loops" problem.
+Your code for Lab4A-adding_odds.py.
+Your code for Lab4B-todo-list.py.
+After you are checked by the instructor/mentor, please upload each .py file for each assignment to Canvas.
+You can now either leave the classroom OR begin working on Part C (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part C (due by Thursday, September 19th): 5 points
+Assignment: Guess a number
+To get started, open IDLE and create a New File via the File menu. We suggest you immediately save this file in the directory managing all your 102 Python Labs this semester. Please save this file with the following name: Week4C-guess-number.py.
+
+In this lab we use while loops in a game where the user of your program guesses a number between 1 and 100. The user keeps guesses until they get it right. You should structure your program as follows:
+Generate a random number between 1 and 100 that the user will guess. You can generate a random number (which is assigned to random_num) with the following code. We will discuss random number generation next week. For now, just use the code below in your Python program and enter a "random" integer at the prompt. It will then assign a random number to random_num.
+import random
+my_seed = int(input("Number to initialize the random generator: "))
+random.seed( my_seed )
+random_num = random.randint(1,100)
+
+Ask the user to guess a number:
+If the number is greater than 100, ask the user to input a number between 1 and 100
+If the number is less than 1, ask the user to input a number between 1 and 100
+If the number is 50 or greater from the randomly generated number, print out "You're cold!"
+If the number is 25 or greater and less than 50 from the randomly generated number, print out "You're lukewarm!"
+If the number is 15 or greater and less than 25 from the randomly generated number, print out "You're getting warm!"
+If the number is 5 or greater and less than 15 from the randomly generated number, print out "You're getting hot!"
+If the number is less than 5 from the randomly generated number, print out "You're so close!"
+When the user chooses the correct number, print out "Congrats! You won!"
+
+Repeat until the user guesses the correct number.
+Sample Execution
+Number to initialize the random generator: 32
+
+Enter a number between 1 and 100: 95
+OUTPUT You're cold!
+
+Enter a number between 1 and 100: 105
+OUTPUT Please Enter a number between 1 and 100
+
+Enter a number between 1 and 100: 41
+OUTPUT You're lukewarm!
+
+Enter a number between 1 and 100: 32
+OUTPUT You're getting warm!
+
+Enter a number between 1 and 100: 16
+OUTPUT You're getting hot!
+
+Enter a number between 1 and 100: 9
+OUTPUT You're so close!
+
+Enter a number between 1 and 100: 10
+OUTPUT Congrats! You won!
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section B
+        #   Week 4 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week4C and upload Week4C-guess-number.py.
+
+Note: this lab is worth 5 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

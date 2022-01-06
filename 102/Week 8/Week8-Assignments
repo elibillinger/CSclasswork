@@ -1,0 +1,163 @@
+Python Assignment: Week 8
+        Part A: due by end of class
+        Part B: due Thursday, October 24th, by 11:45pm
+        Part C: due Thursday, October 24th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 8 of CSCI 102! As before, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (and then uploaded to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 8 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of October 21st): 3 points
+Assignment: Rolling a Die
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week8A-rolling_die.py.
+
+In this lab we practice randomly generating numbers by rolling one die. That is, if your program rolls a die 6000 times, will you get approximately 1000 ones, 1000 twos, etc.? Use a list to count the number of times a die is rolled, given the user wants the die rolled N times.
+
+You can assume the input to your program is always valid (i.e., the number of rolls entered is a positive number).
+Lab I/O Format
+Thoughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORD in this lab might be: NUMBER>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution #1
+Input the number of rolls to make:
+NUMBER> 6
+
+Your 6 rolls follow:
+OUTPUT 1 occurred 0 times
+OUTPUT 2 occurred 3 times
+OUTPUT 3 occurred 0 times
+OUTPUT 4 occurred 2 times
+OUTPUT 5 occurred 1 times
+OUTPUT 6 occurred 0 times
+
+Example Execution #2
+Input the number of rolls to make:
+NUMBER> 600000
+
+Your 600000 rolls follow:
+OUTPUT 1 occurred 99835 times
+OUTPUT 2 occurred 100147 times
+OUTPUT 3 occurred 100356 times
+OUTPUT 4 occurred 99828 times
+OUTPUT 5 occurred 100015 times
+OUTPUT 6 occurred 99819 times
+
+Submission of Part A (due by end of class, the week of October 21st)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+Your code for Week8A-rolling_die.py
+The execution of your code
+After you are checked by the instructor/mentor, please upload your Week8A-rolling_die.py file to Canvas.
+You can now either leave the classroom OR begin working on the other parts of this assignment (due Thursday at 11:45pm). If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, October 24th, by 11:45pm): 3 points
+Assignment: Combing Through the Haystack
+Bioinformatics is the science of collecting and analyzing complex biological data such as genetic codes. We encourage you to use the Rosalind site to receive datasets that you can use to test your code.
+
+To get started, read the details for the Combing Through the Haystack project on the Rosalind site. Then, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week8B-haystack.py. You will have the following input/output in this project:
+
+Input: Two DNA strings s and t, each of length at most 1000 characters long. The string t must also be no longer than the string s.
+
+Output: Total number of substrings t within s and all locations of t as a substring of s.
+
+HINT: note that the location of a substring in the example below does not equal the index in the string. That is, the index in the string is 0-based to computers while a location within an array is 1-based to most humans. You should, therefore, use 1-based in your output.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: s> and t>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution
+Enter a DNA string s:
+s> GATATATGCATATACTT
+Enter a substring t:
+t> ATAT
+The total number of substrings found is 3
+OUTPUT 3
+The locations of these substrings in s are: 2 4 10
+OUTPUT 2 4 10
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section E
+        #   Week 8 - Part B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week8B and upload Week8B-haystack.py.
+
+To receive full credit, your code must execute in Python 3 and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.
+Part C (due by Thursday, October 24th, by 11:45pm): 3 points
+Assignment: Vowels or Not?
+Kevin and Stacy want to play a game they have titled 'Vowels or Not?'. Here are the game rules:
+Both players are given the same string, S.
+Both players have to make substrings using the letters of the string S.
+Stacy has to make substrings starting with consonants.
+Kevin has to make substrings starting with vowels. (Note: vowels are only defined as AEIOU; that is, in this game, Y is not considered a vowel.)
+The game ends when both players have made all possible substrings.
+A player gets +1 point for each occurrence of the substring in the string S. For example, consider the string S = BANANA. Suppose Kevin's vowel beginning substring is ANA. In this case, ANA occurs twice in BANANA. Hence, Kevin will get 2 points for this substring. See the following figure for other examples. Your task is to determine the winner of the game and their score, given a string S. Please name your code file: Week8C-string_game.py.
+
+Your program should:
+Ask the user whether they want to provide a string for the game (choice 1) OR whether they prefer to have a randomly generated string (choice 2).
+If the user enters 1, ask the user to enter a string S. The user should enter a string of all uppercase letters.
+If the user enters 2, generate a random string of length 6. This string should have six uppercase letters.
+Output Kevin's score for the game, followed by Stacy's score for the game.
+Output the winner of the game (Kevin or Stacy) or state the game was a "Draw" (if their scores are the same).
+Hint: there are a couple different ways that you could generate a string of random letters. See the end of Python Video #14: RNG for one idea. Other ways also exist using, for example, the string constant string.ascii_uppercase.
+
+UPDATE: If you haven't yet submitted your code to this assignment, please include using a seed with your random number generator. This will make the grader's life WAY easier. If you've already submitted your code, you won't be marked down for not having this. How you can use a seed is shown next, as an example.
+my_seed = int(input("Number to initialize the random generator: "))
+random.seed( my_seed )
+
+Lab I/O Format
+Thoughout this semester we use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORDs in this lab might be: CHOICE> and STRING>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution 1:
+Would you like to provide your own string or generate a random one? (1 or 2)
+CHOICE> 1
+Enter a string for the game:
+STRING> BANANA
+With the string BANANA, Kevin's score is 9 and Stacy's score is 12
+Stacy wins!
+OUTPUT 9
+OUTPUT 12
+OUTPUT Stacy
+
+
+Example Execution 2: (note: seed does NOT produce this string)
+Would you like to provide your own string or generate a random one? (1 or 2)
+CHOICE> 2
+Number to initialize the random generator:
+SEED> 12345
+The randomly generated string for this game is ATEUOB:
+With the string ATEUOB, Kevin's score is 15 and Stacy's score is 6
+Kevin wins!
+OUTPUT 15
+OUTPUT 6
+OUTPUT Kevin
+
+
+Example Execution 3:
+Would you like to provide your own string or generate a random one? (1 or 2)
+CHOICE> 1
+Enter a string for the game:
+STRING> AND
+With the string AND, Kevin's score is 3 and Stacy's score is 3
+It's a tie!
+OUTPUT 3
+OUTPUT 3
+OUTPUT Draw
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section A
+        #   Week 8 - Part C
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week8C and upload Week8C-string_game.py.
+
+To receive full credit, your code must execute in Python 3 and you must submit a single file (your Python code file). In addition, your code must follow the Lab I/O Format.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

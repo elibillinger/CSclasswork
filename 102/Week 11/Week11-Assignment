@@ -1,0 +1,54 @@
+Python Assignment: Week 11
+        Part A: due Thursday, November 14th, by 11:45pm
+Introduction
+Welcome to your assignment for Week 11 of CSCI 102! We have an easy week this week (due to the CSCI 101 exam on November 13th) - only one assignment! You should do this assignment on your own time and submit to Canvas by Thursday 11:45pm. This is your Week 11 CSCI 102 Assignment page.
+
+Part A (due by Thursday, November 14th): 8 points
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week11-random_file.py.
+Assignment: Random File
+In this assignment you will write functions to create a randomly-generated text file. You will read in a provided text file to learn the words to use and the probability that each word will occur, and then generate and write a random file using that distribution.
+1. Process a word
+Write a function, clean_word, that expects a string as its argument, and returns a version of the string with only lowercase letters and no whitespace or punctuation.
+
+>>> clean_word("Painter-Wakefield's")
+'painterwakefields'
+2. Read and process file
+Write a function, read_file, that expects the path to a file as its argument, and creates and returns a list containing each word from the file (careful: not just each line). Use your word processing function from the previous step to strip out any punctuation and convert all letters to lowercase.
+
+For example, if sample_file.txt is in the current working directory, your code should run as follows:
+
+>>> read_file("./sample_file.txt")
+['how', 'does', 'a', 'ragtag', 'volunteer', 'army', 'in', 'need', 'of', 'a', 'shower',
+ 'somehow', 'defeat', 'a', 'global', 'superpower', 'how', 'do', 'we', 'emerge',
+ 'victorious', 'from', 'the', 'quagmire', 'leave', 'the', 'battlefield', 'waving',
+ 'betsy', 'ross', 'flag', 'higher', 'yo', 'turns', 'out', 'we', 'have', 'a', 'secret',
+ 'weapon', 'an', 'immigrant', 'you', 'know', 'and', 'love', 'whos', 'unafraid', 'to',
+ 'step', 'in', 'hes', 'constantly', 'confusing', 'confounding', 'the', 'british',
+ 'henchmen', 'everyone', 'give', 'it', 'up', 'for', 'americas', 'favorite',
+ 'fighting', 'frenchman', 'lafayette']
+3. Write random file
+Write a function, write_file, that expects as arguments, in order:
+A list of words, like the one created by the previous function
+A path to an output file
+The number of words to write to the output file
+The seed for the random number generator
+and writes a randomly-generated file of that many words by randomly selecting words from the list.
+
+If you use the random module function random.choice() to select each word from the list, calling the function like this:
+
+>>> write_file(d, "./sample_output.txt", 20, 0)
+
+should create a file called sample_output.txt in the current working directory, containing:
+
+step confusing army turns fighting for hes secret up love waving favorite do have do defeat yo we weapon defeat
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 102 – Section A
+        #   Week 11 - Part A
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week11 and upload Week11-random_file.py.
+
+This lab is worth 8 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file). In addition, your code should only contain the three functions discussed (with the function names provided).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

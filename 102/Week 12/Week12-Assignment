@@ -1,0 +1,78 @@
+Python Assignment: Week 12
+        Part A: due by end of class
+        Part B: due Thursday, November 21st, by 11:45pm
+Introduction
+Welcome to your assignment for Week 12 of CSCI 102! As in most weeks, you have (1) some work that needs to be completed and shown to the instructor/mentors in your class before your class ends (though nothing to upload to Canvas) and (2) other work that you will do on your own time and submit to Canvas by a certain day/time. Unlike CSCI 101, we will place all assignments for a given week on one HTML page. This is your Week 12 CSCI 102 Assignment page.
+
+Part A (due by end of class, the week of November 18th): 4 points
+Assignment: Working with Git
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI102/PythonLabs). Save this file as Week12-utility.py.
+
+From class this past week, you should now be familiar with how to create a repo, clone it, and push and pull from that repository. See details from class here: Git Workshop Week 1.
+
+In this lab, you will use GitHub as you develop a Python program. When writing several functions for a large project, it is valuable to develop the program incrementally, where you design, then code, then test, then design, then code, then test, etc. This software development model is referred to as the incremental build model.
+
+In this lab, where you follow the incremental build software development model, you are to commit your Python program in git SEVERAL times during its development. Specifically, you should develop each function incrementally; once a new function is fully developed (after you've tested it), you should push it to your repository. Then, at the end of this lab, you should have nine (or more) commits. The first commit will be when you create your repo and add your Week12-utility.py file. The next eight commits will be after you have fully developed each of the eight functions below. (It is OK if you end up with more than nine commits.)
+
+For your Week12-utility.py file, define the following utility functions (and, again, after each function is developed, push it to your repository):
+PrintOutput: copy this function from your Week 10B lab. Here's an example of using this function:
+>>> PrintOutput("Hello World")
+OUTPUT Hello World
+LoadFile is a function that takes in a string (a filename) and then returns a list. The list is the contents of the file, where each element is a list of data from the file. Here's an example of using this function. The input file had four lines of text.
+>>> lines = LoadFile("test.txt")
+>>> print("OUTPUT", lines)
+OUTPUT ["Hello there", "I am a test file", "please load me in and print me out", "Thanks"]
+UpdateString is a function that takes in two strings and an index integer (no return). The function should print a string that is the first string modified to replace the character at the index provided with the second string. (Remember that strings are immutable, i.e., some_string[5] = 'a' will give you an error.) Here's an example of using this function:
+>>> UpdateString("Hello World", "a", 3)
+OUTPUT Helao World
+FindWordCount is a function that takes in a list and a string. The function then returns the number of occurances of the string in the list. Here's an example of using this function:
+>>> a = LoadFile("alice.txt")
+>>> PrintOutput(str(FindWordCount(a, "Alice")))
+OUTPUT 403
+ScoreFinder is a function that takes in two lists and a string. The first list is a list of strings (player names), the second list is a list of floats (player scores), and the string is a name (player to find). If the player to find exists in the list of player names, then print the name of that player along with their associated score (which is in the second list at the same index). If the player to find does not exist in the list of player names, print player not found. Here are two examples of using this function:
+>>> players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+>>> scores = [5, 8, 10, 6, 10, 4]
+>>> ScoreFinder(players, scores, "jill") % NOTE: upper and lowercase should both work
+OUTPUT Jill got a score of 6
+>>> ScoreFinder(players, scores, "Manuel")
+OUTPUT player not found
+Union takes in two lists and returns a single list that is the union of the two lists (i.e., return all values of the lists A and B with no duplicates). Here's an example of using this function:
+>>> players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+>>> print("OUTPUT", Union(scores, players2))
+OUTPUT [5, 8, 10, 6, 4, "Melvin", "Martian", "Baka", "Xai", "Cody"]
+Intersection takes in two lists and returns a single list that is the intersection of the two lists (i.e., return all values of the lists A and B that are in both A and B). Here's an example of using this function:
+print("OUTPUT", Intersection(players, players2))
+>>> OUTPUT ["Cody", "Xai"]
+NotIn takes in two lists and returns a single list that is all values in the first list that are NOT in the second list. Here's an example of using this function:
+>>> print("OUTPUT", NotIn(players2, players))
+OUTPUT ["Melvin", "Martian", "Baka"]
+README.md File
+In addition to your code, create a README.md file that describes the software development method you used to create each function along with your typical header information, such as:
+        #   METHOD USED
+        #   Tracy Camp
+        #  ​CSCI 102 – Section A
+        #   Week 12 - Part A
+Commit and push this README.md to your GitHub repo.
+Submission of Part A (due by end of class, the week of November 18th)
+After you have Part A completed, add your name to the white board (under the CHECK ME list). Adding your name to the list will help ensure that students are checked in a first-come-first-serve (FCFS) manner.
+When it is your turn, show the instructor/mentor:
+The commits in your GitHub repository
+Your README.md file in your respository
+You do not upload anything to Canvas for Part A this week.
+You also do not need to show the instructor/mentor your code. Thus, if your code isn't fully complete by class time, that's OK. Just be sure to have 9+ commits and a README file in your repository by class time. If you are in CSCI 101, we encourage you to try and complete the lab by Wednesday noon, as doing so will help prepare you for the Python Exam that evening.
+If you ever need assistance from an instructor/mentor, add your name to the white board (under the HELP ME list). Adding your name to the list will help ensure that students are helped in a FCFS manner.
+Part B (due by Thursday, November 21st): 8 points
+Part B is to submit your Python code for Part A to Canvas. This is due at our regular day/time for Python labs (Thursday evening).
+Comments PLUS
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Also include the URL to your GitHub repo in the header comments of your Python code. Here's an example:
+        #   YOUR GITHUB REPO
+        #   Tracy Camp
+        #  ​CSCI 102 – Section A
+        #   Week 11 - Part B
+
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Week12 and upload Week12-utilities.py.
+
+This lab is worth 8 points. To receive full credit, your code must execute in Python 3, you must submit a single file (your Python code file), and your header must have the URL to your GitHub repo. In addition, your code should only contain the functions discussed (with the function names provided).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

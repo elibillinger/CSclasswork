@@ -1,0 +1,61 @@
+Python Lab 2A: Bijele
+Due Thurs, Sept 5th, by 11:45pm
+Assignment
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file as Lab2A-bijele.py.
+
+Emma has found an old chessboard and a set of pieces in her attic. Unfortunately, the set contains only white pieces, and apparently an incorrect number of them. A set of pieces should contain:
+One king
+One queen
+Two rooks
+Two bishops
+Two knights
+Eight pawns
+Emma would like to know how many white pieces of each type she should add or remove to make a valid chess set.
+
+Input
+The input consists of 6 integers, all separate lines, each between 0 and 10 (inclusive). The numbers are in order, the number of white kings, queens, rooks, bishops, knights, and pawns in the set Emma found.
+
+Output
+The output should consist of 6 integers on a single line; the output should specify the number of white pieces of each type Emma should add or remove. If a number is positive, Emma needs to add that many pieces. If a number is negative, Emma needs to remove that many pieces.
+
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab you might choose: KINGS>, QUEENS>, etc.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program. For example, in this assignment your 1st output line may be: Please enter the number of white chess pieces that you have of each type:
+
+Example Execution 1:
+Please enter the number of white chess pieces that you have of each type:
+KINGS> 0
+QUEENS> 1
+ROOKS> 2
+BISHOPS> 2
+KNIGHTS> 2
+PAWNS> 7
+The output below provides the number of each type you have (over or under):
+OUTPUT 1 0 0 0 0 1
+
+
+Example Execution 2:
+Please enter the number of white chess pieces that you have of each type:
+KINGS> 2
+QUEENS> 1
+ROOKS> 2
+BISHOPS> 1
+KNIGHTS> 2
+PAWNS> 1
+The output below provides the number of each type you have (over or under):
+OUTPUT -1 0 0 1 0 7
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section E
+        #   Python Lab 2A
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab2A and upload Lab2A-bijele.py.
+
+Note: this lab is worth 3 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

@@ -1,0 +1,34 @@
+Python Lab 3A: Twitter
+Due Thurs, Sept 12th, by 11:45pm
+Introduction
+NOTE: We are using Python 3 in this class. Points will be deducted if this lab (or future labs) do not execute in Python 3.
+
+This lab, as well as Lab 3B, are due to Canvas by 11:45pm on Sept 12th (latest). You will submit each lab separately, as a single .py file.
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI101/PythonLabs). Save this file as Lab3A-Abbr.py.
+Assignment
+Section 17.10 in your zyBook (an optional Section that we encourage you to do, though not required) provides a program that decodes a few common abbreviations in online communication. For example, in Twitter or Messages, one might use LOL instead of typing "Laughing Out Loud". Your goal in this lab is to augment the code provided in our zyBook in order to expand the number of abbreviations that can be decoded. Specifically, add these popular abbreviations: BTW, CU, AFAIK, and IDK.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: TWEET>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution
+Enter the Tweet or Message abbreviation to decode.
+TWEET> IDK
+The decoded abbreviation is:
+OUTPUT IDK = I don't know
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section E
+        #   Python Lab 3A
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab3A and upload Lab3A-Abbr.py.
+
+Note: this lab is worth 3 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

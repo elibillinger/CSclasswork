@@ -1,0 +1,30 @@
+Python Lab 1B: Fibonacci
+Due Thurs, August 29th, by 11:45pm
+Introduction
+Welcome to your second Python lab in CSCI 101! This lab, as well as Lab 1A, will be due to Canvas by 11:45pm on August 29th. You will submit each lab separately, as a single .py file.
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in some directory you create that you will use to store/manage all your Python Labs this semester (e.g., CSCI101/PythonLabs). Save this file as Lab1B-Fibonacci.py.
+
+A “recurrence relation” is a way of defining the terms of a sequence of numbers with respect to the values of previous terms. The Fibonacci numbers are a well-known recurrence relation named after Leonardo of Pisa, who was known as “Fibonacci.” Fibonacci’s 1202 Latin text Liber Abaci introduced what have come to be called “Fibonacci numbers” to Western European mathematics, although mathematicians in India had written of the sequence hundreds of years before Fibonacci. Fibonacci sequences are found ubiquitously in nature at microscopic (e.g., various cell structures and cancer cell division), everyday (e.g., pine cones, chicken eggs, aloe plants, and hurricanes) and galactic (e.g., spiral and whirlpool galaxies) levels. Search online for images of “Fibonacci sequence in nature” for some beautiful examples.
+Assignment
+The following recurrence relation defines Fibonacci numbers Fn:
+F0 = 1
+F1 = 1
+Fn = Fn-1 + Fn-2 (for n >= 2)
+
+Write a Python program that calculates and then prints the first 12 Fibonacci numbers. This assignment should be solved without recursion or loops (and do not worry if you do not know what recursion and loops are).
+
+For 102 students: we suggest you complete the CSCI 102 labs this week before this CSCI 101 lab.
+
+For students with prior programming experience: you are welcome to use recursion or loops to solve this lab. If you choose to do this, do it on your own. Please do not encourage new programming students in CSCI 101 to do the same. That would be intimidating! They will learn about loops and recursion in this class, when the time is right.
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section E
+        #   Python Lab 1B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab1B and upload Lab1B-Fibonacci.py.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.
+
+Note: this lab is worth 2 points.

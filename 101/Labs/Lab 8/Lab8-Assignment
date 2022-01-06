@@ -1,0 +1,78 @@
+Python Lab 8: Parse the Declaration
+Due Thursday, October 31st, by 11:59pm
+Introduction
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab8-declaration.py.
+Assignment
+Nicholas Cage once said the bold phrase, "I'm going to steal the Declaration of Independence." In this lab you need to read in the Declaration of Independence and allow the user to either (1) output the number of occurrences of a given word or (2) output the number of words that have a specific length. This focus of lab is on the fundamentals of file I/O.
+
+To begin this lab, download the Declaration_of_independence.txt file and ensure you place it in the same folder/directory as your Python code for this lab. Your task is to write a program that
+Asks the user whether they would like to print the number of times a specific word appears OR print the number of words of a specific length.
+If print the number of times a specific word appears:
+Ask the user for a word to count.
+Read in the Declaration of Independence file.
+Count the number of times that word appears in the file.
+Output the count.
+If print the number of words of a specific length:
+Ask the user for a specific length (i.e., N).
+Read in the Declaration of Independence file.
+Count the number of words that appear in the file that have length N. If a word appears more than once, count it more than once.
+Output the count.
+Of the words that have length N, choose one word randomly and output it.
+Note: Ignore all casing, e.g., "We" and "we" should be considered the same word.
+Lab I/O Format
+Thoughout this semester we use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORD in this lab might be: CHOICE> and ( WORD> or LENGTH>). .
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution 1:
+Would you like to print the number of times a specific word appears OR print the number of words of a specific length? (1 or 2)
+CHOICE> 1
+Enter a word:
+WORD> America
+The number of times America appears in the document is: 2
+OUTPUT 2
+
+
+Example Execution 2:
+Would you like to print the number of times a specific word appears OR print the number of words of a specific length? (1 or 2)
+CHOICE> 1
+Enter a word:
+WORD> banana
+The number of times banana appears in the document is: 0
+OUTPUT 0
+
+
+Example Execution 3:
+Would you like to print the number of times a specific word appears OR print the number of words of a specific length? (1 or 2)
+CHOICE> 2
+Enter a length:
+LENGTH> 14
+The number of words in the document with length 14 is: 7
+OUTPUT 7
+One example random word of this length is: Naturalization
+OUTPUT Naturalization
+
+
+Example Execution 4:
+Would you like to print the number of times a specific word appears OR print the number of words of a specific length? (1 or 2)
+CHOICE> 2
+Enter a length:
+LENGTH> 42
+The number of words in the document with length 42 is: 0
+OUTPUT 0
+No example random word of this length exists
+OUTPUT error
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section D
+        #   Python Lab 8
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab8 and upload Lab8-declaration.py.
+
+Note: this lab is worth 10 points. To receive full credit, your code must execute in Python 3, you must submit a single file (your Python code file), and you must have the input/output match the lab requirements.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

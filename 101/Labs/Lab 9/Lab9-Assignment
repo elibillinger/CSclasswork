@@ -1,0 +1,70 @@
+Python Lab 9: Unit Testing
+Due Thursday, November 7th, by 11:59pm
+Introduction
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab9-unit_testing.py.
+Assignment
+In computer programming, unit testing is a software testing method by which individual units of source code, sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use. -- Wikipedia on Unit Testing
+
+Essentially unit tests are programs that test the correctness of another program's output. Your goal in this assignment is to create a series of unit tests to ensure that an output is as expected. Typically testing is done using assert statements; we will simplify, however, and just use conditionals.
+
+Each test should return True or False that represents whether the condition is true or false. A few notes:
+The code you submit to Canvas should only contain your created functions.
+Our test script will call your functions with the function names listed below. You will not receive credit for a function call if your function name does not match the name below.
+In this lab, you should implement the following tests (each as a separate function):
+Multiply - the input to this test function is three values, the initial operands (a and b), and the output that was recieved from whatever multiplication method was used (the specific method is irrelevant to you). This function should determine if the 3rd value is indeed the product of the first two numbers (a and b).
+BoundsChecking - given three integers, a lower bound, an upper bound, and the length of a list, ensure that the bounds do not exceed the bounds for the list. In other words, ensure the lower bound is not less than 0 and the upper bound is not greater than the last index of the list. You should also check that the upper bound is greater than the lower bound.
+DecimalPoints - the input to this test function is a float. Return true if the number of places after the decimal is exactly three; otherwise return false. You can assume that the float number sent to the function has decimal values. (Hint: consider splitting an input string on the decimal and then test the length.)
+ListSorted - this test will check if a list is sorted or not (per Python sorted function). It will take in a list and check sortedness (is that a word?) of the list. This test function should return true only if all values are sorted. The list may contain all numbers OR all characters/words.
+ReversedList - the input to this test function is two lists. Return true if the 1st list matches the 2nd list, in reverse order.
+NumZeros - given an integer (n) and a 2D list of X's and O's, return true if exactly n O's are within the 2D list; otherwise return false. You can assume all inputs are letters (X's and O's). You should count upper and lower case O's.
+CheckCS - the input to this test function is a string. Return true if the string has the letters "c", "s" (in that order). If yes, return True; otherwise, return False.
+Example Function Calls:
+>>> Multiply(3, 5, 15)
+True
+>>> Multiply(3, 5, 10)
+False
+>>> BoundsChecking(3,10,15)
+True
+>>> BoundsChecking(-1,10,15)
+False
+>>> BoundsChecking(2,20,15)
+False
+>>> DecimalPoints(3.175)
+True
+>>> DecimalPoints(3.1)
+False
+>>> DecimalPoints(3.14159)
+False
+>>> ListSorted([1,2,3,4,5])
+True
+>>> ListSorted([5,4,3,2,1])
+False
+>>> ReversedList([1,2,3,4,5], [5,4,3,2,1])
+True
+>>> ReversedList([1,2,3,4,5], [1,2,3,4,5])
+False
+>>> ReversedList([1,2,3,4,5], [5,4,4,4,4])
+False
+>>> my_list = [['x','o','x','o','o'], ['x','x','x','x','x'], ['x','o','o','x','x']] >>> NumZeros(5, my_list)
+True
+>>> my_list = [['x','o','x','o','o'], ['x','o','x','x','o'], ['x','o','o','x','x']] >>> NumZeros(3, my_list)
+False
+>>> CheckCS("biomechanics")
+True
+>>> CheckCS("biomechanic")
+False
+>>> CheckCS("crisp")
+True
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section G
+        #   Python Lab 9
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab9 and upload Lab9-unit_testing.py.
+
+Note: this lab is worth 8 points. To receive full credit, your code must execute in Python 3, you must submit a single file (your Python code file), and you must have the input/output match the lab requirements.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

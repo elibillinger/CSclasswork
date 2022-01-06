@@ -1,0 +1,79 @@
+ython Homework (Lab) 10: Putting It All Together
+Due Tuesday, November 26th, 2019 by 11:45pm (EXTENDED TO DEC 2ND)
+Introduction
+NOTE: We are using Python 3 in this class. Points will be deducted if this lab (or any past/future lab) does not execute in Python 3.
+
+This lab is due to Canvas by 11:45pm on November 26th. You will submit a single .py file.
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI101/PythonLabs). Save this file as Lab10-economics101.py.
+Assignment
+The purpose of this assignment is to put in practice everything we've learned thus far (which should help you prepare for our Python quiz on November 20th). This Lab will test you on string formating, lists, file I/O, and using functions. These concepts will be explored by conducting a historical comparison between the change in GDP and the unemployment rate.
+Problem Statement:
+In economics, the gross domestic product (GDP) is a measure of how much a country has produced. Economists use this number to gauge how well the economy is doing in a given country. The unemployment rate is another measure taken into account; however, the unemployment rate is called a lagging economic indicator (LEI) because the rate typically does not go down until the economy starts to pick up again.
+
+In this project, you will work with real world GDP data provided as a text file and unemployment rate data provided as a CSV file. These dataset were collected from the U.S. Bureau of Economic Analysis and the U.S. Bureau of Labor Statistics respectively.
+
+Your task is to output the average values for both GDP and unemployment rate for a given user requested year.
+Requirements:
+Prompt the user for the GDP file name and the unemployment file name. You can use the provided GDP data and unemployment data files for your testing. While we will use other files in grading, they will be in the same format.
+Prompt the user for a particular year in the range 1948-2018. (Notice that both data sets provided have data for this range of years.) Any year outside of this range should return an error.
+Process each dataset in a separate function.
+get_gdp_data(fileName, year): returns a list of all 4 GDPs for that year (one for each quarter) in the provided GDP file.
+get_unemp_data(fileName, year): returns a list of all 12 unemployment rates for that year (one for each month) in the provided unemployment file.
+Compute the average GDP and average unemployment rate for the data returned from #3.
+get_average_gdp(gdp_list): returns the average GDP on data provided.
+get_average_unemp(unemp_list): returns the average unemployment rate on data provided.
+Notes and Hints:
+Carefully analyze the provided files. Note the sample files provided are of two different types (text and csv).
+Break down the problem into parts.
+Make "dummy" functions that take and return the correct type of value.
+Complete one function at a time.
+Manually check the outputs from functions.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: GDP>, UNEMPLOYMENT> and YEAR>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+For this assignment, we also request that you provide the sentence listed in the example before the first occurrence of the word OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Again, for this project, you need to match the line before the first occurrence of OUTPUT in the examples provided. Specifically, you need to round the output to two decimal places for GDP and one decimal place for unemployment rate.
+
+Example Execution #1
+Enter the GDP file name:
+GDP> gdp.txt
+Enter the unemployment file name:
+UNEMPLOYMENT> unemp.csv
+Enter year to examine:
+YEAR> 1948
+
+For 1948, the average GDP is 274.47 and the average unemployment rate is 3.8.
+OUTPUT 1948
+OUTPUT 274.47
+OUTPUT 3.8
+
+Example Execution #2
+Enter the GDP file name:
+GDP> gdp.txt
+Enter the unemployment file name:
+UNEMPLOYMENT> unemp.csv
+Enter year to examine:
+YEAR> 2021
+Incorrect year, try again
+YEAR> 2018
+
+For 2018, the average GDP is 20494.08 and the average unemployment rate is 3.9.
+OUTPUT 2018
+OUTPUT 20494.08
+OUTPUT 3.9
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section A
+        #   Python Lab 10
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab10 and upload Lab10-economics101.py.
+
+Note: this assignment is worth 15 points. To receive full credit, your code must execute in Python 3, you must submit a single file (your Python code file), and your code must have the header mentioned previously.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

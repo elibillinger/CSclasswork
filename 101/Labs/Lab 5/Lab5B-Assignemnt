@@ -1,0 +1,46 @@
+Python Lab 5B: Timber Regrowth
+Due Thursday, September 26th, by 11:59pm
+Introduction
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab5B-timber.py.
+Assignment
+A problem that occurs in timber management is determining how much of an area to leave uncut so that the harvested area regrows in a certain period of time. It is assumed that the natural process of reforestation takes place at a known rate per year, depending on climate and soil conditions.
+
+A reforestation equation expresses this growth as a function of the amount of timber standing and the reforestation rate. For example, if 100 acres are left standing after harvesting and the reforestation rate that year is 0.05 acres per year, then 5 new acres of forest returns after the first year due to the natural process of reforesting. In other words, 100 + 0.05 * 100 = 105 acres of land are in the forest at the end of the first year. At the end of the second year, the number of acres in the forest is 105 + 0.05 * 105, or 110.25 acres. In short, the reforestation equation for this example is ( X * 1.05 ) where X is the acres of forest left standing.
+
+In this lab, suppose 2,500 acres of land remain uncut and that the reforestation rate is 0.02 acres per year. Also assume 14,000 acres of land are available in the area.
+
+Your program should print a table that shows (1) the number of acres in the forest at the end of each year for a total of Y years, where Y is entered by the user, and (2) the % of the total area that has forest coverage each year. Have your output organized in a nice table-like format, and include year zero. (Hint: maybe use '\t' and '%.2f', for two decimal places, to format your table.)
+
+Extra credit (2 points): Modify your program to also output how many years are required for the total area to be reforested, i.e., to restore the forest to 100% coverage. If you choose to do this, add one more line to your output, i.e., "OUTPUT 52".
+
+You can assume the input to your program is always valid (i.e., the number of years is an integer greater than zero).
+
+Lab I/O Format
+Thoughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORD in this lab might be: YEARS>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution
+Input the number of years to print in the reforestation table:
+YEARS> 5
+The reforestation table is then
+
+OUTPUT	Year	# Acres in Forest	% of Forest
+OUTPUT	0	2500.0	17.86%
+OUTPUT	1	2550.0	18.21%
+OUTPUT	2	2601.0	18.58%
+OUTPUT	3	2653.0	18.95%
+OUTPUT	4	2706.1	19.33%
+OUTPUT	5	2760.2	19.72%
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section A
+        #   Python Lab 5B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab5B and upload Lab5B-timber.py.
+
+Note: this lab is worth 5 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

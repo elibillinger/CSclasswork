@@ -1,0 +1,63 @@
+Python Lab 6: Daylight Saving Time
+Due Thursday, October 10th, by 11:59pm
+Introduction
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab6-daylight_savings.py.
+Assignment
+Daylight Saving Time (DST) is the practice of advancing clocks forward for the summer time (Spring ahead), usually by one hour, to gain an extra hour of sunlight in the evenings at the cost of darker mornings. Countries and regions have changed their DST practices over the years, sometimes changing the dates they switch the clocks, and other times changing the number of minutes the clock changes by.
+
+Any clock change creates a real hassle. Sleep cycles are disrupted, operating systems and other computer software need to follow special rules, and sometimes people are late to work or a function because of it.
+
+To help make clock changes easier on yourself, you’ve decided to make a computer program that calculates the new time after an adjustment.
+Input
+Input consists of a single integer N (1 ≤ N ≤ 500) that indicates the number of test cases that follow. Each test case consists of a single line with the following information.
+a single character to indicate whether the clock will roll forwards (F) or backwards (B)
+an integer D (0 ≤ D ≤ 120) to indicate the number of minutes to change by
+an integer H (0 ≤ H < 24) to indicate the hour the clock currently reads (without leading zeros)
+an integer M (0 ≤ M < 60) to indicate the minutes the clock currently reads
+You may assume all input entered is correct.
+Output
+For each test case entered, give the time (hours in 24-hour format, followed by a space, followed by minutes) of the adjusted clock. You may report the numbers without leading zeros.
+
+Lab I/O Format
+Thoughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, your WORD in this lab might be: N> and INPUT>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution 1:
+N> 1
+INPUT> F 60 13 20
+OUTPUT 14 20
+
+
+Example Execution 2:
+N> 7
+INPUT> B 45 9 0
+OUTPUT 8 15
+INPUT> F 20 23 50
+OUTPUT 0 10
+INPUT> B 30 0 5
+OUTPUT 23 35
+INPUT> B 60 2 0
+OUTPUT 1 0
+INPUT> F 0 12 0
+OUTPUT 12 0
+INPUT> F 15 17 45
+OUTPUT 18 0
+INPUT> B 0 0 0
+OUTPUT 0 0
+
+
+Hints
+It is easy to get this problem wrong. We encourage you to come up with more test cases than the samples here. We will test your program on many more inputs than you see here; however, as mentioned above, you can assume all the inputs we test will be correct.
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section D
+        #   Python Lab 6
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab6 and upload Lab6-daylight_savings.py.
+
+Note: this lab is worth 8 points. To receive full credit, your code must execute in Python 3, you must submit a single file (your Python code file), and you must have the input/output match the lab requirements.
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

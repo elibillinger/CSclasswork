@@ -1,0 +1,50 @@
+Python Lab 5A: Upside Down
+Due Thursday, September 26th, by 11:59pm
+Assignment
+This lab is due to Canvas by 11:45pm on September 26th (latest). You will submit the lab as a single .py file, with Lab 5B.
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI101/PythonLabs). Save this file as Lab5A-upside_down.py.
+
+When grading papers, Alex writes the grade on the top of the paper and then places the paper on the top of another stack. When he is done, he enters the grades into a file in his computer. Alas, because the stack of graded papers was in the wrong order, he realizes that all the grades he entered are in the wrong order!
+
+Help Alex by writing a program which flips the order of the grades he inputs.
+Input
+The first line of input is an integer 1 ≤ N ≤ 100 that indicates the number of papers Alex graded and entered into the system (in the wrong order). The next N lines each contain an integer 0 ≤ G ≤ 100 that indicate each grade he entered. You may assume the user will enter integers such that 1 ≤ N ≤ 100 and 0 ≤ G ≤ 100.
+Output
+Output all of the grades G in the opposite order you received them, each on its own line.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: NUMBER> and GRADE>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution 1:
+NUMBER> 5
+GRADE> 100
+GRADE> 94
+GRADE> 87
+GRADE> 100
+GRADE> 84
+OUTPUT 84
+OUTPUT 100
+OUTPUT 87
+OUTPUT 94
+OUTPUT 100
+
+
+Hint:
+Want to create a list with N elements in it? When you multiply a list by an integer (N) in Python, Python will repeat the list N times. For example:
+my_list = [0] * 6
+# my list created is [0, 0, 0, 0, 0, 0]
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section B
+        #   Python Lab 5A
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab5A and upload Lab5A-upside_down.py.
+
+Note: this lab is worth 4 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

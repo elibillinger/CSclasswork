@@ -1,0 +1,52 @@
+Python Lab 2B: Money Converter
+Due Thurs, Sept 5th, by 11:45pm
+Introduction
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory managing all your Python Labs this semester. Please save this file with the following name: Lab2B-money.py.
+Assignment
+The purpose of this lab is to create a program that will tell you how much some item in another currency will cost in United States dollars. We provide the following algorithm to help you get started.
+Create dollars, convert_rate, and item_cost variables, initializing each to 0.0.
+Create currency variable, initializing to default "EUR".
+Prompt the user to input the currency that is being converted from (e.g., EUR, GBP, CAD) .
+Prompt the user to input the convert_rate for today's currency to US dollars.
+Prompt the user to input the item_cost, for the item you would like to purchase .
+Calculate and store the cost of the item in dollars (cost of item in US dollars).
+Output the cost of the item in US dollars
+Hint: You'll need to use string formatting to get the output you want.
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: CURRENCY>, RATE>, and COST>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+Example Execution #1
+Input the currency to convert from
+CURRENCY>EUR
+Input today's convert rate for EUR
+RATE>1.24254
+Input the cost of the item you want to purchase
+COST>50
+The item that costs 50.0 in EUR currency costs $62.13 in US dollars
+OUTPUT $62.13
+
+NOTE: While the line that begins with OUTPUT may seem redundant, it is needed for our grading script.
+Example Execution #2
+Input the currency to convert from
+CURRENCY>INR
+Input today's convert rate for INR
+RATE>0.01572
+Input the cost of the item you want to purchase
+COST>7500
+The item that costs 7500.0 in INR currency costs $117.90 in US dollars
+OUTPUT $117.90
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section E
+        #   Python Lab 2B
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab2B and upload Lab2B-money.py.
+
+Note: this lab is worth 4 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

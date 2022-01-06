@@ -1,0 +1,99 @@
+Python Lab 4: Hangman
+Due Thurs, Sept 19th, by 11:45pm
+Introduction
+This lab is due to Canvas by 11:45pm on September 19th (latest). You will submit the lab as a single .py file.
+
+To get started, open IDLE and then create a New File via the File menu. We suggest you immediately save this file in the directory you created to manage all your Python Labs this semester (e.g., CSCI101/PythonLabs). Save this file as Python4-hangman.py.
+Assignment
+In this lab we will combine several of the fundamentals that we have learned so far, including strings, conditionals, branching, variables, lists, and while loops. The goal is to build a simple Hangman game. Your program needs to ask the user to enter a secret word and the number of guesses allowed for the game. Your program should then enter a loop to play the game. We suggest you structure your program as follows:
+Prompt the user for the secret word
+Prompt the user for the number of guesses allowed in the game
+Begin Game:
+While the word hasn't been guessed and the number of guesses is less than the number of guess allowed:
+Prompt the user for a character
+Increment the number of guesses
+Check to see if the guessed character appears in the secret word
+If the secret word has been guessed, print "Congratulations! You guessed the secret word!". Then print the secret word on a new line and end the game.
+If the secret word has NOT been guessed and the player has no more guesses left, print "You ran out of guesses! Better luck next time!" Then print the secret word on a new line and end the game.
+If the game isn't over AND the character appears in the word, print out "Success! You guessed a character in the word!". Then print the current status of the secret word on a new line.
+If the game isn't over AND the character doesn't appear in the word, print out "Boo! You guessed incorrectly". Then print the current status of the secret word on a new line.
+Hint: Maybe have a list of letters that have been guessed, which is checked before you look for the letter in the secret word. Or maybe use an uncommon character (like #,$,^, or @) in the secret word that has been guessed. There are many ways to solve this problem. Think creatively!
+Lab I/O Format
+Throughout this semester we will use a specific Lab Input/Output Format. This format is described below:
+When prompting for input, use the prompt string WORD>, where WORD is a single, uppercase word which describes the input. For example, this lab might choose: WORD>, NUM>and CHAR>.
+When providing output that will be graded, start the line with OUTPUT. Think of this as "boxing your answer" on a math worksheet; it lets us quickly find your answer. Our grading script will skip any output lines that do not start with OUTPUT.
+You are welcome (and should!) have other output lines that do not begin with OUTPUT; while our grading script will ignore these, good programmers include print statements that are informational to the user of the program.
+
+Example Execution
+Welcome to Simple Hang Man
+Enter a secret word:
+WORD> animal
+Enter the number of guesses allowed:
+NUM> 40
+Please enter a character:
+CHAR> a
+OUTPUT Success! You guessed a character in the word!
+39 guesses remaining
+Character's guessed: [ a ]
+OUTPUT Secret word: a _ _ _ a _
+
+Please enter a character:
+CHAR> n
+OUTPUT Success! You guessed a character in the word!
+38 guesses remaining
+Character's guessed: [ a, n ]
+OUTPUT Secret word: a n _ _ a _
+
+Please enter a character:
+CHAR> e
+OUTPUT Boo! You guessed incorrectly
+37 guesses remaining
+Character's guessed: [ a, n, e ]
+OUTPUT Secret word: a n _ _ a _
+
+Please enter a character:
+CHAR> i
+OUTPUT Success! You guessed a character in the word!
+36 guesses remaining
+Character's guessed: [ a, n, e, i ]
+OUTPUT Secret word: a n i _ a _
+
+Please enter a character:
+CHAR> m
+OUTPUT Success! You guessed a character in the word!
+35 guesses remaining
+Character's guessed: [ a, n, e, i, m ]
+OUTPUT Secret word: a n i m a _
+
+Please enter a character:
+CHAR> l
+OUTPUT Congratulations! You guessed the secret word!
+34 guesses remaining
+OUTPUT Secret word: a n i m a l
+
+
+Out of Guesses Sample Output
+Please enter a character:
+CHAR> f
+OUTPUT Boo! You guessed incorrectly
+1 guess remaining
+Character's guessed: [ a, o e, t, t, l, d, q, r ]
+OUTPUT Secret word: a _ _ _ a l
+
+Please enter a character:
+CHAR> z
+OUTPUT You ran out of guesses! Better luck next time!
+OUTPUT Secret word: a n i m a l
+
+
+Comments
+All Python files submitted to Canvas should include a header with your name, section, and assignment info. These details should be WITHIN the file you upload to Canvas. Submissions without this header will lose 1 point. Here's an example:
+        #   Tracy Camp
+        #  ​CSCI 101 – Section E
+        #   Python Lab 4
+Submission
+Once you are satisfied with your solution to this lab, you need to submit the file to Canvas. In Canvas, go to Assignments > Lab4 and upload Python4-hangman.py.
+
+Note: this lab is worth 6 points. To receive full credit, your code must execute in Python 3, and you must submit a single file (your Python code file).
+
+Whenever you submit something to Canvas, we strongly recommend you always double check what you submitted actually got submitted correctly (e.g., did the file upload correctly? did you submit the correct file? etc.) If your submission is incorrect, it's on you.

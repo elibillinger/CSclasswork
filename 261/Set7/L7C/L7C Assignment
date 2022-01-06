@@ -1,0 +1,39 @@
+Concepts
+Focus on expanding the Godzilla class from Lab7B.
+
+Suggestion: Use NotePad or WordPad
+Consider using NotePad or WordPad on your computer to write your code for this lab. Once you feel good about what you've written, then copy the code into your project. Doing this will help you see where you might make mistakes on the exam!
+
+You should write a main.cpp that tests each feature of your class works as expected. You will need to submit your class declaration file, your class definition file, and your main.cpp file for this lab.
+
+The Final Godzilla Class
+Now add the following function to your class:
+
+A greet function that accepts another Godzilla object as a parameter which is passed by constant reference. That is, the parameter should be marked const so that the function cannot inadvertently change the target's values. The function should print out a message in the form of "Callee's Name bows to Target's Name."
+Finally, in main before the two Godzillas do battle, have the two Godzilla objects greet each other. As in, the code would look like
+
+godzilla.greet( mechaGodzilla );
+mechaGodzilla.greet( godzilla );
+In order for this to work, you will need to make sure that you have marked ALL of your functions as const or not appropriately. Which functions should be constant functions? Which parameters should be constant parameters? Do this for every function - denote it as a const function when it is not modifying any of the callee's data members. Likewise, mark any parameters in every function as const that are not modified within the function body.
+
+An example output is below:
+
+Enter the name: Metalzilla
+Enter the health: 95
+Enter the power: 30
+Metalzilla (P: 15) - H: 95
+Godzilla (P: 20) - H: 80
+Metalzilla bows to Godzilla.
+Godzilla bows to Metalzilla.
+Godzilla attacks Metalzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Godzilla has been vanquished.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set7. Detailed instructions for doing this are posted in Assignment 7.
+

@@ -1,0 +1,120 @@
+· Instructions · Rubric · Submission ·
+
+Each week this semester, you have been doing labs and homework assignments that emphasize specific aspects of the C++ programming language. For the last few weeks of the course, you will make use of these language skills in the context of a larger, more realistic project. The goals of this project are:
+
+To engage in a project which is tailored to your particular interests.
+To have additional experience using the programming constructs covered within the scope of this course.
+To take responsibility for designing and producing a large program, thereby gaining knowledge and understanding of the entire software development process.
+The final project is open-ended. You may choose to write a program that plays a game, reads large data files and does a complex calculation with the data, or anything in between. Some detailed requirements are given below, so please read this document carefully.
+
+Pair Programming
+For this project, you may choose (not mandatory) to work with a partner using the pair programming technique. In the pair programming technique, two programmers work together on one computer. One is designated as the Driver and writes the code; the other is designated as the Navigator and reviews each line of code as it is typed. The two programmers switch roles frequently. For this project, the programmers should switch roles at least every fifteen to twenty minutes.
+
+You may choose a partner from a different section, but both of you must be able to attend all coding sessions together. Make sure your schedules align such that you will be able to meet outside of class three or four times over the last few weeks of the semester.
+
+Remember, with the pair programming technique, both programmers must be present at all times when working on the assignment. Thus, consider your schedules when deciding to work as partners!
+You may choose a partner from a different section but, again, both programmers must be present at all times when working on the assignment.
+If you choose to work with a partner, only one student in the partnership should submit the finished work; furthermore, this submission must have both your names and usernames in the header comment of your main.cpp file.
+There will be a 50% penalty if both students submit the same work! This causes extra, unnecessary work for our grader, so please do not do it.
+There will be a 50% penalty if both names and sections are not in the header comment of your main.cpp file. This again causes extra, unnecessary work for our grader (as the grader may need to contact you), so please do not forget to do it.
+Note the requirement in the last step to include your names and sections in the header comment!
+Reminder: Pair programming is not the same as team programming.
+Both programmers must be present at all times when working on the project. There will be a 50% penalty if the instructors discover that a pair has broken this policy.
+Requirements - Project Proposal
+(due Wednesday, April 08, 2020 11:59 PM)
+On Wednesday, April 08, 2020 11:59 PM, a short description of your project is due. You need to submit your description (as a PDF) to Canvas. (If you have a partner, both you and your partner need to submit a proposal, though they can be the same.) This document needs to include the following sections WITH the section titles listed below.
+
+TITLE: Include your name, your CSCI 261 section, your partner's name (if you have a partner), your partner's CSCI 261 section, and a project title.
+PROBLEM DESCRIPTION: You should write a one-paragraph description of your project. This paragraph should give the reader a general idea about the program requirements and what problem you are trying to solve. For example: We will be creating a program that calculates the optimum pair of gears that should be selected on a bicycle, given a degree of incline and current velocity. Users select the type of bike, specify their speed, pain threshold, and degree of incline. The program then informs the user of the front and rear gears that should be selected. But wait, there's more! We then animate this on the screen to illustrate the bike as it climbs or descends a hill. Whee!
+DATA DESCRIPTION: This is the UML class diagrams for the classes you will be creating for your program. Be sure to include comments to describe what your data members and member functions will do. This section is NOT in paragraph form; instead, this section is pseudocode made up of the UML class diagrams. This section does NOT include actual C++ code, it is only pseudocode.
+PROCEDURAL DESCRIPTION: Include a brief description in pseudocode of how your main program will operate. This section should also NOT be in paragraph form. This section does NOT include actual C++ code, it is only pseudocode.
+SPECIAL NEEDS/CONCERNS: Your Project Definition should mention any special needs or concerns that the instructor should know about. Will you need extra help on a particularly difficult idea that you will have to conquer in order to make this project work? If you're addressing a specific problem for a non-CS major, you may need to get advice from someone within that department.
+The document you submit should answer the following questions:
+
+What class will you create? What data attributes and member functions will it have?
+How will you use an array (or vector) within your project?
+How will a data file be used?
+You do not need to, and should not, do any coding to write this Project Proposal. The purpose of this Project Proposal is to get you to think about the initial design of your final project. (Note: we understand that the initial design you submit on Wednesday, April 08, 2020 11:59 PM is likely to change as you complete your project for the due date.)
+
+NOTE: You have a bit of time to decide upon your topic and a big picture of your design, but then only over about three weeks for implementation. Because of the tight time period for implementation, we strongly encourage you to have most of your design plans done earlier than Wednesday, April 08, 2020 11:59 PM (to give you extra time for implementation). Many previous students have said "gosh, wish I had gotten started on the final project earlier."
+
+Your instructor will give you feedback on your Project Definition the class period after you submit it (e.g., too complex or too simple).
+
+Requirements - Project Code
+(due Tuesday, April 28, 2020, 11:59 PM)
+Your program must use at least one original class, written specifically for this project. You are free to use other classes we have developed during the semester, such as the Date class, or classes described in zyBooks, but you must also write and use one original class.
+
+Your custom class must encapsulate some important data/functionality of your program.
+Your custom class must have some data/functions that are private.
+Your custom class must have a well-defined public interface.
+Your custom class must be defined and declared in separate files.
+Your program must use at least one array (one-dimensional or two-dimensional). This array needs to be either an array within your class OR an array of objects of your class type. If desired, you can use a vector instead of an array.
+
+Your program must make use of file I/O. Data may either be read from or written to a file, or both. Please place your data file in the same directory as your main.cpp file.
+
+Your program must use functions where appropriate.
+
+Your program must use constants where appropriate.
+
+Your project must make use of ample commenting. There should be enough documentation to allow another programmer to easily make modifications or enhancements.
+
+Your program must adhere to our CSCI 261 style guidelines.
+
+Requirements - Project Paper
+(due Tuesday, April 28, 2020, 11:59 PM)
+Create a text file called final.txt which contains the following sections WITH the section titles listed below. This file is submitted with your code (see Submission instructions below).
+
+TITLE: Include your name, your CSCI 261 section, your partner's name (if you have a partner), your partner's CSCI 261 section, and a project title.
+PROBLEM DESCRIPTION: This is the one-paragraph description of your project (from the Problem Proposal) with any necessary changes.
+PROGRAM DOCUMENTATION: This section should include a brief description of how to run your program (i.e., what the user should type and any other information a user might need to know) and also a brief description that might be used by another programmer to modify/extend your program. For example, there may be some features that you would have included in your program if you had more time. You could include a list of those features, with any thoughts you had about how they should be implemented.
+TESTS: List at least FIVE test cases that your program handles smoothly. Do not assume you have a smart user. For example, if the user enters the number of inputs that exist, then your program should not fail if the user enters -1. These tests should show that your program works properly. Given some input, the proper output is computed. Your program handles edge cases. etc.
+REFLECTIONS: Include at least a one-paragraph description of what you learned from this project. It might help to think about what problems you encountered, and what you would do differently if you had to do another project.
+Resources
+While you may search on the Internet for hints as to how certain things are done in the C++ language, you cannot directly copy and paste code found from resources outside our course.
+
+That said, any resources we have used in this class from previous labs and homework assignments are fair game for use in your project.
+
+Incremental Development
+Now that you are designing and writing a large project from scratch, the "Incremental Build" model of software development is more important than ever before. This is a software development methodology where the model is designed, implemented, and tested incrementally, adding a little more functionality each time, until the product is finished. In other words, write a small amount of code to do one specific task, then run the program to be sure what you have done so far works. Only when you are satisfied with what you have so far do you move on to the next part of the program.
+
+In short, implement and test small parts of your program as you work!
+
+Project Possibilities
+There are numerous different project ideas possible. Here are a few examples:
+
+Breakout
+In the classic arcade game Breakout a layer of bricks lines the top third of the screen. A ball travels across the screen, bouncing off the top and side walls of the screen. When a brick is hit, the ball bounces away and the brick is destroyed. The player loses a turn when the ball touches the bottom of the screen. To prevent this from happening, the player has a movable paddle to bounce the ball upward, keeping it in play.
+
+In this game, you might want to develop the following three classes: Paddle , Brick and Ball .
+
+Frogger
+Another classic arcade game, Frogger is a game in which the object is to direct frogs to their homes one by one. To do this, each frog must avoid cars while crossing a busy road and navigating a river full of hazards.
+
+Classes such as Frog , Car , Truck , Log , Turtle , Crocodile , and others could be used in implementing this game.
+
+Othello
+There are several games with two-dimensional arrays as playing areas. Possibilities include Connect Four, Reversi (aka, Othello) and Battleship.
+
+Non-Games
+Finally, there is no requirement that your final project be a game. For example, if you are passionate about bike riding, you might create a program that calculates the optimum front and rear gears that should be selected on a bicycle, given a degree of incline and current velocity. Users select the type of bicycle, specify their speed, pain threshold, and degree of incline. The program then informs the user of the front and rear gears that should be selected.
+
+Or maybe there is something you could write that would be useful for your major or other classes. Anything that meets the requirements of the project (see above) is fair game.
+
+Other Ideas
+If you have other ideas but need a bit of help with the design, please feel free to talk to your instructor or a tutor.
+
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+25	Project behaves as expected.
+17	Project makes appropriate use of a class.
+10	Project makes appropriate use of an array or vector.
+10	Project makes appropriate use of File I/O.
+10	Project makes appropriate use of functions.
+7	Project makes appropriate use of constants and data types.
+7	Project includes meaningful variable/function names and ample commenting for readability. Project follows our CSCI 261 style guidelines.
+7	Project description meets requirements (due Wednesday, April 08, 2020 11:59 PM).
+7	final.txt meets requirements.
+100	Total Points

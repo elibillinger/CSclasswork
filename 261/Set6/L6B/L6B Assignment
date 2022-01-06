@@ -1,0 +1,25 @@
+Concepts
+Focus on defining a Godzilla class from scratch.
+
+Suggestion: Use NotePad or WordPad
+Consider using NotePad or WordPad on your computer to write your code for this lab. Once you feel good about what you've written, then copy the code into your project. Doing this will help you see where you might make mistakes on the exam!
+
+You should write a main.cpp that tests each feature of your class works as expected. You will need to submit your class declaration file, your class definition file, and your main.cpp file for this lab.
+
+Godzilla Class
+We are going to declare a class called Godzilla (note the style, upper case G) that will allow us to ultimately simulate a battle between Godzilla & Mechagodzilla. Create a new class called Godzilla that contains private data members for storing the name (as a string), the health (as a double), and power (as a double) of a Godzilla creature. The public functions you should include in your class:
+
+Appropriate getters/setters for each data member.
+Now in main, create a Godzilla object - named godzilla (note the style, lower case g). Prompt the user to provide the name, health, and power of godzilla and use the appropriate setters.
+
+To verify your object is correct, output the name, health, & power of godzilla using the appropriate getters.
+
+An example output is below:
+
+Enter the name: Metalzilla
+Enter the health: 95
+Enter the power: 30
+Metalzilla has 95 health and 30 power.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set6. Detailed instructions for doing this are posted in Assignment 6.

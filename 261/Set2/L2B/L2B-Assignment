@@ -1,0 +1,40 @@
+Rock Paper Scissors
+Over the next three labs we are going to make a fully functioning Rock, Paper, Scissors game!
+
+Most of you have likely played the classic game Rock, Paper, Scissors. Believe it or not, a hardcore world of Rock, Paper, Scissors has existed, even in Denver. It's a bit frightening.... So, before you start thinking how Rock, Papers, Scissors (or RPS for those in the know) is a kid's game, think again. This is serious stuff; go ahead and TRY to beat the computer on this NY Times link. (But, if anyone asks, your C++ assignment this week is to implement a simple interactive rule-based system that addresses a theoretical Decision Problem.)
+
+RPS Image
+Your goal is to ultimately implement a one-player version of Rock, Paper, Scissors against the computer. The first step is to ask the Human Player what they choose and then repeat back their choice. Players will enter either R for Rock, P for Paper, and S for Scissors. Here is an example interaction for this part of the program:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player: R
+
+Player choose R
+Here is another example:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose S
+Now, we must randomly decide what the Computer chooses. To do so, we will randomly generate a number for the computer. The computer has three possible choices and we will represent these three choices by the numbers 0, 1, and 2. Properly use the rand() function to generate a random number in the range [0, 2]. Print out the computer's value to the user. Once your program looks like below, you are ready to move on.
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose S
+Computer choose 2
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose S
+Computer choose 0
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose S
+Computer choose 1
+Every time you run your program, the computer should have a different value. Once your random number is working properly, it's time to make sense of both players' choices. Move on to Lab2C!
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set2. Detailed instructions for doing this are posted in Assignment 2.

@@ -1,0 +1,33 @@
+The purpose of this homework is to give you more practice on writing your own classes.
+
+The Goal
+The goal of this homework is to create a unique class of a "magic item", which allows the user of the "magic item" to do something and then, perhaps, win something. Your "magic item" can (and should) have different behaviors than the "magic items" created by your fellow students. For example, a "magic item" may ask a riddle and, if answered correctly, awards a potOfGold. In addition to answering a riddle, other example behaviors are solving a math problem, answering a trivia question, playing a slot machine, etc.
+
+You have complete freedom as to what this magic item does. Be creative and have fun with this assignment. Next week, you will see and use your magic item along with several of your classmates so try to create the best magic item and show off your skillz. Just as your items have prizes, there will prizes in class as well.
+
+Examples
+To illustrate this "magic item" idea, example 1 and example 2 are provided. You are not allowed to use these "magic items" in your main.cpp (nor copy the example code to create your own "magic item" class either!)
+
+Functional Requirements
+You must declare your class in its own header file and then define your class in a corresponding source file.
+Your "magic item" class should have at least two data members and, in addition to constructors and getter/setter functions, at least four other member functions. One of these other functions must be an introduction() function that tells the user how to use the "magic item" to win a prize.
+Both files associated with your "magic item" class must include your name.
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+4	All code submitted properly.
+6	All labs completed and submitted
+L7A, L7B, L7C
+6	Original class created.
+2	Class contains at least two data members.
+3	Class contains appropriate constructors and getters/setters.
+4	Class contains at least four member functions beyond constructors/getters/setters.
+1	One of the member functions is an introduction() function.
+2	Class declared and defined in separate header and source files.
+2	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+30	Total Points

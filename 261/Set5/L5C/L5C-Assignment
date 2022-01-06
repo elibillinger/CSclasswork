@@ -1,0 +1,84 @@
+Concepts
+This assignment introduces you to a simple form of "unit testing" as a mechanism for exploring the string API. Focus on learning what unit tests are, what an "API" is, and what you can do with string objects.
+
+APIs (Application Programming Interface)
+As you can see above, the acronym API stands for Application Programming Interface. But what does that mean? In a nutshell, an API describes what you can do with a particular library or object that you are provided (or that you create). It describes how your code can "interface with" or "use" a particular library or object.
+
+For example, the string API consists of member functions that tell you how long the string is, allow you to capitalize the string, tell you whether it contains a specific character, or allow you to extract a part of the string.
+
+While the API really is the programmatic components that you can actually use, we often rely on API documentation to discover what you can do with a particular library or object. For example, in this assignment you will use the string API, and you will need to look up some API documentation about how you can use string objects.
+
+Unit Testing
+As entire books have been written on unit testing, we will merely introduce the topic here. A "unit test" is a small piece of code designed to test a specific part of a program's functionality. In other words, they are bits of code that test the functionality of other code!
+
+For this assignment, that's all the preliminary information you really need to know about unit testing. You will actually write the unit tests, eventually getting the entire test suite to pass (at which point you should go outside and run a victory lap).
+
+The string Mantra
+How you read and interpret object-oriented code is important when it comes to understanding the difference between data types, variables, and the "values" that a variable represents. Take a look at the following code.
+
+string name = "Jimi Hendrix";
+You are familiar with that syntax, but as we delve into objects we want to emphasize a particular way of translating that from "computerese" to English. When reading the above code, you should say to yourself "name is a string whose contents are the words Jimi Hendrix." Say that sentence aloud while reading the line of code above. Seriously, say it aloud about three or four times:
+
+"name is a string whose contents are the words Jimi Hendrix. name is a string whose contents are the words Jimi Hendrix. name is a string whose contents are the words Jimi Hendrix. name is a string whose contents are the words Jimi Hendrix."
+
+Doing this will help hammer home the way you should translate this line of code (and make anyone near you think there is something seriously wrong with you).
+
+Instructions
+A skeletal test suite (a collection of functions) has been provided for you in StringTests_main.cpp. Notice that the functions in this code are defined below main.cpp. In this case, each function is performing a single test on a string. The function will need to return the result of the test.
+
+When you first run the program, you will see the following output:
+
+              Testing length():     PASSED
+              Testing length():     PASSED
+                  Testing at():  !!>FAILED<!! '' != 'p'
+                  Testing at():  !!>FAILED<!! '' != 'r'
+              Testing append():  !!>FAILED<!! "There's a " != "There's a natural mystic."
+              Testing append():  !!>FAILED<!! "It's the " != "It's the eye of the tiger."
+              Testing insert():  !!>FAILED<!! "If you carefully." != "If you listen carefully."
+              Testing insert():  !!>FAILED<!! "carefully." != "Watch carefully."
+                Testing find():  !!>FAILED<!! -1 != 6
+                Testing find():  !!>FAILED<!! -1 != 3
+              Testing substr():  !!>FAILED<!! "Such a natural mystic" != "natural"
+              Testing substr():  !!>FAILED<!! "Such a natural mystic" != "Such"
+             Testing replace():  !!>FAILED<!! "Strings are not the way" != "Things are not the way"
+             Testing replace():  !!>FAILED<!! "Show me the things" != "Show me the way"
+           Testing firstWord():  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "The"
+           Testing firstWord():  !!>FAILED<!! "A man a plan a canal Panama" != "A"
+           Testing firstWord():  !!>FAILED<!! "I have the hang of this" != "I"
+     Testing removeFirstWord():  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "quick brown fox jumped over the lazy dog"
+     Testing removeFirstWord():  !!>FAILED<!! "Goodbye" != ""
+     Testing removeFirstWord():  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "brown fox jumped over the lazy dog"
+          Testing secondWord():  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "quick"
+          Testing secondWord():  !!>FAILED<!! "A man a plan a canal Panama" != "man"
+          Testing secondWord():  !!>FAILED<!! "I have the hang of this" != "have"
+           Testing thirdWord():  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "brown"
+           Testing thirdWord():  !!>FAILED<!! "A man a plan a canal Panama" != "a"
+           Testing thirdWord():  !!>FAILED<!! "I have the hang of this" != "the"
+            Testing nthWord(1):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "The"
+            Testing nthWord(2):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "quick"
+            Testing nthWord(3):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "brown"
+            Testing nthWord(4):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "fox"
+            Testing nthWord(5):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "jumped"
+            Testing nthWord(6):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "over"
+            Testing nthWord(7):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "the"
+            Testing nthWord(8):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "lazy"
+            Testing nthWord(9):  !!>FAILED<!! "The quick brown fox jumped over the lazy dog" != "dog"
+          Testing substitute():  !!>FAILED<!! "The Gxxgle" != "The Google"
+          Testing substitute():  !!>FAILED<!! "$chool of Mine$" != "school of Mines"
+          Testing substitute():  !!>FAILED<!! "D--" != "C++"
+Your job: complete each TODO using the string API such that all tests pass. You should not modify the contents of main in this lab, and instead only insert code at each TODO statement. When you have finished the task, remove the TODO comment. In CLion, you can view all the TODO steps by going to the menu View > Tool Windows > TODO. This will help you keep track of your progress through this lab.
+
+You should start by reading the body of the function called runAllTests() in order to see what your functions must accomplish. For example, the function stringLength() must return the length of the string "Now" using the string API. Take a look at the function stringLength() to see an example of a successful implementation.
+
+When your program prints "PASSED" for a given unit test instead of "FAILED," then you know that your function implementation for that test is complete. Once you get all functions to print "PASSED", do your victory lap!
+
+Hints
+We recommend that you complete the functions in the order in which they are called in runAllTests() .
+If you have trouble getting a function to pass its test, use the debugger with breakpoints to help you troubleshoot what your code is doing.
+Leverage the string API as much as you can. Explore the string API to see how the functions work. The documentation may be somewhat confusing; thus, if there is something you don't understand, be sure to ask!
+Functional Requirements
+You must not modify the contents of main() or runAllTests().
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set5. Detailed instructions for doing this are posted in Assignment 5.
+

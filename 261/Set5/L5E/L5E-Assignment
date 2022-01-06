@@ -1,0 +1,64 @@
+Instructions
+This lab will make Lab5A more flexible. Instead of requiring the user to enter 15 numbers every time, we will allow the user to enter as many numbers as they wish (assume they will enter at least 1 number). The user will enter non-negative numbers (greater than or equal to zero) one at a time. When the user wishes to no longer enter numbers, the user should enter -1 to signal they are done.
+
+When the user is done entering numbers, print in order:
+
+How many numbers the user entered.
+The numbers the user entered in order.
+The smallest number they entered.
+The largest number they entered.
+The first number they entered.
+The last number they entered.
+An example interaction follows:
+
+Hey! Witness my first vector mojo!
+Enter as many non-negative numbers as you'd like and I will tell you what they are.
+When you wish to be done, enter -1 to stop entering numbers.
+
+Your Number Is: 8
+Your Number Is: 6
+Your Number Is: 7
+Your Number Is: 5
+Your Number Is: 3
+Your Number Is: 0
+Your Number Is: 9
+Your Number Is: -1
+
+So awesome! You entered 7 numbers.
+The numbers are: 8 6 7 5 3 0 9
+The smallest number is: 0
+The largest number is: 9
+The first number is: 8
+The last number is: 9
+
+Have a nice day!
+Gaze at my awesome.
+A second interaction may look like:
+
+Hey! Witness my first vector mojo!
+Enter as many non-negative numbers as you'd like and I will tell you what they are.
+When you wish to be done, enter -1 to stop entering numbers.
+
+Your Number Is: 56
+Your Number Is: 42
+Your Number Is: 17
+Your Number Is: 25
+Your Number Is: -1
+
+So awesome! You entered 4 numbers.
+The numbers are: 56 42 17 25
+The smallest number is: 17
+The largest number is: 56
+The first number is: 56
+The last number is: 25
+
+Have a nice day!
+Gaze at my awesome.
+Functional Requirements
+Your program cannot make a call to the STL Algorithm method sort() (or any other methods from the algorithm library). You must iterate through the vector searching for the largest and smallest element yourself.
+When printing the number of numbers entered by the user, do not use a counter inside the loop. Instead, make use of one of our vector functions to determine this value.
+You must iterate through the vector again after printing all the values. You should not keep track of the smallest and largest value as the user is entering them.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set5. Detailed instructions for doing this are posted in Assignment 5.
+

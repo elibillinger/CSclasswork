@@ -1,0 +1,104 @@
+Cube
+"26 rooms high, 26 rooms across, 17,576 possible rooms"
+
+The program below computes the volume of a square prism. I mean it, just one, specific square prism. How lame! Let's modify this program and make it more versatile.
+
+Before you begin to code, create an empty project under Set1 and add a new source code, i.e., main.cpp , file; if you don't have down how to do this yet, follow directions in Lab 1A. Call this project L1C and copy the code below into the main.cpp file within the project. Then update the comment section, and build/execute the program. Make sure everything runs fine before moving on to the next step.
+
+Your Task
+
+Your task is three-fold.
+
+First, calculate the volume of a rectangular prism. Change the program below to output the volume of the prism with an appropriate output statement. (Suggestion: do not start the next task until you are happy with the execution of this first task.)
+
+/* CSCI 261 Lab 1C: GEOMETRIC CALCULATIONS
+ *
+ * Author: XXXX (_INSERT_YOUR_NAME_HERE_)
+ *
+ * Add more complete description here...
+ */
+
+// The include section adds extra definitions from the C++ standard library.
+#include <iostream> // For cin, cout, etc.
+
+// We will (most of the time) use the standard library namespace in our programs.
+using namespace std;
+
+// Must have a function named "main", which is the starting point of a C++ program.
+int main() {
+
+    /******** MODIFY OR INSERT CODE BELOW HERE ********/
+
+    int length = 17;
+    int width = 17;
+    int height = 2;
+    int volume;
+
+    // Volume of a box is length times width times height.
+    volume = length * width * height;
+
+    /******** MODIFY OR INSERT CODE ABOVE HERE ********/
+
+    return 0; // signals the operating system that our program ended OK.
+}
+Second, change the program above to calculate the volume of any box-like structure or jail cell. (Oh, wait, I thought you said prison, not prism.) In other words, ask the user to enter a whole number for the length, width, and height of the prism (or prison), and then capture that input via appropriate input statements. Be considerate and think about what should always accompany an input statement as well.
+
+Next, we'll calculate the area of a circle.
+
+Stating Facts to the Machine (declaring constants)
+
+You are aware of several facts about the world, such as your GPA or your middle name. Some of these facts change and some don't.
+
+Imagine you're standing on top of a building with a bucket of water balloons. When you drop a water balloon from a building, you witness that water balloon accelerate toward the ground according to the laws of gravity (a.k.a. free fall). Being a totally genius Mines student, you know that acceleration of free fall on Earth is approximately 9.8 m/s/s. This value is "constant" -- it will never change (at least, as long as you're on Earth). Hence, we call these sorts of things constants.
+
+If we were to simulate dropping water balloons as a computer program, it should be obvious that we would need to somehow inform the machine that the acceleration of the balloons is about 10 m/s/s. How do we define facts that do not change to the machine? We "declare constants."
+
+This is like telling the computer, "Hey computer, there's something I'd like you to know about. It's called FREE_FALL_ACCELERATION, which is an integer and is equal to ten. Mmmkay? Don't forget it, and don't ever let it change while the program is running. It's constant."
+
+Alternatively, this is like saying "The constant integer FREE_FALL_ACCELERATION is equal to ten."
+
+You will realize very quickly that despite the versatility of computers, they are incredibly picky. If you tried any of the following:
+
+FREE_FALL_ACCELERATION int const = 10;
+cONSt int FREE_FALL_ACCELERATION = 10;
+const int FREE_FALL_ACCELERATION = 10
+const int = 10;
+Then you'd find that the computer would whine. Programs must adhere to specific rules. We call these rules "syntax." You follow the syntax of English every day. If your friend called you up and asked, "Pizza hey order! let's" you would think they were Yoda but, more importantly, you'd notice that your friend isn't following English syntax.
+
+When you declare constants, you must follow proper syntax (in other words, the machine isn't smart enough to translate your Yoda-code). For constants, the proper syntax is always like this:
+
+const int FREE_FALL_ACCELERATION = 10;
+Recognize this syntax pattern, especially noticing the use of const .
+
+One last thing. See how the constant name is in CAPITAL letters? Always use ALL_CAPS for your constant names. Why? Because then anyone reading your code will think "heh, that's a constant!" (Plus, you'll lose points if you don't follow this coding style.)
+
+Calculate the Area of a Circle
+
+Modify your program to compute the area of a circle after printing the area of the prism. If you don't recall the area of a circle from elementary school, good thing knowledge is always at your fingertips, with that thing they call the Internet.
+
+Once you have a circle's area equation in hand, you'll realize you should have three variables:
+area of type double
+radius of type double
+PI of type double
+It makes sense to use a constant for one of these three variables, and an input statement for another. Figure these things out, and do it! (We suggest you use five digits of precision for the constant.)
+
+After the calculation, print the circle's area. Use appropriate text in the output for understanding, e.g., "The area of a circle with radius 5.2 is 84.9486". Here is an example run of the complete program:
+
+Enter the dimensions of your box: 4 2 5
+The volume of your box is: 40
+Enter the radius of your circle: 3.2
+The area of a circle with radius 3.2 is 32.1699
+Test Values
+
+Here are some known input/output values that you can test against. Be sure to try your own to verify the code works!
+
+Inputs		Output
+Box Dimensions	Circle Radius		Volume	Area
+17 17 2	3.2		578	32.1699
+18 1 19	0		342	0
+2 2 0	-5.5		0	95.0331
+2 -2 2	2.7448		-8	23.6685
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set1. Detailed instructions for doing this are posted in Assignment 1.

@@ -1,0 +1,75 @@
+Concepts
+
+The focus of this assignment is on one concept: how to read data from an "input file stream" or ifstream object.
+
+Working with Data
+Today's class discussed how data is often treated as "streams" of information that can be read a piece at a time. The files we will read in CSCI 261 are simple text files; for lab today, the simple text file contains a series of characters. Remember that whenever you work with a file stream as input, we call them ifstream objects.
+
+
+There will always be four things you will do whenever working with an ifstream.
+
+Open the file
+Check for an error
+Read its data
+Close the file
+The typical pattern for this is as follows:
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    // declare ifstream object and open the file
+    ifstream myCatsAges("filename");
+
+    // check for an error
+    if ( myCatsAges.fail() ) {
+        cerr << "Error opening input file";
+        return -1;
+    }
+
+    // read the data and do something with it
+    int age;
+    myCatsAges >> age;
+    cout << "One cat is " << age << " years old." << endl;
+
+    // close the file
+    myCatsAges.close();
+
+    return 0;
+}
+
+Remember, once you have an ifstream object (like myCatsAges shown above) you use it in a manner similar to using cin .
+
+
+Instructions
+
+At the end of Lab3A, we wrote out a file that was formatted as such:
+
+A o B = ?
+We now want to write a program that will read that file in. It needs to read in the values of A, o, and B by reading in the file. The pseudocode for what you'll want to do is shown below:
+
+// Declare two doubles to store A and B
+// Declare a character to store the math sign
+// Open the file
+// Read in A
+// Read in math sign
+// Read in B
+// Close the file
+Once we've determined A, o, and B, write to the standard out (a.k.a. cout) the solution to the problem. An example is shown below:
+
+-15.15 * 82.311 = -1247.01
+In Lab3C, we will modify this program to format the output more cleanly.
+
+CLion Setup
+Where to place the input file
+Any input file needs to be placed at the project level, which should be the same directory as your main.cpp file. You should see both your input file AND main.cpp file in the same directory.
+
+After you run your program, you will likely get an error saying the requested input file cannot be found. This is the same problem we initially had with our output files. CLion is looking in the wrong place. We need to tell CLion which folder to use.
+
+To do so, we need to tell CLion where the files live. This can be found from going to Run > Edit Configurations. In the pop up window that appears, we want to set the "Working Directory" to be the parent folder, ../. Hit Apply and OK, then rerun the program. Your program will now be able to open the file.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set3. Detailed instructions for doing this are posted in Assignment 3.
+

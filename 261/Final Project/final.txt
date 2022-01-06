@@ -1,0 +1,28 @@
+Title:
+    Eli Billinger Section C
+    Memory Game
+Problem Description:
+    The program I will be creating will be a memory game. The game is a
+    bunch of cards laid out on the screen. All of the different cards are stored on a file which is read
+    to make the table. The program will randomize the cards in a grid pattern. The user will select
+    two cards using coordinates to see if they match and continue picking two cards until they find
+    all of the matching ones. The program will show the cards to the user and keep them shown if they are matching.
+    It is text based and uses user text inputs to run.
+Program Documentation:
+    In order to run the program first they must but in Y to start the game and say you completed the instructions.
+    Then they enter coordinates in the form of letter than number i.e. (A1). It will prompt the user for the coordinate
+    of the two cards separately.
+    More Features could have been having the table be able to be different sizes every game and Allowing the user to add
+    symbols for the different cards.
+Tests:
+    Test for Instruction Read:
+    'Y', 'y', 'n', 'H'
+    Tests for Coordinates:
+    'A1','a2','C5','F4','f4','B&','/3'
+    Tests for Restart:
+    'Y','y','n','T'
+Reflections:
+    From this I learned a lot about using different functions in classes and combining classes together. Some difficulties
+    occured when trying to get it to check if the game has been won. One difficult part was checking if the strings were valid.
+    I learned that the location of where I call functions is important since it would keep outputing the grid even if there was
+    a non valid coordinate.

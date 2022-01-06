@@ -1,0 +1,45 @@
+Pair Programming
+
+For this lab, you will be working with a partner to practice pair programming and proper programming design.
+
+Last time, you thought of math equations that can be solved using a computer program. Below are a list of equations provided by your classmates. You and your partner will implement two of these equations.
+
+#	Major	Equation	Formula
+1	Chemistry	Ideal Gas Law	Ideal Gas Law
+2	Civil Engineering	Average Acceleration	Average Acceleration
+3	Electrical Engineering	Ohm's Law	Ohms Law
+4	Engineering Physics	Newton's Law of Universal Gravitational	Newton's Law of Universal Gravitational
+5	Math	Distance	Distance
+6	Math	Volume Sphere	Volume of a Sphere
+7	Mechanical Engineering	Deflection	Deflection
+8	Mechanical Engineering	Heat Transfer	Heat Transfer
+9	Mechanical Engineering	Stress	Stress
+10	Mining	Shear Stress	Shear Stress
+11	Physics	Coulomb's Law	Coulombs Law
+
+For each equation, you must:
+
+Define the appropriate variables that are needed giving them the proper data type, a proper identifier, and a sensible initial value
+Declare constants as needed
+You must prompt the user to enter all non-constant values for the equations
+Calculate the right hand side of the equation solving for the left hand side
+Print out the final computed value of the equation
+And as always, be sure to be providing helpful output to the user so the user provides the correct values and knows what is being returned
+Now before you get started doing any coding, take out a piece of paper and write out the pseudocode to solve this task. Put your names (first & last) at the top as you will be turning in your pseudocode in class as part of your grade. Once you have your pseudocode, determine who is going to drive first and get to coding! We will switch drivers every 5 minutes so listen for the cue to switch positions.
+
+At the end of this lab, your program output should look similar to below:
+
+Enter the acceleration: 4.33
+Enter the mass: 9.3
+The force is: 40.269
+Enter the width: 4
+Enter the height: 2
+The area is: 8
+To receive full credit for this lab, you must do the following:
+
+Turn in a hardcopy of your pseudocode to the instructor at the end of class
+Both members of your pair must turn in the same main.cpp
+Both of your names must be in the comments in the header of your file
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set2. Detailed instructions for doing this are posted in Assignment 2.

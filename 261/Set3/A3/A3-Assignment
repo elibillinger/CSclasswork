@@ -1,0 +1,223 @@
+· Instructions · Rubric · Submission ·
+
+You've just been hired to implement a shopping cart for an online retailer, "Sprockets R Us". The existing system already has the product price, shipping, and tax information available in an external file. The company has requested that the shopping cart read in the product information from the external file, ask the user how many items they wish to purchase, and then write out an order receipt. You eagerly tell your new boss this will be ready next week!
+
+Instructions
+Your task for this assignment can be broken in to three subtasks:
+
+Read In Product Information
+Ask The User For Order Information
+Create Order Receipt
+More details for each subtask are given below.
+
+Subtask I: Read In Product Information
+The product information is stored in the product_public.txt file. A second example is provided as well: product_public2.txt This file has the following format:
+
+price_per_individual_unit
+sales_tax_percentage_rate
+shipping_min_1 flat_shipping_rate1
+shipping_min_2 flat_shipping_rate2
+shipping_min_3 flat_shipping_rate3
+free_shipping_min
+The first line gives the price of an individual Sprocket.
+The second line gives the sales tax percentage to be applied.
+The next three lines list three shipping rates. The first value is the minimum price and the second value is the corresponding shipping fee.
+The last line gives the minimum amount to qualify for free shipping.
+
+Your first task is to read in these values from the external file and store all the values in variables with an appropriate data type.
+
+Subtask II: Ask The User For Order Information
+Once you have read in the product information from the external file, now create the shopping cart system and prompt the user via the standard output & input to enter how many sprockets this wish to order.
+
+An example interaction is shown below for you to model to implementation from:
+
+Welcome to Sprockets-R-Us!
+We sell round sprockets, square sprockets, and triangle sprockets.
+The cost of a single sprocket is $1.99.
+How many sprockets do you wish to order?
+> 5
+Thank you for your order of 5 sprockets!  One moment while we prepare your receipt...
+In the above example, the user entered they wished to purchase 5 sprockets.
+
+You are free to alter the exact text that gets displayed but the following three features MUST be present:
+
+The price for a single sprocket must be printed to the standard output with two decimal places.
+The user must be able to enter from the standard input the number of sprockets they wish to order.
+The number of sprockets ordered must be printed back to the standard output.
+Subtask III: Create Order Receipt
+Once you know how many products are being ordered, you can now calculate the final total. The final total is computed with the following steps in order:
+
+First, determine the product total by multiplying the price per unit by quantity ordered.
+Next, determine the shipping fee based on #1. The amounts correspond to the The public file has a shipping table as follows:
+If Total Amount Is Between	Then Shipping Fee Is
+[shipping_min_1, shipping_min_2)
+($0.00, $9.98]	$25.99
+[shipping_min_2, shipping_min_3)
+[$9.99, $29.98]	$19.99
+[shipping_min_3, free_shipping_min)
+[$29.99, $99.98]	$14.99
+[free_shipping_min, infinity)
+[$99.99, $∞)	$0.00
+If the user qualifies for free shipping, then print a message to the user thanking them for their large purchase.
+Next, compute the subtotal of product total (#1) plus shipping fee (#2).
+Now determine the sales tax amount by multiplying the subtotal from #3 by the sales tax percentage. When computing the amount, if a fraction of a penny remains then use the half round up rule (round up if >= 5, otherwise round down).
+Compute the subtotal of product total (#1) plus shipping fee (#2) plus sales tax (#4).
+If the subtotal from #5 is not an even dollar amount ($X.00), then ask the user if they would like to make a donation and round their total up to the nearest dollar. If they say yes, then compute the donation amount necessary to round the subtotal up to the nearest dollar amount.
+Finally, compute the grand total by adding the subtotal from #5 with the donation amount from #6. Display this final amount to the user.
+Each step of the calculation will be printed to an external file named receipt.txt. The receipt MUST match the following formatting with example amounts based off of the public_product.txt file:
+
+-----------------------------
+Sprockets-R-Us Order Receipt
+-----------------------------
+Price Per Unit:    $     1.99
+Quantity Ordered:           5
+Unit Subtotal:     $     9.95
+-----------------------------
+Shipping Fee:      $    25.99
+-----------------------------
+Sales Tax ( 6.75%):$     2.43
+-----------------------------
+Donation?                   Y
+Donation Amount:   $     0.63
+=============================
+Grand Total:       $    39.00
+=============================
+When formatting the receipt, make sure the following rules are followed:
+
+All dollar amounts are displayed to two decimals.
+All dollar amounts are right aligned with the decimal point aligned. You can assume all amounts will be less than $100,000.
+Sales Tax Rate is listed as a percentage. You can assume the rate will be less than 100% and greater than 0%.
+If the user wants to make a donation, then display the donation amount. Otherwise, do not. A second example is shown below.
+For the above order, the user would see the following displayed to the standard out:
+
+Welcome to Sprockets-R-Us!
+We sell round sprockets, square sprockets, and triangle sprockets.
+The cost of a single sprocket is $1.99.
+How many sprockets do you wish to order?
+> 5
+Thank you for your order of 5 sprockets!  One moment while we prepare your receipt...
+Do you wish to make a donation to the Human Fund? (Y/N)
+> Y
+Thank you for your order.  Your total is $39.00.
+A second receipt and interaction is shown below:
+
+-----------------------------
+Sprockets-R-Us Order Receipt
+-----------------------------
+Price Per Unit:    $     1.99
+Quantity Ordered:         111
+Unit Subtotal:     $   220.89
+-----------------------------
+Shipping Fee:      $     0.00
+-----------------------------
+Sales Tax ( 6.75%):$    14.91
+-----------------------------
+Donation?                   N
+=============================
+Grand Total:       $   235.80
+=============================
+Welcome to Sprockets-R-Us!
+We sell round sprockets, square sprockets, and triangle sprockets.
+The cost of a single sprocket is $1.99.
+How many sprockets do you wish to order?
+> 111
+Thank you for your order of 111 sprockets!  One moment while we prepare your receipt...
+Congratulations!  You qualified for free shipping.
+Do you wish to make a donation to the Human Fund? (Y/N)
+> N
+Thank you for your order.  Your total is $235.80.
+To test the correctness of your program, your program will be run against a second input file product_private.txt with unknown values to ensure calculations and formatting are performed correctly.
+
+Extra Credit!
+For extra credit, improve the formatting of the receipt by having the dollar sign next to the amount.
+
+-----------------------------
+Sprockets-R-Us Order Receipt
+-----------------------------
+Price Per Unit:         $1.99
+Quantity Ordered:         111
+Unit Subtotal:        $220.89
+-----------------------------
+Shipping Fee:           $0.00
+-----------------------------
+Sales Tax ( 6.75%):    $14.91
+-----------------------------
+Donation?                   N
+=============================
+Grand Total:          $235.80
+=============================
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+6	All labs completed and submitted
+L3A, L3B, L3C
++3	L3C & A3 Extra Credit.
+2	Programming Lab 3 completed in AutoGrader.
+6	Product Input File opened, read, and closed properly.
+1	User interaction matches above example.
+2	Receipt calculations performed correcty.
+6	Receipt Output File opened, written, formatted, and closed properly.
+1	Public input test files generate correct results.
+2	Private input test file generates correct results.
+2	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+28	Total Points
+
+This assignment is due by Tuesday, February 11, 2020, 11:59 PM.
+As with all assignments, this must be an individual effort and cannot be pair programmed. Any debugging assistance must be provided in accordance with the course collaboration policy.
+Do not forget to complete the following labs with this set: L3A, L3B, L3C .
+Do not forget to complete the Programming Lab for this set.
+
+Submission
+Always, always, ALWAYS update the header comments at the top of your main.cpp file. And if you ever get stuck, remember that there is LOTS of help available. The following instructions are copied from How to Submit Homework.
+
+
+It is critical that you follow these steps when submitting homework.
+
+If you do not follow these instructions, your assignment will receive a major deduction. Why all the fuss? Because we have several hundred of these assignments to grade, and we use computer tools to automate as much of the process as possible. If you deviate from these instructions, our grading tools will not work. And that makes us very unhappy. And when we're unhappy, we give penalties. Thus, make us happy.
+
+Submission Instructions
+
+Here are step-by-step instructions for submitting your homework properly:
+File and folder names are extremely important in this process. Please double-check carefully, to ensure things are named correctly.
+The top-level folder of your project must be named Set3
+Inside Set3, create 4 sub-folders that are required for this Set. The name of each sub-folder is defined in that Set (e.g. L3A, L3B, L3C, and A3).
+Copy your main.cpp into the subdirectories of Set3 (steps 1-2), zip this Set3 folder (steps 3-4), and then submit the zipped file (steps 5-11) to Canvas.
+For example, when you zip/submit Set3, there will be 4 sub-folders called L3A, L3B, L3C, and A3 inside the Set3 folder, and each of these sub-folders will have a file called main.cpp and nothing else.
+
+Using Windows Explorer (not to be confused with Internet Explorer), find the file named "main.cpp" located inside the folder for the particular lab or homework assignment you will submit.
+
+STOP: Are you really sure you are viewing the correct assignment's folder?
+
+Now, for A3, right click on the main.cpp to copy the file. Then, return to the Set3/A3 folder and right click to paste the file. In other words, put a copy of your homework's main.cpp source code into the Set3/A3 folder.
+
+Follow the same steps for L3A, to put a copy of your lab's main.cpp into the Set3/L3A folder. Repeat this process for Set3/L3B, Set3/L3C.
+
+STOP: Are you sure your Set3 folder now has all your code to submit?
+
+Now, right-click on the "Set3" folder.
+In the pop-up menu that opens, move the mouse "Send to..." and expand the sub-menu.
+In the sub-menu that opens, select "Compressed (zipped) folder".
+
+STOP: Are you really sure you are zipping a Set3 folder with sub-folders that each contain a main.cpp file in it?
+
+After the previous step, you should now see a "Set3.zip" file.
+
+Now visit the Canvas page for this course and click the "Assignments" button in the sidebar.
+
+Find Set3, click on it, find the "Submit Assignment" area, and then click the "Choose File" button.
+
+Find the "Set3.zip" file created earlier and click the "Open" button.
+
+STOP: Are you really sure you are selecting the right homework assignment? Are you double-sure?
+
+WAIT! There's one more super-important step. Click on the blue "Submit Assignment" button to submit your homework.
+
+No, really, make sure you click the "Submit Assignment" button to actually submit your homework. Clicking the "Choose File" button in the previous step kind of makes it feel like you're done, but you must click the Submit button as well! And you must allow the file time to upload before you turn off your computer!
+
+Canvas should say "Submitted!". Click "Submission Details" and you can download the zip file you just submitted. In other words, verify you submitted what you think you submitted!
+In summary, you must zip the "Set3" folder and only the "Set3" folder, this zip folder must have several sub-folders, you must name all these folders correctly, you must submit the correct zip file for this homework, and you must click the "Submit Assignment" button. Not doing these steps is like bringing your homework to class but forgetting to hand it in. No concessions will be made for incorrectly submitted work. If you incorrectly submit your homework, we will not be able to give you full credit. And that makes us unhappy.

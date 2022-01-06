@@ -1,0 +1,33 @@
+Concepts
+Focus on expanding the Godzilla class from Lab7A.
+
+Suggestion: Use NotePad or WordPad
+Consider using NotePad or WordPad on your computer to write your code for this lab. Once you feel good about what you've written, then copy the code into your project. Doing this will help you see where you might make mistakes on the exam!
+
+You should write a main.cpp that tests each feature of your class works as expected. You will need to submit your class declaration file, your class definition file, and your main.cpp file for this lab.
+
+Ensure A Valid Godilla Object
+Currently, both the parameterized constructor and setters allow any value for to be entered for the health and power of Godzilla. We want to make sure that the values that are set for each property are within specified criteria. Add private helper functions to perform this validation since we will do the same validation in our parameterized constructor and setters. Add the following validation functions:
+
+If the provided health is less than zero, set the health to zero.
+If the provided power is less outside the range of [10, 25], then set the power to a random value within the target range.
+There should be no change in main, but run the program and test values that are both valid and invalid.
+
+An example output is below:
+
+Enter the name: Metalzilla
+Enter the health: 95
+Enter the power: 30
+Metalzilla (P: 15) - H: 95
+Godzilla (P: 20) - H: 80
+Godzilla attacks Metalzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Godzilla has been vanquished.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set7. Detailed instructions for doing this are posted in Assignment 7.

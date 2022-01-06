@@ -1,0 +1,38 @@
+Imagine you own a bookstore and you want to keep track of all the books you have. Each book has its associated title, author, cost, and year it was published. What's the best way to store all of this information?
+
+Structure of Arrays
+Previously, our strategy would have been to store each piece of information separately and then create an array out of each variable.
+
+const int NUM_BOOKS = 100;
+string bookTitle[NUM_BOOKS];
+string bookAuthor[NUM_BOOKS];
+float bookCost[NUM_BOOKS];
+int bookYear[NUM_BOOKS];
+This strategy works, but can be error prone. If we want to get all of the information for book i, then we need to make sure we provide the correct index to every array. This organizational scheme is referred to as a Structure of Arrays.
+
+Meet the struct
+The struct allows us to group together related pieces of data and store them in a single data structure. Below is one of the examples from class.
+
+struct Height {
+    int feet;
+    int inches;
+};
+When we declare a new struct, we can then make new variables out of the new data type. Using the dot operator, we can then access the individual components of the struct.
+
+Height worldsTallestMan;
+worldsTallestMan.feet = 8;
+worldsTallestMan.inches = 11; // it's true!
+Array of Structures
+Armed with this new ability, we can now better organize our book data. For this lab we will need to do the following steps:
+
+Create a struct called Book
+A Book is made up of a title, author, cost, and publication year as described above
+Create an array of type Book that can store 5 books
+This organizational scheme is thus called an Array of Structures
+Have the user enter in all the information for each book
+Ask the user which number book they want the information for
+Print the corresponding book's information to the screen
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set5. Detailed instructions for doing this are posted in Assignment 5.
+

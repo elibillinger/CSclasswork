@@ -1,0 +1,55 @@
+Instructions
+Create a new project and call it Lab6A. One of the limitations of functions is that they can only return a single value. There are two ways we can solve this limitation - one involving Pass-by-Value and the other involving Pass-by-Reference.
+
+Pass-by-Value
+One workaround to this limitation is to create a struct. The limitation of the function is that they can return a single value. Well, a variable of a struct type is a single value - it just happens to be made up of subcomponents.
+
+To start, create a struct called CartesianPoint that contains two doubles named x and y. Then create a second struct called PolarCoordinate that conatins two doubles named radius and theta.
+
+Structures can be used with functions matching the following template:
+
+OutputStructType functionName( const InputStructType inParam );
+We will create two functions called polarToCartesianPBV and cartesianToPolarPBV that match this format. Begin by reviewing the Polar to Cartesian Conversion equations.
+
+Your program should first prompt the user which direction they wish to convert, either
+(r, θ) -> (x, y)
+or
+(x, y) -> (r, θ)
+Prompt the user to input the values on the left hand side, create the appropriate structure, and then call the corresponding function to compute the right hand side. Display these values to the user.
+
+Your functions must match the following specifications:
+
+Function Name: polarToCartesianPBV
+Input: PolarCoordinate passed by constant value corresponding to the polar coordinate
+Output: CartesianPoint
+Description: Converts polar (r, θ) to cartesian (x, y).
+
+Function Name: cartesianToPolarPBV
+Input: CartesianPoint passed by constant value corresponding to the cartesian location
+Output: PolarCoordinate
+Description: Converts cartesian (x, y) to polar (r, θ).
+
+Pass-by-Reference
+The other workaround to this limitation is to pass parameters by reference. When the function completes, the arguments corresponding to these parameters will contain the modified values. A generic function prototype would match the following template:
+
+void functionName( const dataType inParam1, const dataType inParam2, // input to the function
+                   dataType& outParam1, dataType& outParam2 );       // output from the function
+We will create two functions called polarToCartesianPBR and cartesianToPolarPBR that match this format.
+
+Your functions must match the following specifications:
+
+Function Name: polarToCartesianPBR
+Input: double passed by constant value corresponding to the radius, double passed by constant value corresponding to the angle, double passed by reference corresponding to the xCoord, double passed by reference corresponding to the yCoord
+Output: None
+Description: Converts polar (r, θ) to cartesian (x, y).
+
+Function Name: cartesianToPolarPBR
+Input: double passed by constant value corresponding to the xCoord, double passed by constant value corresponding to the yCoord, double passed by reference corresponding to the radius, double passed by reference corresponding to the angle
+Output: None
+Description: Converts cartesian (x, y) to polar (r, θ).
+
+Now when the user chooses a direction to convert, call and the display the results of your Pass-by-Value function and your Pass-by-Reference function. (Yes, you should print the same vales twice to confirm both functions are in agreement.)
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set6. Detailed instructions for doing this are posted in Assignment 6.

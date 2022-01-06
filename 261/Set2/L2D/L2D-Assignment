@@ -1,0 +1,33 @@
+Make a copy of Lab2C's main.cpp and place it as the starting point for Lab2D.
+
+Rock Paper Scissors Part III
+At the end of Lab2C, our program looked like follows:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: p
+
+Player choose Paper
+Computer choose Rock
+The final step of our game is to determine who actually won. This handy chart will be your guide.
+
+RPS Image
+Add a final line of output that prints a line following this pattern:
+
+X beats Y. Z wins!
+Where X and Y are one of "rock" or "scissors" or "paper" and Z is either "Human" or "Computer". Be sure to handle ties appropriately too. And now, we have a fully functioning Rock, Paper, Scissors game! Great job!
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: R
+
+Player choose Rock
+Computer choose Paper
+
+Paper beats Rock.
+Computer wins!
+Extra Credit! Rock, Paper, Scissors, Lizard, Spock
+For extra credit, expand your program to play a game of Rock, Paper, Scissors, Lizard, Spock. Feel free to practice a few games to fully understand what beats what. Below is the logic. You will notice there are more ways to win or lose and a smaller possibility to tie.
+
+RPS Image
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set2. Detailed instructions for doing this are posted in Assignment 2.

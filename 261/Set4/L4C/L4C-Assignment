@@ -1,0 +1,28 @@
+Loop Errors
+To gain more practice with loops, as well as provide experience to read/fix someone else's code.
+
+You will learn how the flow of control can be altered with different types of looping statements. You'll see the effect of braces in creating blocks of code, consider how complex boolean expressions are evaluated, and witness common pitfalls in programming conditional looping statements.
+
+Your task for this lab is to fix a program that has several loops and several errors.
+
+Instructions
+Create a new project and call it Lab4C. Once you have your empty main.cpp , open LoopErrors_main.cpp and copy the code to your main.cpp .
+
+The LoopErrors_main.cpp program, as it currently stands, contains a number of errors related to the learning objectives stated. Your task is to correct the program, describe the type of error(s) you found, and list all the different values you need to input to test all possible cases in each section of the program. You should write this information (errors found/corrected and test values) as a comment at the top of each program section.
+
+Compile and run the program. It is obviously not correct!
+
+For each section, you must correct the error or errors. To identify the errors, you may need to do some calculations. For example, if the program says it is calculating the sum of the numbers from 1 to 5 (inclusive), the result should be 15.
+
+The program contains some sections with infinite loops. Some infinite loops will cause a message to keep scrolling on your screen. For others, the cursor will just be blinking and nothing will appear (at least immediately) on your screen. You might want to challenge yourself to identify the infinite loops before you try to run the program. But running the program to see where the infinite loops occur is also acceptable.
+
+HINT: You may wish to comment out the code for all but one section at a time to ensure that section is working properly.
+
+NOTE: If you get help on any of these sections, BE SURE that you understand the answer. You may see questions similar to these on the exam.
+
+Test Cases
+For each section, you can assume you will have a smart user that will give a valid integer greater than 1. Your task is to use multiple inputs to verify that the calculations are correct. In the comments for each section, list the input and corresponding generated output that shows your loop is working as desired.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set4. Detailed instructions for doing this are posted in Assignment 4.

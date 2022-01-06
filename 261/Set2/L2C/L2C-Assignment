@@ -1,0 +1,47 @@
+Make a copy of Lab2B's main.cpp and place it as the starting point for Lab2C.
+
+Rock Paper Scissors Part II
+At the end of Lab2B, our program looked like follows:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose S
+Computer choose 1
+This could work, but it is somewhat cryptic. Will S beat 1? We don't know. We need to convert both players' choices into intelligble output. We'll start with the Human player first. Instead of printing back whatever the Human entered, we want to convert the single letter entered into the full word that it corresponds to.
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: S
+
+Player choose Scissors
+Computer choose 1
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: P
+
+Player choose Paper
+Computer choose 1
+Great! We're one third of the way there. Next, we'll decode what the Computer Player is doing. Instead of displaying 0, 1, or 2, your program should instead print Rock, Paper, or Scissors respectively. At this point, we now will know what each player has thrown:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: P
+
+Player choose Paper
+Computer choose Paper
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: P
+
+Player choose Paper
+Computer choose Scissors
+Wonderful, almost done! Since we are good little programmers, we know that our user may not always follow instructions exactly as we state. We want to handle the situation when the user accidently types a lower case letter. Now the Human Player can enter either R or r for rock, P or p for paper, and S or s for scissors. Your program will now be:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: p
+
+Player choose Paper
+Computer choose Rock
+And we're done with Part 2! On to the last part, Lab2D, to bring it all together.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set2. Detailed instructions for doing this are posted in Assignment 2.
+

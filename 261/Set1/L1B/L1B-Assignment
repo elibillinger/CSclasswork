@@ -1,0 +1,23 @@
+An Intro To ASCII Art
+
+Part 1 of Assignment 1 requires you to create your own ASCII Art to print to the screen. For this lab, you'll get more practice outputting information to the screen by creating creative pictures. You will need to follow the steps in Lab1A to create a new project and main.cpp file for this lab. This time, create a new folder called L1B.
+
+Your first task is to add the appropriate cout statements to print this tree to the screen:
+
+   *
+  ***
+ *****
+*******
+  ***
+Once the you are finished with the tree, add two blank lines and add additional statements to print what zyBooks calls a cat (I thought it was a rabbit).
+
+/\   /\
+  o o
+ =   =
+  ---
+Hint: A backslash \ in a string acts as an escape character, such as with a newline \n. So, to print an actual backslash, escape that backslash by prepending another backslash. Ex: The following prints a single backslash:
+
+cout << "\\";
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set1. Detailed instructions for doing this are posted in Assignment 1.

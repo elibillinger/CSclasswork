@@ -1,0 +1,50 @@
+Make a copy of Lab2D's main.cpp and place it as the starting point for Lab4A.
+
+Rock Paper Scissors Part IV
+At the end of Lab2D, we had a fully functioning rock-paper-scissors game. Now we want to modify our game so the user can continue to play another game if they choose. We will need to wrap our code from Lab2D in a while loop until the user says they don't want to play anymore. When the user says they don't want to play again, print out a nice message thanking them for playing.
+
+As the user continues to play, keep track of how many games the user won, lost, and tied. When the user stops playing, print out how many games were won, lost, and tied.
+
+A sample run of the program is shown below:
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: R
+
+Player choose Rock
+Computer choose Paper
+
+Paper beats rock.
+Computer wins!
+
+Do you want to play again? (Y/N) Y
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: R
+
+Player choose Rock
+Computer choose Paper
+
+Paper beats rock.
+Computer wins!
+
+Do you want to play again? (Y/N) Y
+
+Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)
+Player one: R
+
+Player choose Rock
+Computer choose Scissors
+
+Rock beats scissors.
+Player wins!
+
+Do you want to play again? (Y/N) N
+
+Thanks for playing!
+You won 1 game(s), lost 2 game(s), and tied 0 game(s).
+Congrats! We've now fully finished our Rock, Paper, Scissors game. See how many games you can play in a row without losing to the computer!
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set4. Detailed instructions for doing this are posted in Assignment 4.
+

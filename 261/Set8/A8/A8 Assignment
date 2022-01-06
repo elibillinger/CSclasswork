@@ -1,0 +1,43 @@
+The Purpose
+The purpose of this homework is to give you practice using objects of classes written by others. You can learn how to work with objects from others by looking at the member functions provided in the class.
+
+The Goal
+There are two parts to this assignment. First, you should refactor your class to only have private data members and a public interface using getters/setters as necessary. If your class uses helper functions, then make sure they are appropriately declared as private so a user cannot inadvertantly call one of them. Be sure to add const where appropriate for all functions and parameters do not modify the corresponding values.
+
+Second, you must acquire three other magic items from your classmates to use (see the next section). Include their .h and .cpp files into your project. Then in your main.cpp create objects of these new classes. You can then present the user with a menu as to which magic item they want to use or use all four in sequence.
+
+Code Sharing
+Before sharing your "magic item" class with another, you should include your name in both files associated with your "magic item" class. In other words, your "magic item" class is your work; make sure you take credit for it!
+
+In your main.cpp file, also include all names of people you shared your "magic item" class with.
+
+If you are interested in having others use your awesome "magic item" class, feel free to post an advertisement on Piazza (with your email address so students can contact you for a copy of your code). However, you must follow these rules:
+
+Do NOT post your "magic item" class source code on Piazza.
+Do NOT share your main.cpp file. ONLY share your MagicItem.h and MagicItem.cpp files.
+Post your advertisement as a NOTE (not a question). Any advertisements posted as a question will be deleted.
+Functional Requirements
+To receive full credit, the following requirements must be met:
+
+Your "magic item" class should have at least two data members and, in addition to constructors and getter/setter functions, at least three other member functions. One of these other functions should be an introduction() function that tells the user how to use the "magic item" to win a prize.
+Both files associated with your "magic item" class should include your name.
+Your main.cpp must use at least three "magic items" written by others (in addition to your own), as well as let the user know whether he/she won the prize.
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+2	All labs completed and submitted
+L8A
++2	L8A Extra Credit.
+4	Original class has private data members and public interface.
+4	Original class uses const appropriately.
+4	Original class uses private helper functions appropriately.
+3	Three other classes included.
+3	Three other objects created in main.
+3	Three other objects used appropriately.
+3	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+26	Total Points

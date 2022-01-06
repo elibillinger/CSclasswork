@@ -1,0 +1,155 @@
+As you will learn, we LOVE triangles in this class. (And I particularly love them in the computer graphics class). Get ready to learn more than you'll ever want to about geometry and triangles.
+
+Instructions: Part I - Classify Their Triangle
+Write code to first read three real value measurements, i.e., your program should prompt the user to enter the three real values (which should be stored as three double variables). Once done, write code to determine whether the three real value measurements make a triangle. If yes, your program should tell the user whether the triangle is a right, acute, or obtuse triangle (see hints below). If no, your program should politely terminate with an appropriate error message.
+
+The user should be allowed to enter the three real values in any order; in other words, your program should not assume any particular input order such as ascending or descending.
+
+
+Hints
+A triangle is possible IFF each side is smaller than the sum of the others.
+To classify a triangle, first you need to determine which of the three sides is the longest. The variable names a, b, and c are often used for the sides of a triangle, with c being the longest. If c is the longest side of the triangle, then the triangle is a right triangle if (and only if) a2 + b2 == c2.
+Due to the imprecise nature of double variables, you cannot directly compare two double variables with the == operator. Instead, you should do the comparison using a TOLERANCE constant (e.g., TOLERANCE == 0.0001) in the following way:
+// The fabs function (defined in cmath) returns the
+//   absolute value of a given floating point number.
+// Thus, if the following equation is true, then we assume a2 + b2 == c2.
+//   fabs(a2 + b2 - c2) <= TOLERANCE
+The TOLERANCE constant represents the error we are willing to accept when comparing two double values for equality; in other words, if two values are different by TOLERANCE (or less), then we consider the two values as equivalent. In your program, declare a TOLERANCE constant and set it to 0.0001.
+You must check to see if the triangle is a right triangle first; otherwise you may be classifying a right triangle as acute or obtuse by mistake.
+If the triangle is not right, you should then check whether if it is acute (i.e., a2 + b2 > c2).
+Otherwise, if the triangle is not right or acute, then you can say the triangle is obtuse (i.e., a2 + b2 < c2)
+Test Values
+Here are some known input/output values that you can test against. Be sure to try your own to verify the code works!
+
+
+Inputs	Classification	Purpose of Test
+3 4 5	Right	Known Right Triangle
+5 12 13	Right	Known Right Triangle
+5 5 9	Obtuse	Known Obtuse Triangle
+5 5 1	Acute	Known Acute Triangle
+Sides are not in increasing order
+Two sides share the longest length
+5 1 5	Acute	Known Acute Triangle
+Sides are not in increasing order
+Two sides share the longest length
+1 1 1	Acute	Known Acute Triange
+All sides share the longest length
+0.1 0.1 0.1	Acute	Known Acute Triange
+All sides share the longest length
+Sides are floating point values
+1 2 3	Not a Triangle	Invalid triangle. a + b > c fails
+3 4 0	Not a Triangle	Invalid triangle. One side has a zero length
+-3 -4 -5	Not a Triangle	Invalid triangle. All sides have negative lengths (even though
+a2 + b2 = c2 would still hold.)
+
+Instructions: Part II - Triangle Stats
+If the result of Part I determines we do have a valid triangle, then we will continue to print out some stats about our triangle. We first will want to print out the three sides in increasing order. Then, we will print out both the perimeter and area of the triangle.
+
+Hints
+Perhaps there is an easy way to compute the area knowing only the side lengths...
+Test Values
+Here are some known input/output values that you can test against. Be sure to try your own to verify the code works!
+
+
+Inputs	Classification	Perimeter	Area	Purpose of Test
+3 5 4	Right	12	6	Known Right Triangle
+Sides are not in increasing order
+13 12 5	Right	30	30	Known Right Triangle
+Sides are not in increasing order
+5 5 9	Obtuse	19	9.8075	Known Obtuse Triangle
+5 5 1	Acute	11	2.4875	Known Acute Triangle
+Sides are not in increasing order
+Two sides share the longest length
+5 1 5	Acute	11	2.4875	Known Acute Triangle
+Sides are not in increasing order
+Two sides share the longest length
+1 1 1	Acute	3	0.433	Known Acute Triangle
+All sides share the longest length
+0.1 0.1 0.1	Acute	0.3	0.004	Known Acute Triange
+All sides share the longest length
+Sides are floating point values
+1 2 3	Not a Triangle			Invalid triangle. a + b > c fails
+3 4 0	Not a Triangle			Invalid triangle. One side has a zero length
+-3 -4 -5	Not a Triangle			Invalid triangle. All sides have negative lengths (even though
+a2 + b2 = c2 would still hold.)
+
+Instructions: Part III - Randomize The Triangle
+Now for the tricky part. We are going to go back and edit what we did at the very beginning. Initially, the user was entering the length of the three sides. Instead, we want to ask the user to enter the first two sides of a triangle. We then need our program to generate a third random real side length that results in a valid triangle. Given the hints above, what can the minimum and maximum possible values be? The rest of the program will then proceed as before using the randomly generated value.
+
+
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+2	All code submitted properly.
+8	All labs completed and submitted
+L2A, L2B, L2C, L2D
++2	L2D Extra Credit.
+2	In Class Exercise completed.
+2	Programming Lab 2 completed through AutoGrader.
+5	Triangle side length computed as random floating point values.
+6	Triangle properly classified.
+3	Triangle stats printed properly.
+2	(1) Comments used.
+(2) Coding style followed.
+(3) Appropriate variable names, constants, and data types used.
+(4) Instructions followed.
+30	Total Points
+
+This assignment is due by Tuesday, February 04, 2020, 11:59 PM.
+As with all assignments, this must be an individual effort and cannot be pair programmed. Any debugging assistance must be provided in accordance with the course collaboration policy.
+Do not forget to complete the following labs with this set: L2A, L2B, L2C, L2D .
+Do not forget to complete the Programming Lab for this set.
+
+Submission
+Always, always, ALWAYS update the header comments at the top of your main.cpp file. And if you ever get stuck, remember that there is LOTS of help available. The following instructions are copied from How to Submit Homework.
+
+
+It is critical that you follow these steps when submitting homework.
+
+If you do not follow these instructions, your assignment will receive a major deduction. Why all the fuss? Because we have several hundred of these assignments to grade, and we use computer tools to automate as much of the process as possible. If you deviate from these instructions, our grading tools will not work. And that makes us very unhappy. And when we're unhappy, we give penalties. Thus, make us happy.
+
+Submission Instructions
+
+Here are step-by-step instructions for submitting your homework properly:
+File and folder names are extremely important in this process. Please double-check carefully, to ensure things are named correctly.
+The top-level folder of your project must be named Set2
+Inside Set2, create 5 sub-folders that are required for this Set. The name of each sub-folder is defined in that Set (e.g. L2A, L2B, L2C, L2D, and A2).
+Copy your main.cpp into the subdirectories of Set2 (steps 1-2), zip this Set2 folder (steps 3-4), and then submit the zipped file (steps 5-11) to Canvas.
+For example, when you zip/submit Set2, there will be 5 sub-folders called L2A, L2B, L2C, L2D, and A2 inside the Set2 folder, and each of these sub-folders will have a file called main.cpp and nothing else.
+
+Using Windows Explorer (not to be confused with Internet Explorer), find the file named "main.cpp" located inside the folder for the particular lab or homework assignment you will submit.
+
+STOP: Are you really sure you are viewing the correct assignment's folder?
+
+Now, for A2, right click on the main.cpp to copy the file. Then, return to the Set2/A2 folder and right click to paste the file. In other words, put a copy of your homework's main.cpp source code into the Set2/A2 folder.
+
+Follow the same steps for L2A, to put a copy of your lab's main.cpp into the Set2/L2A folder. Repeat this process for Set2/L2B, Set2/L2C, Set2/L2D.
+
+STOP: Are you sure your Set2 folder now has all your code to submit?
+
+Now, right-click on the "Set2" folder.
+In the pop-up menu that opens, move the mouse "Send to..." and expand the sub-menu.
+In the sub-menu that opens, select "Compressed (zipped) folder".
+
+STOP: Are you really sure you are zipping a Set2 folder with sub-folders that each contain a main.cpp file in it?
+
+After the previous step, you should now see a "Set2.zip" file.
+
+Now visit the Canvas page for this course and click the "Assignments" button in the sidebar.
+
+Find Set2, click on it, find the "Submit Assignment" area, and then click the "Choose File" button.
+
+Find the "Set2.zip" file created earlier and click the "Open" button.
+
+STOP: Are you really sure you are selecting the right homework assignment? Are you double-sure?
+
+WAIT! There's one more super-important step. Click on the blue "Submit Assignment" button to submit your homework.
+
+No, really, make sure you click the "Submit Assignment" button to actually submit your homework. Clicking the "Choose File" button in the previous step kind of makes it feel like you're done, but you must click the Submit button as well! And you must allow the file time to upload before you turn off your computer!
+
+Canvas should say "Submitted!". Click "Submission Details" and you can download the zip file you just submitted. In other words, verify you submitted what you think you submitted!
+In summary, you must zip the "Set2" folder and only the "Set2" folder, this zip folder must have several sub-folders, you must name all these folders correctly, you must submit the correct zip file for this homework, and you must click the "Submit Assignment" button. Not doing these steps is like bringing your homework to class but forgetting to hand it in. No concessions will be made for incorrectly submitted work. If you incorrectly submit your homework, we will not be able to give you full credit. And that makes us unhappy.
+
+

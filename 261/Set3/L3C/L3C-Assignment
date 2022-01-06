@@ -1,0 +1,26 @@
+At the end of Lab3B, we generated output that was formatted like below:
+
+-15.15 * 82.311 = -1247.01
+Which works, but we'd like to be more precise and make values easier to read. Specifically, we want to always display three decimal places and align the decimal points when outputting the results.
+
+Instructions
+
+Using the appropriate I/O manipulators, modify your program from Lab3B to match the following output exactly (with specific numbers replaced to match your prior output):
+
+
+    -15.150
+*    82.311
+===========
+  -1247.012
+You'll need to use a combination of I/O manipulators and turn settings on/off to accomplish this task. Do not make the padding by outputting spaces. Instead, be sure to be setting an appropriate width for the column. This also applies to the row dividers. The tildes should not be hard coded in, but instead the appropriate I/O manipulators need to be used. For instance, the following is incorrect:
+
+cout << "    " << A << "\n*    " << B << "\n===========\n  "  << A*B << endl;
+Note that the extra spaces and all the equal signs are hard coded in. Instead, we'll want to use the appropriate width, align, and fill I/O manipulators.
+
+Extra Credit
+
+For extra credit, print the formatted output to both the standard out (cout) and to an external file.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set3. Detailed instructions for doing this are posted in Assignment 3.

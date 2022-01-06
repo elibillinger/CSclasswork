@@ -1,0 +1,167 @@
+For this assignment you will do some simple image processing to create some pretty cool effects!
+
+Colors
+Computers represent colors as a combination of three individual colors: red, green, and blue. These values correspond to an additive color space in which some combination of red and green creates yellow. If you wish to know more about the RGB color space, head over to Wikipedia.
+
+We will create a struct named Pixel to store the three components red, green, and blue all as integers. We can then create a variable of this new struct type to store the values that represent a color.
+
+PPM Image Format
+An image is an ordered arrangement of pixels. The pixels are arranged into a 2D matrix with some number of rows and columns. Each pixel is made up of a combination of red, green, and blue as described above.
+
+There are many different formats that an image can be represented in. PPM (Portable PixMap) is one of the simplest image formats and all of the image information is stored in an ASCII text file.
+
+A sample PPM file is shown below as viewed in a text editor:
+
+P3
+4 4
+255
+  0 0   0   100   0   0   0  0   0   255   0 255
+  0 0   0     0 255 175   0  0   0     0   0   0
+  0 0   0     0   0   0   0 15 175     0   0   0
+255 0 255     0   0   0   0  0   0   255 255 255
+The first value denotes the type of the PPM image - this will always be P3.
+
+The next two values denote the width and height of the image - these will always be integers.
+
+The next value denotes the maximum value of each color - this will always be an integer.
+
+After that there will be height*width*3 values which correspond to the R G B values of each pixel in the image. The values are presented going across a row and then down the image.
+
+The above example corresponds to the following image when viewed in an image viewing program:
+
+sample RGB PPM image
+Luckily for us, if you open a PPM file in CLion it will show the visual representation of the image. If you open the same PPM file in NotePad (or TextEdit on Mac), then you will see the ASCII text representation of the image.
+
+Instructions
+For this assignment, we will write a program to read in a PPM file, manipulate it, and then output a new PPM file.
+
+Begin by making the struct to correspond to a single Pixel as described above. We will need this to create the image matrix. Next, create the 2D structure to store all of the Pixels. Here we will need to use vectors instead of an array because the matrix size will vary based on the input file. Create an empty vector of vectors of Pixels. The outer vector will correspond to each row of the image. The inner vector will correspond to each column of a row. This is created by:
+
+vector< vector< Pixel > > image;
+Pay special attention to the space inbetween > >. Without that space, the compiler will interpret this symbol as our extraction operator and throw a compiler error.
+
+Now we're ready to start reading in the file.
+
+We will first prompt the user to enter the filename of the image they wish to open. Open a file stream for this filename and ensure the file stream opened. We're now ready to read data!
+
+We'll need to read the first four values (a string and three integers) to know the information about our image. Once we have the height and width of the image, we can create nested for loops to read all of the pixel data. As a hint, a general structure/pseudocode is given below.
+
+create image matrix
+for each row
+    create a row
+    for each column
+        create a pixel
+        read in pixel information
+        add pixel to row
+    add row to image
+A sample PPM image for you to use is provided here: wallpaper.ppm. The image is shown below.
+
+RGB Wallpaper
+A second PPM image for you to use is provided here: brick.ppm. Be sure your program is flexible to work with any PPM image that may be provided.
+
+Now that the file is read in and stored in our vector, prompt the user to enter which image manipulation they wish to perform:
+
+Convert to grayscale
+Invert the colors
+Regardless of the user choice, we will write out a new PPM file in the format specified above.
+
+Details on each manipulation are given below. When you write out the individual pixel color values to the file, apply the appropriate conversion to the corresponding pixel.
+
+Convert to Grayscale
+Name the new image file basefilename_grayscale.ppm. For instance, if the user entered wallpaper.ppm then you would create a new file named wallpaper_grayscale.ppm.
+
+To convert a color to grayscale, we want to average the three RGB values together and create a new pixel where all three values are equal to the average. However, we don't want to just do (R+G+B)/3 because this doesn't model how the colors appear in real life. Instead we will use a weighted average. Use the following equation to compute the grayscale intensity to apply for an individual pixel:
+
+gray = 0.2989 * red + 0.5870 * green + 0.1140 * blue
+The wallpaper image converted to grayscale is shown below.
+
+Grayscale Wallpaper
+Invert the colors
+Name the new image file basefilename_inverted.ppm. For instance, if the user entered wallpaper.ppm then you would create a new file named wallpaper_inverted.ppm.
+
+When we invert a color, we need to find its complement (hey, nice color!). This is done by subtracting each color component from the max possible value.
+
+The wallpaper image with inverted colors is shown below.
+
+Inverted Wallpaper
+Extra Credit!
+Now that your two image processing techinques are working, experiment with your own! Flip the image along the X and/or Y axis. Blur the image. Detect edges with the image. The possibilities are endless! Try coming up with your own image filter.
+
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+10	All labs completed and submitted
+L5A, L5B, L5C, L5D, L5E
+2	Programming Lab 5 completed in AutoGrader.
+3	struct created correctly.
+1	User enters image filename and processing to apply.
+3	Image read from file properly.
+3	Image stored in vector properly (DO NOT use an array).
+3	Image written to file properly.
+2	Grayscale conversion calculated properly.
+2	Color inversion calculated properly.
+1	Public test images generate correct results.
+2	Private test images generate correct results.
++2	A5 Extra Credit: Additional image filter applied.
+2	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+34	Total Points
+
+This assignment is due by Thursday, March 12, 2020 11:59 PM.
+As with all assignments, this must be an individual effort and cannot be pair programmed. Any debugging assistance must be provided in accordance with the course collaboration policy.
+Do not forget to complete the following labs with this set: L5A, L5B, L5C, L5D, L5E .
+Do not forget to complete the Programming Lab for this set.
+
+Submission
+Always, always, ALWAYS update the header comments at the top of your main.cpp file. And if you ever get stuck, remember that there is LOTS of help available. The following instructions are copied from How to Submit Homework.
+
+
+It is critical that you follow these steps when submitting homework.
+
+If you do not follow these instructions, your assignment will receive a major deduction. Why all the fuss? Because we have several hundred of these assignments to grade, and we use computer tools to automate as much of the process as possible. If you deviate from these instructions, our grading tools will not work. And that makes us very unhappy. And when we're unhappy, we give penalties. Thus, make us happy.
+
+Submission Instructions
+
+Here are step-by-step instructions for submitting your homework properly:
+File and folder names are extremely important in this process. Please double-check carefully, to ensure things are named correctly.
+The top-level folder of your project must be named Set5
+Inside Set5, create 6 sub-folders that are required for this Set. The name of each sub-folder is defined in that Set (e.g. L5A, L5B, L5C, L5D, L5E, and A5).
+Copy your main.cpp into the subdirectories of Set5 (steps 1-2), zip this Set5 folder (steps 3-4), and then submit the zipped file (steps 5-11) to Canvas.
+For example, when you zip/submit Set5, there will be 6 sub-folders called L5A, L5B, L5C, L5D, L5E, and A5 inside the Set5 folder, and each of these sub-folders will have a file called main.cpp and nothing else.
+
+Using Windows Explorer (not to be confused with Internet Explorer), find the file named "main.cpp" located inside the folder for the particular lab or homework assignment you will submit.
+
+STOP: Are you really sure you are viewing the correct assignment's folder?
+
+Now, for A5, right click on the main.cpp to copy the file. Then, return to the Set5/A5 folder and right click to paste the file. In other words, put a copy of your homework's main.cpp source code into the Set5/A5 folder.
+
+Follow the same steps for L5A, to put a copy of your lab's main.cpp into the Set5/L5A folder. Repeat this process for Set5/L5B, Set5/L5C, Set5/L5D, Set5/L5E.
+
+STOP: Are you sure your Set5 folder now has all your code to submit?
+
+Now, right-click on the "Set5" folder.
+In the pop-up menu that opens, move the mouse "Send to..." and expand the sub-menu.
+In the sub-menu that opens, select "Compressed (zipped) folder".
+
+STOP: Are you really sure you are zipping a Set5 folder with sub-folders that each contain a main.cpp file in it?
+
+After the previous step, you should now see a "Set5.zip" file.
+
+Now visit the Canvas page for this course and click the "Assignments" button in the sidebar.
+
+Find Set5, click on it, find the "Submit Assignment" area, and then click the "Choose File" button.
+
+Find the "Set5.zip" file created earlier and click the "Open" button.
+
+STOP: Are you really sure you are selecting the right homework assignment? Are you double-sure?
+
+WAIT! There's one more super-important step. Click on the blue "Submit Assignment" button to submit your homework.
+
+No, really, make sure you click the "Submit Assignment" button to actually submit your homework. Clicking the "Choose File" button in the previous step kind of makes it feel like you're done, but you must click the Submit button as well! And you must allow the file time to upload before you turn off your computer!
+
+Canvas should say "Submitted!". Click "Submission Details" and you can download the zip file you just submitted. In other words, verify you submitted what you think you submitted!
+In summary, you must zip the "Set5" folder and only the "Set5" folder, this zip folder must have several sub-folders, you must name all these folders correctly, you must submit the correct zip file for this homework, and you must click the "Submit Assignment" button. Not doing these steps is like bringing your homework to class but forgetting to hand it in. No concessions will be made for incorrectly submitted work. If you incorrectly submit your homework, we will not be able to give you full credit. And that makes us unhappy.

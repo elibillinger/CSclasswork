@@ -1,0 +1,51 @@
+Instructions
+For this lab, your task is to first define a NxM matrix (e.g. two-dimensional array). Then you should prompt the user to enter the values for the matrix. Your program should be able to work with any values of N and M (i.e. declare N and M, or more clearly stated, your ROWS and COLUMNS as constants at the beginning of your program).
+
+Once the user has entered in all the values, print the matrix back to the user. Be sure to align the values so the matrix is easily readable by the user.
+
+Now define a new matrix of size MxN to represent the transpose. Store the transpose of the user's matrix and then print the transposed matrix to the user.
+
+An example run with output is shown below:
+
+Welcome to the Matrix Calculator! 
+	
+Please enter a 4x3 matrix:
+
+Enter Row 1 Column 1: 5
+Enter Row 1 Column 2: 5
+Enter Row 1 Column 3: 5
+
+Enter Row 2 Column 1: 1
+Enter Row 2 Column 2: 2
+Enter Row 2 Column 3: 3
+
+Enter Row 3 Column 1: 10
+Enter Row 3 Column 2: 2
+Enter Row 3 Column 3: 4
+
+Enter Row 4 Column 1: 2
+Enter Row 4 Column 2: 2
+Enter Row 4 Column 3: 2
+	
+The matrix you entered is:
+[   5   5   5 ]
+[   1   2   3 ]
+[  10   2   4 ]
+[   2   2   2 ]
+	
+The transpose of the matrix is:
+[   5   1  10   2 ]
+[   5   2   2   2 ]
+[   5   3   4   2 ]
+	
+Have a nice day!
+Hints
+1D Arrays and a for Loop work well together.
+2D Arrays and two for Loops work well together.
+Functional Requirements
+Define constants to keep track of the number of ROWS and COLUMNS. Do not prompt the user for what size matrix they want to work with, they'll also input N rows and M columns.
+Your program should be flexible to work with any number of ROWS and COLUMNS. That is, by changing the values of your ROWS and COLUMNS constants and recompiling, the rest of your program should adjust as appropriate to handle the correct number of elements.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set5. Detailed instructions for doing this are posted in Assignment 5.
+

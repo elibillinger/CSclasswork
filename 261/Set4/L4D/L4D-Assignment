@@ -1,0 +1,61 @@
+Input Paradigms
+As discussed in class, input files can have one of several common formats. In this lab we will work with two common formats:
+
+Counter-Controlled: The first line corresponds to the number of records to follow. The next n lines contain each record.
+Sentinel-Controlled: The last line corresponds to the end of records.
+Instructions
+
+First, download the following two files for use with this lab:
+
+counter_controlled.txt - The first line is an integer denoting how many records follow. Each subsequent line then contains a floating point number.
+sentinel_controlled.txt - Each line contains a floating point number. The last line is denoted by -9999. Use an error threshold of 10-6 when comparing for equality.
+In your program, you will need to ask the user which type of file they would like to process. Then open the corresponding file and calculate the average value in the file.
+
+For the Counter-Controlled file, you will need to use a for loop to read the file. Think about why a for loop makes the most sense.
+
+For the Sentinel-Controlled file, you will need to use a while loop to read the file. Think about why a while loop makes the most sense.
+
+The two sample run outputs are shown below:
+
+Which file would you like to open?
+1. Counter Controlled
+2. Sentinel Controlled
+> 1
+There are 10 values in the file.
+The values in the file are:
+1.5
+2.7
+3.5
+5.3
+9.2
+6.6
+3.7
+11.3
+0.5
+5.0
+The average is 4.93.
+Which file would you like to open?
+1. Counter Controlled
+2. Sentinel Controlled
+> 2
+The values in the file are:
+1.5
+2.7
+3.5
+5.3
+9.2
+6.6
+3.7
+11.3
+0.5
+5.0
+There are 10 values in the file.
+The average is 4.93.
+Take note that in the Counter-Controlled example we first print the number of records THEN all the values. In the Sentinel-Controlled example we first print all the values THEN the number of records.
+
+You can assume a smart user and that the files are well formed.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set4. Detailed instructions for doing this are posted in Assignment 4.
+

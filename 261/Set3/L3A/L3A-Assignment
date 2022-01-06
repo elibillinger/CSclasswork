@@ -1,0 +1,59 @@
+Concepts
+The focus of this lab is on one concept: how to write data to an "output file stream" or ofstream object.
+
+Working with Data
+Today's class discussed how data is often treated as "streams" of information that can be written a piece at a time. The files we will write in CSCI 261 are simple text files; for lab today, the simple text file will contain a series of characters. Remember that whenever you work with a file stream as output, we call them ofstream objects.
+
+There will always be four things you will do whenever working with an ofstream.
+
+Open the file
+Check for an error
+Write its data
+Close the file
+The typical pattern for this is as follows:
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    // declare ofstream object and open the file
+    ofstream myCatsAges("filename");
+
+    // check for an error
+    if ( myCatsAges.fail() ) {
+        cerr << "Error opening output file";
+        return -1;
+    }
+
+    // write the data
+    myCatsAges << 5 << endl;
+    myCatsAges << 8 << endl;
+
+    // close the file
+    myCatsAges.close();
+
+    return 0;
+}
+Remember, once you have an ofstream object (like myCatsAges shown above) you use it in a manner similar to using cout .
+
+Instructions
+
+For this lab, write a program that first generates two random decimal numbers within the range -100 to 100 inclusive. Next, generate a random number between 1 and 4 inclusive to correspond to each of our math operators (+, -, *, /). Finally, write out to a file called mathWorksheet.txt the following format:
+
+A o B = ?
+With A and B replaced by the two random numbers that were generated and o replaced by the random math operator. A complete example is shown below:
+
+-15.15 * 82.311 = ?
+In Lab3B, we will write a program to solve this randomized problem.
+
+CLion Setup
+Where is the output file
+After you run your program, you may wonder "hmm, where did the file I just wrote to go?". Well, if you expand the cmake-build-debug folder, then you will see the file you created. This is ok, but not our preferred location. We would much rather have the resulting file be placed at the same level as our main.cpp.
+
+To do so, we need to tell CLion where we would like files placed. This can be found from going to Run > Edit Configurations. In the pop up window that appears, we want to set the Working Directory to be the path to the folder that our main.cpp file is located in. We can set this by telling CLion to go to the parent directory, denoted by ../ (two periods). Hit Apply and OK, then rerun the program. You will now see the file created next to main.cpp.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set3. Detailed instructions for doing this are posted in Assignment 3.
+

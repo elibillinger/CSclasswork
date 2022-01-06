@@ -1,0 +1,302 @@
+In this homework, we will focus on arrays, vectors, strings, File I/O, and Functions!
+
+Overview
+Have you ever finished a book and wondered, "Geez, I wonder how many times each word occurs in this text?" No? This assignment illustrates a fundamental use of the array & vector: storing related values in a single data structure, and then using that data structure to reveal interesting facts about the data.
+
+For this assignment, you will read in a text file containing the story Green Eggs and Ham. You will then need to count the number of occurrences of each word & letter and display the frequencies. You'll be amazed at the results!
+
+The Specifics
+For this assignment, download the A6 code pack. This zip file contains several files:
+
+main.cpp - the predetermined main.cpp. This file shows the usage and functionality that is expected of your program. You are not allowed to edit this file. You will not be submitting this file with your assignment.
+CMakeLists.txt - the preset CMake file to build with your functions files.
+input/greeneggsandham.txt - the contents of Green Eggs and Ham in text format.
+input/aliceChapter1.txt - the first chapter of Alice in Wonderland in text format.
+output/greeneggsandham.out - the expected output when running your program against the greeneggsandham.txt file
+output/aliceChapter1.out - the expected output when running your program against the aliceChapter1.txt file
+The contents of main.cpp are shown below:
+
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+#include "functions.h"
+
+int main() {
+    // open file for parsing
+    string filename = promptUserForFilename();
+    ifstream fileIn;
+    if( !openFile(fileIn, filename) ) {
+        cerr << "Could not open file \"" << filename << "\"" << endl;
+        cerr << "Shutting down" << endl;
+        return -1;
+    }
+
+    // read all the words in the file
+    vector<string> allWords = readWordsFromFile( fileIn );
+    fileIn.close();
+    cout << "Read in " << allWords.size() << " words" << endl;
+
+    // clean the words to remove punctuation and convert to uppercase
+    removePunctuation(allWords, "?!.,;:\"()_");
+    capitalizeWords(allWords);
+
+    // find only the unique words in the file
+    vector<string> uniqueWords = filterUniqueWords(allWords);
+    cout << "Encountered " << uniqueWords.size() << " unique words" << endl;
+
+    // put the words in to alphabetical order
+    alphabetizeWords( uniqueWords );
+
+    // count the number of occurrences of each word
+    vector<unsigned int> uniqueWordCounts = countUniqueWords(allWords, uniqueWords);
+
+    // pretty print the unique words and their corresponding counts
+    printWordsAndCounts(uniqueWords, uniqueWordCounts);
+
+    // count the occurrences of every letter in the entire text
+    unsigned int letters[26] = {0};
+    countLetters(letters, allWords);
+    printLetterCounts(letters);
+
+    // print statistics on word and letter frequencies
+    printMaxMinWord(uniqueWords, uniqueWordCounts);
+    printMaxMinLetter(letters);
+
+    return 0;
+}
+Take note how the program now reads as a series of subtasks and the provided comments are redundant. The code is "self documenting" with the function names providing the steps that are occurring. Your task is to provide the implementations for all of the referenced functions. You will need to create two files: functions.h and functions.cpp to make the program work as intended.
+
+You will want to make your program as general as possible by not having any assumptions about the data hardcoded in. Two public input files have been supplied with the starter pack. We will run your program against a third private input file.
+
+Function Requirements
+The requirements of each function are given below. The input, output, and task of each function is described. The functions are:
+
+promptUserForFilename()
+openFile()
+readWordsFromFile()
+removePunctuation()
+capitalizeWords()
+filterUniqueWords()
+alphabetizeWords()
+countUniqueWords()
+printWordsAndCounts()
+countLetters()
+printLetterCounts()
+printMaxMinWord()
+printMaxMinLetter()
+promptUserForFilename()
+Input: None
+
+Output: A string
+
+Task: Prompt the user to enter a filename.
+
+openFile()
+Input: (1) The input file stream (2) The string filename to open
+
+Output: True if the file successfully opened, False if the file could not be opened
+
+Task: Open the input file stream for the corresponding filename. Check that the file opened correctly. The string filename will remain unchanged.
+
+readWordsFromFile()
+Input: The input file stream
+
+Output: A vector of strings
+
+Task: Read all of the words that are in the filestream and return a list of all the words in the order present in the file.
+
+removePunctuation()
+Input: (1) A vector of strings (2) A string of all the punctuation characters to remove
+
+Output: None
+
+Task: For each word in the vector, remove all occurrences of all the punctuation characters denoted by the punctuation string. When complete, the input vector will now hold all the words with punctuation removed. The punctuation string will remain unchanged.
+
+capitalizeWords()
+Input: A vector of strings
+
+Output: None
+
+Task: For each word in the vector, convert each character to its upper case equivalent. When complete, the input vector will now hold all the words capitalized.
+
+filterUniqueWords()
+Input: A vector of strings
+
+Output: A vector of strings
+
+Task: The function will return only the unique words present in the input vector. The output vector will not contain any duplicate words.
+
+alphabetizeWords()
+Input: A vector of strings
+
+Output: None
+
+Task: Sort the strings in the input vector alphabetically. When complete, the input vector have the same length and contents but reordered so that the contents are in alphabetical order.
+
+countUniqueWords()
+Input: (1) A vector of strings representing all of the words in the file (2) A vector of strings representing only the unique words in the file
+
+Output: A vector of unsigned integers
+
+Task: For every unique word in the list, count the number of occurrences the unique word is present in the full text. Return a vector of all the counts. Each position in the vector of counts corresponds to the same position in the unique word list. The vector of counts will have the same size as the vector of unique words. Upon completion, neither input vector will be modified.
+
+printWordsAndCounts()
+Input: (1) A vector of strings (2) A vector of unsigned integers
+
+Output: None
+
+Task: For each word and count in the vectors, print out the word and its corresponding count. Upon completion, the two vectors will remain unchanged. Format the output as follows:
+
+#P : ABCDEF : #C
+Notice how there are three columns separated by :. We want the : aligned in every row and the values aligned in each column. The columns correspond to the following values:
+
+#P - The position the word in the list. Begin at 1. Right align all values. Allocate enough space for the length of the last position. (If there are less than 10 numbers, then we need only 1 space. If there are less than 100 numbers, then we need only 2 spaces. And so on. Assume there will be at most 109 unique words.)
+ABCEDF - The unique word. Left align all values. Allocate enough space for the longest word present in the list.
+#C - The corresponding count of the unique word. Right align all values. Allocate enough space for the length of the largest number. (Assume there will be at most 109 unique words.)
+An example with actual values is shown below:
+
+1 : BIRTHDAY : 4
+2 : BJORNE   : 1
+3 : HAPPY    : 4
+4 : TO       : 4
+5 : YOU      : 3
+Refer to the expected output files for longer examples on the expected formatting.
+
+countLetters()
+Input: (1) An array of 26 unsigned integers (2) A vector of strings
+
+Output: None
+
+Task: Count the number of occurrences of each letter present in all words. Each position of the array corresponds to each letter as ordered by the English alphabet. Upon completion, the array will hold the counts of each letter and the vector of strings will remain unchanged.
+
+printLetterCounts()
+Input: An array of 26 unsigned integers
+
+Output: None
+
+Task: For each letter, print out the letter and its corresponding count. Format the output as follows:
+
+A : #C
+B : #C
+...
+Y : #C
+Z : #C
+Notice how there are two columns separated by :. We want the : aligned in every row and the values aligned in each column. The columns correspond to the following values:
+
+A - The letter
+#C - The corresponding count of the letter. Right align all values. Allocate enough space for the length of the largest number. (Assume there will be at most 109 unique words.)
+An example with actual values is shown below:
+
+A :  8
+B :  5
+C :  0
+D :  4
+E :  1
+F :  0
+G :  0
+H :  8
+I :  4
+J :  1
+K :  0
+L :  0
+M :  0
+N :  1
+O :  8
+P :  8
+Q :  0
+R :  5
+S :  0
+T :  8
+U :  3
+V :  0
+W :  0
+X :  0
+Y : 11
+Z :  0
+Refer to the expected output files for longer examples on the expected formatting.
+
+printMaxMinWord()
+Input: (1) A vector of strings (2) A vector of unsigned integers
+
+Output: None
+
+Task: Print out the two words that occur least often and most often. If there is more than one word that occurs the same number of times, print the one that comes first alphabetically. Upon completion, both input vectors will remain unchanged. Print out the following pieces of information:
+
+The word
+The number of occurrences
+The frequency of appearance as a percentage to 3 decimal places
+Format the output as follows:
+
+Least Frequent Word: ABCDEF #C (#P%)
+Most Frequent Word:  ABCDEF #C (#P%)
+Notice how there are three columns of values. The columns correspond to the following values:
+
+ABCEDF - The word. Left align all values. Allocate enough space for the longer of the two words.
+#C - The corresponding count of the word. Right align all values. Allocate enough space for the length of the larger number. (Assume there will be at most 109 unique words.)
+#P - The frequency of the word. Right align all values. Print to three decimal places.
+An example with actual values is shown below:
+
+Least Frequent Word: BJORNE   1 (  6.250%)
+Most Frequent Word:  BIRTHDAY 4 ( 25.000%)
+Refer to the expected output files for longer examples on the expected formatting.
+
+printMaxMinLetter()
+Input: An array of 26 unsigned integers
+
+Output: None
+
+Task: Print out the two letters that occur least often and most often. If there is more than one letter that occurs the same number of times, print the one that comes first alphabetically. Upon completion, the input array will remain unchanged. Print out the following pieces of information:
+
+The letter
+The number of occurrences
+The frequency of appearance as a percentage to 3 decimal places
+Format the output as follows:
+
+Least Frequent Letter: A #C (#P%)
+Most Frequent Letter:  Z #C (#P%)
+Notice how there are three columns of values. The columns correspond to the following values:
+
+A - The letter.
+#C - The corresponding count of the letter. Right align all values. Allocate enough space for the length of the larger number. (Assume there will be at most 109 occurrences.)
+#P - The frequency of the letter. Right align all values. Print to three decimal places.
+An example with actual values is shown below:
+
+Least Frequent Letter: C  0 (  0.000%)
+Most Frequent Letter:  Y 11 ( 14.667%)
+Refer to the expected output files for longer examples on the expected formatting.
+
+Functional Requirements
+You may not make use of the standard library functions sort(), find(), any_of() or anything else from #include <algorithm>. You must implement your own sorting and searching functions.
+DO NOT use global variables.
+You must use parameters properly, either pass-by-value or pass-by-reference.
+Do not use any global variables. You must use parameters properly.
+Mark parameters as const appropriately if the function is not modifying the parameter value.
+For this assignment, the output must match the example outputs exactly.
+For this assignment, only submit your functions.h and functions.cpp files. Do not include main.cpp, CMakeLists.txt, or any of the other input/output files.
+Hints
+
+Do not wait until the day before this is due to begin.
+You can start right away by putting all functions above main(). Then later split the functions in to their own files.
+The first step is to create the files and function stubs to get the program to compile and run.
+The second step is to implement each function one at a time. Verify the function is correct before moving on to the next function.
+Do not just dive into the assignment. Create a mental plan of what tasks your program needs to accomplish. Convert this to pseudocode. Tackle the first task (eg, "can I open the file ok?") and conduct a sanity check. Then tackle the next task (eg, "can I read all the words in the file, and store the frequencies of each word?") and conduct another sanity check. We strongly suggest writing your program (one step at a time!)
+You may modify main.cpp to verify each step is working properly.
+You may add additional functions to assist if you deem it necessary. A common task is determining how many digits are present in an integer.
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+2	All code submitted properly.
+6	All labs completed and submitted
+L6A, L6B, L6C
+13	Each function input/output correct as specified and performs correct task.
+7	Functional requirements above met.
+2	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+30	Total Points

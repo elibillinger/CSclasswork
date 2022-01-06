@@ -1,0 +1,32 @@
+Part I - Development
+Today we're going to return to our math roots and compute some multiplication tables. First, you must read from the standard input the integer multipler until a value greater than 1 and less than 11 is received. Then, read from the standard input again the integer multiplicand until a value greater than 1 and less than 11 is received.
+
+Next output a multiplication table. You'll need to print out the column and row headers so we know what two values are being multiplied. Then each cell will be the result of that product. Be sure to have the numbers right aligned with enough space to have all our columns aligned. Fill the empty space with a period to ensure the columns are properly aligned.
+
+A sample run of the program is shown below:
+
+112
+5
+1
+7
+.....1...2...3...4...5...6...7
+.1...1...2...3...4...5...6...7
+.2...2...4...6...8..10..12..14
+.3...3...6...9..12..15..18..21
+.4...4...8..12..16..20..24..28
+.5...5..10..15..20..25..30..35
+Note that the program uses the first two valid values entered as the multipier and multiplicand (5 & 7). Also be aware that there is a newline after the final row of the table.
+
+Hint: You'll need a couple of loops to accomplish this task. And recall, the iomanip library will help you with aligning the columns.
+
+Recall that the user can enter values within the range 2 to 10 inclusive, so be sure to allocate enough space to handle a 10x10 multiplication table. For this scenario, the last line would look like:
+
+10..10..20..30..40..50..60..70..80..90.100
+Part II - Testing
+To ensure your program meets the required specifications, log into the AutoGrader - which must be accessed from the Mines network (so you'll need to use the VPN if at home). Log in with your multipass account. Navigate to our course > L4B > multiplyTables. You will see on the right hand side a text editor. Enter your code here. Then hit the "Submit" button in the lower left corner.
+
+You'll see a colored bar at the top with each segment denoting a single test. Each test provides a specific input to your program and then compares your output with the expected output. If the bar is green, then the test passed. If the bar is red, then the test failed and you can compare your output with the expected output by hovering over the box. Additionally, if your code has a compiler error it will display the error.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set4. Detailed instructions for doing this are posted in Assignment 4.

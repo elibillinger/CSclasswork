@@ -1,0 +1,30 @@
+Concepts
+Focus on expanding the Godzilla class from Lab6B.
+
+Suggestion: Use NotePad or WordPad
+Consider using NotePad or WordPad on your computer to write your code for this lab. Once you feel good about what you've written, then copy the code into your project. Doing this will help you see where you might make mistakes on the exam!
+
+You should write a main.cpp that tests each feature of your class works as expected. You will need to submit your class declaration file, your class definition file, and your main.cpp file for this lab.
+
+Expanded Godzilla Class
+We are now going to properly construct our object correctly. Add a default constructor that sets the name to "Godzilla", the health to a random value between [50, 100], and the power to a random value between [10, 25].
+
+Also add a public print() function that print's out the object's name, health, and power to the standard out in the following format:
+
+name (P: power) - H: health
+Where the values name, power, and health have been replaced with the corresponding data member's value.
+
+Now in main, create two Godzilla objects - one named godzilla and the other named mechagodzilla. Prompt the user to provide the name, health, and power of godzilla and use the corresponding setters. mechagodzilla should be created using the default constructor.
+
+To verify your objects are correct, call the print() function for each of godzilla and mechagodzilla.
+
+An example output is below:
+
+Enter the name: Metalzilla
+Enter the health: 95
+Enter the power: 30
+Metalzilla (P: 30) - H: 95
+Godzilla (P: 20) - H: 80
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set6. Detailed instructions for doing this are posted in Assignment 6.

@@ -1,0 +1,112 @@
+Instructions
+Your goal for this assignment is to exercise your knowledge of selection statements ( if / else ), looping constructs ( while and for ) and the use of rand(). Your game must adhere to the following interaction example.
+
+Hold onto your pants, we're about to play guess-the-numbah!
+Enter the lowest possible number: 14
+
+Enter the highest possible number: 15
+High number must be at least 100 more than the low number.
+
+Enter the highest possible number: 132
+
+Pick a number between 14 and 132: 20
+Too low! Not even close!
+
+Pick a number between 14 and 132: 75
+Too high!
+
+Pick a number between 14 and 132: 1
+Invalid guess.
+
+Pick a number between 14 and 132: t
+Please enter a number.
+
+Pick a number between 14 and 132: 63
+Too low! Oooh you're close!
+
+Pick a number between 14 and 132: 64
+
+That's right! You won the game in 4 tries.
+You must first prompt the user to enter the low end of the number range. Then prompt the user to enter the high end of the number range. The high end must be at least 100 more than the low end entered by the user. Your game must use a random number between LOW and HIGH, inclusively. You should only accept guesses that are within the range [LOW, HIGH], showing an error message otherwise. Your game must print "Too low!" or "Too high!" relative to the target number and the players' guess. Your game must print "Oooh you're close!" if the number guessed differs from the target by 5 or less; and it must print "Not even close!" if the number guessed differs from the target by a value of 25 or more.
+
+For example, if the target is 50 and the player enters 10, your program should print "Too low!" and "Not even close!", but if the player enters 52, your program should print "Too high!" and "Oooh you're close!". When the correct number is guessed, your program must print "You won the game in N tries" where N is the number of valid guesses the player made.
+
+Functional Requirements
+Define the following constants
+TOO_CLOSE_DIFFERENCE (=5)
+TOO_HIGH_DIFFERENCE (=25)
+MIN_RANGE (=100)
+Use these constants correctly. (By making these values constants, we can store them in one place in our program. If we change any of the values, then our program will operate under a new set of valid constraints. Changing these values could make the game easier or harder.)
+We can no longer assume the user will follow instructions. Be sure to validate all inputs by ensuring that a number (not a character) was entered and the number is within the specified ranges.
+Grading Rubric
+Your submission will be graded according to the following rubric.
+
+
+Points	Requirement Description
+2	All code submitted properly.
+8	All labs completed and submitted
+L4A, L4B, L4C, L4D
+2	Programming Lab 4 completed and Multiplication Table in AutoGrader.
+8	Game is properly playable per example interaction.
+6	Functional requirements above met.
+2	Game is properly randomized.
+4	(1) Comments used
+(2) Coding style followed
+(3) Appropriate variable names, constants, and data types used
+(4) Instructions followed
+32	Total Points
+
+This assignment is due by Tuesday, February 25, 2020, 11:59 PM.
+As with all assignments, this must be an individual effort and cannot be pair programmed. Any debugging assistance must be provided in accordance with the course collaboration policy.
+Do not forget to complete the following labs with this set: L4A, L4B, L4C, L4D .
+Do not forget to complete the Programming Lab for this set.
+
+Submission
+Always, always, ALWAYS update the header comments at the top of your main.cpp file. And if you ever get stuck, remember that there is LOTS of help available. The following instructions are copied from How to Submit Homework.
+
+
+It is critical that you follow these steps when submitting homework.
+
+If you do not follow these instructions, your assignment will receive a major deduction. Why all the fuss? Because we have several hundred of these assignments to grade, and we use computer tools to automate as much of the process as possible. If you deviate from these instructions, our grading tools will not work. And that makes us very unhappy. And when we're unhappy, we give penalties. Thus, make us happy.
+
+Submission Instructions
+
+Here are step-by-step instructions for submitting your homework properly:
+File and folder names are extremely important in this process. Please double-check carefully, to ensure things are named correctly.
+The top-level folder of your project must be named Set4
+Inside Set4, create 5 sub-folders that are required for this Set. The name of each sub-folder is defined in that Set (e.g. L4A, L4B, L4C, L4D, and A4).
+Copy your main.cpp into the subdirectories of Set4 (steps 1-2), zip this Set4 folder (steps 3-4), and then submit the zipped file (steps 5-11) to Canvas.
+For example, when you zip/submit Set4, there will be 5 sub-folders called L4A, L4B, L4C, L4D, and A4 inside the Set4 folder, and each of these sub-folders will have a file called main.cpp and nothing else.
+
+Using Windows Explorer (not to be confused with Internet Explorer), find the file named "main.cpp" located inside the folder for the particular lab or homework assignment you will submit.
+
+STOP: Are you really sure you are viewing the correct assignment's folder?
+
+Now, for A4, right click on the main.cpp to copy the file. Then, return to the Set4/A4 folder and right click to paste the file. In other words, put a copy of your homework's main.cpp source code into the Set4/A4 folder.
+
+Follow the same steps for L4A, to put a copy of your lab's main.cpp into the Set4/L4A folder. Repeat this process for Set4/L4B, Set4/L4C, Set4/L4D.
+
+STOP: Are you sure your Set4 folder now has all your code to submit?
+
+Now, right-click on the "Set4" folder.
+In the pop-up menu that opens, move the mouse "Send to..." and expand the sub-menu.
+In the sub-menu that opens, select "Compressed (zipped) folder".
+
+STOP: Are you really sure you are zipping a Set4 folder with sub-folders that each contain a main.cpp file in it?
+
+After the previous step, you should now see a "Set4.zip" file.
+
+Now visit the Canvas page for this course and click the "Assignments" button in the sidebar.
+
+Find Set4, click on it, find the "Submit Assignment" area, and then click the "Choose File" button.
+
+Find the "Set4.zip" file created earlier and click the "Open" button.
+
+STOP: Are you really sure you are selecting the right homework assignment? Are you double-sure?
+
+WAIT! There's one more super-important step. Click on the blue "Submit Assignment" button to submit your homework.
+
+No, really, make sure you click the "Submit Assignment" button to actually submit your homework. Clicking the "Choose File" button in the previous step kind of makes it feel like you're done, but you must click the Submit button as well! And you must allow the file time to upload before you turn off your computer!
+
+Canvas should say "Submitted!". Click "Submission Details" and you can download the zip file you just submitted. In other words, verify you submitted what you think you submitted!
+In summary, you must zip the "Set4" folder and only the "Set4" folder, this zip folder must have several sub-folders, you must name all these folders correctly, you must submit the correct zip file for this homework, and you must click the "Submit Assignment" button. Not doing these steps is like bringing your homework to class but forgetting to hand it in. No concessions will be made for incorrectly submitted work. If you incorrectly submit your homework, we will not be able to give you full credit. And that makes us unhappy.

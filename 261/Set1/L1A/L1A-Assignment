@@ -1,0 +1,97 @@
+The IDE
+This lab teaches you how to create a C++ program from scratch. CLion is an Integrated Development Environment (IDE) designated to facilitate the development of software solutions. CLion includes an editor, a compiler, a linker, a debugger, and many other additional tools to help programmers write high quality software.
+
+Depending on its complexity, a software project will have many different files associated with it, such as the source code (instructions written using a programming language), header files (mostly definitions), resource files (images, sounds), data files, and configuration files. Most IDEs, including CLion, require programmers to organize all of these files into an entity called a project. More complex software may be built from many inter-related projects that are organized into a solution (a container for projects). But, in our course this semester, we will only develop single-project solutions.
+
+Creating a C++ Empty Project
+Now you may proceed to create your first C++ CLion project. How exciting! On the splash screen, click "New Project". Make sure that "C++ Executable" is selected on the left hand side. Set the location to be a folder on your Z: drive (such as Z:/CSCI261/L1A). Read the next paragraph about file naming before moving on.
+
+Let us now provide you with a few important notes about names for projects, solutions, and development files in general. Do not use spaces or any special characters when naming your project. We highly recommend using short names (less than 10 characters). If you want to use more than one word, use underscores to connect the words or appropriate use of upper/lower case (e.g., MyGame). Also, make sure your chosen name has a meaning so you can remember what the project is later (e.g., L1A).
+
+Additional note for the lab machines on campus: You may receive an error upon opening the project that says something similar to "Cannot continue with sh.exe on your path." This seems to be machine + user specific and may not happen. If it doesn't, move on. But if you do see this big block of red text, here is the fix to continue:
+
+Go to File > Settings (or Preferences on Mac)
+Expand Build, Execution, Deployment
+Select CMake
+In the CMake options: field, enter -DCMAKE_SH="CMAKE_SH-NOTFOUND"
+Hit Apply and Ok
+Editing A C++ Source Code File
+If you haven't already, be sure to click create. The very first time there is one setting we need to change (for the lab machines, you may not need to do this on your personal machine). On the top menus, select Help > Find Action. Search for "registry" and hit enter. Uncheck the box that says run.processes.with.pty. Great, close the window and let's move on.
+
+You will already have a main.cpp file that is started for you. This file will contain our program. Begin by deleting the default contents of the file.
+
+You can now start typing code. Sweet! Since this is a programming class, not a typing class, enter the code between the following lines with cut/paste:
+
+/* CSCI 261 Lab 1A: XXXX (_GIVE_BRIEF_DESCRIPTION_HERE_)
+ *
+ * Author: XXXX (_INSERT_YOUR_NAME_HERE_)
+ *
+ * More complete description here...
+ */
+
+// The include section adds extra definitions from the C++ standard library.
+#include <iostream> // For cin, cout, etc.
+
+// We will (most of the time) use the standard library namespace in our programs.
+using namespace std;
+
+// Define any constants or global variables below this comment.
+
+// Must have a function named "main", which is the starting point of a C++ program.
+int main() {
+
+  /******** INSERT YOUR CODE BELOW HERE ********/
+
+  cout << "Hello world!" << endl; // print Hello world! to the screen
+
+  /******** INSERT YOUR CODE ABOVE HERE ********/
+
+  return 0; // signals the operating system that our program ended OK.
+}
+Next, edit all places where XXXX appears in your main.cpp file with the appropriate information. When you are done, you can save main.cpp by typing Ctrl+s.
+
+Running your Code
+The easiest way to compile and execute your project is to click the green arrow button at the top menu bar. A new tab should appear below with the following output:
+
+Scanning dependencies of target L1A
+[ 50%] Building CXX object CMakeFiles/L1A.dir/main.cpp.o
+[100%] Linking CXX executable L1A
+[100%] Built target L1A
+Congratulations! You've written and compiled your very first program! We will discuss what the building and linking steps are doing very soon. Next, you'll see the new tab appear with the contents:
+
+Hello world!
+
+Process finished with exit code 0
+Congratulations! You've run your very first program! The "Hello World" line is the output of your program.
+
+The Iterative Process
+Now that your program is running, we are going to add two more output statements following the "Hello world!" line. Add a second cout statement that prints
+
+How are you?
+Run your program again to verify you are seeing the new output on the screen. Finally, add a third line to print (note the spaces)
+
+   (I'm fine).
+Run your program again. When you are complete, your program should output
+
+Hello world!
+How are you?
+   (I'm fine).
+You just went through a short iterative process, or as programmer's say an incremental build. Once you knew you had your program running properly, you made a small change to the program and reran the program to verify the change was correct. Once again, a small change was introduced to the code and the program was run to verify the proper output. You should become very familiar with this process as it will make future projects go smoother if you make small changes at a time.
+
+This lab taught you how to create a C++ CLion project from scratch and output statements to the screen. You need to know how to create an empty project from scratch. Thus, feel free to create a second new empty project for grins (i.e., do this lab a second time when you start Lab1B).
+
+Optional Material: Details on the CLion Interface
+The default interface can be described in four sections: the menus, left pane, Code Window, and Output Window.
+
+The menus have the same functionality of most Microsoft Windows programs (e.g., Open File); there are, however, menu items that are specific to programming.
+
+The left pane has several different views. You will almost always use the Project tab which is similar to Windows Explorer. All of the code files associated with your projects (i.e., program) will appear here.
+
+The Code Window is where you will type/edit your C++ programs. It works similar to a text editor with the bonus of syntax coloring and segment grouping. You can have multiple code windows open - they will stack as tabs at the top of the Code Window. These tabs allow you to easily jump between multiple files when editing. You can drag a tab to open to windows side by side for easy viewing.
+
+The Output Window keeps track of information from the compiler. When you build your program (or code), this window will list any problems that it found and give you tools to help you find and fix those problems. If there were no errors building your program, then the output from your program will appear in this window.
+
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set1. Detailed instructions for doing this are posted in Assignment 1.
+

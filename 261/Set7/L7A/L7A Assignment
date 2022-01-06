@@ -1,0 +1,34 @@
+Concepts
+Focus on expanding the Godzilla class from Lab6C.
+
+Suggestion: Use NotePad or WordPad
+Consider using NotePad or WordPad on your computer to write your code for this lab. Once you feel good about what you've written, then copy the code into your project. Doing this will help you see where you might make mistakes on the exam!
+
+You should write a main.cpp that tests each feature of your class works as expected. You will need to submit your class declaration file, your class definition file, and your main.cpp file for this lab.
+
+Even More Expanded Godzilla Class
+Currently, when the godzilla object is created we need to call three different setters. Add a parameterized constructor that allows a user to create a new Godzilla object specifying the name, health, and power.
+
+Now in main, after prompting the user for the values create the godzilla object using the parameterized constructor instead of the setters.
+
+It's now time for godzilla and mechagodzilla to go to battle. Add an attack function as described below:
+
+An attack function that accepts another Godzilla object as a parameter. The function should modify the target's health by subtracting the callee's power. It should also print out a message in the form of "Callee's Name attacks Target's Name." If the target's health falls below or equal to zero, print out a second message stating "Target's Name has been vanquished."
+Now in main, have godzilla attack mechagodzilla once. Then, if mechagodzilla is still alive, have mechagodzilla attack godzilla until godzilla has been vanquished. Your program should end at that point.
+
+An example output is below:
+
+Enter the name: Metalzilla
+Enter the health: 95
+Enter the power: 30
+Metalzilla (P: 30) - H: 95
+Godzilla (P: 20) - H: 80
+Godzilla attacks Metalzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Metalzilla attacks Godzilla.
+Godzilla has been vanquished.
+Lab Submission
+
+You will submit your solution to this lab with the rest of Set7. Detailed instructions for doing this are posted in Assignment 7.
+

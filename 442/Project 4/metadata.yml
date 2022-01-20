@@ -1,0 +1,12 @@
+---
+:id: 99975416
+:submitters:
+- :name: Eli Billinger
+  :email: elibillinger@mines.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2021-11-12 22:58:27.727596000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2021-11-12 14:58:27.727596000 Z
+:status: processed
+:score: 100.0

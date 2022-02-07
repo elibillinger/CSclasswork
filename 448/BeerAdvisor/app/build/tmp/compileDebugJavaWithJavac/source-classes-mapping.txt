@@ -1,0 +1,2 @@
+com/csci448/elibillinger/beeradvisor/BuildConfig.java
+ com.csci448.elibillinger.beeradvisor.BuildConfig

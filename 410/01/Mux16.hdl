@@ -1,0 +1,66 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux16.hdl
+
+/**
+ * 16-bit multiplexor: 
+ * for i = 0..15 out[i] = a[i] if sel == 0 
+ *                        b[i] if sel == 1
+ */
+
+CHIP Mux16 {
+    IN a[16], b[16], sel;
+    OUT out[16];
+
+    PARTS:
+    Not(in = sel, out = notsel);
+    And(a = a[0], b = notsel, out = aands);
+    And( a = b[0], b = sel, out = bands);
+    Or(a = aands, b = bands, out = out[0]);
+    And(a = a[1], b = notsel, out = aands1);
+    And( a = b[1], b = sel, out = bands1);
+    Or(a = aands1, b = bands1, out = out[1]);
+    And(a = a[2], b = notsel, out = aands2);
+    And( a = b[2], b = sel, out = bands2);
+    Or(a = aands2, b = bands2, out = out[2]);
+    And(a = a[3], b = notsel, out = aands3);
+    And( a = b[3], b = sel, out = bands3);
+    Or(a = aands3, b = bands3, out = out[3]);
+    And(a = a[4], b = notsel, out = aands4);
+    And( a = b[4], b = sel, out = bands4);
+    Or(a = aands4, b = bands4, out = out[4]);
+    And(a = a[5], b = notsel, out = aands5);
+    And( a = b[5], b = sel, out = bands5);
+    Or(a = aands5, b = bands5, out = out[5]);
+    And(a = a[6], b = notsel, out = aands6);
+    And( a = b[6], b = sel, out = bands6);
+    Or(a = aands6, b = bands6, out = out[6]);
+    And(a = a[7], b = notsel, out = aands7);
+    And( a = b[7], b = sel, out = bands7);
+    Or(a = aands7, b = bands7, out = out[7]);
+    And(a = a[8], b = notsel, out = aands8);
+    And( a = b[8], b = sel, out = bands8);
+    Or(a = aands8, b = bands8, out = out[8]);
+    And(a = a[9], b = notsel, out = aands9);
+    And( a = b[9], b = sel, out = bands9);
+    Or(a = aands9, b = bands9, out = out[9]);
+    And(a = a[10], b = notsel, out = aands10);
+    And( a = b[10], b = sel, out = bands10);
+    Or(a = aands10, b = bands10, out = out[10]);
+    And(a = a[11], b = notsel, out = aands11);
+    And( a = b[11], b = sel, out = bands11);
+    Or(a = aands11, b = bands11, out = out[11]);
+    And(a = a[12], b = notsel, out = aands12);
+    And( a = b[12], b = sel, out = bands12);
+    Or(a = aands12, b = bands12, out = out[12]);
+    And(a = a[13], b = notsel, out = aands13);
+    And( a = b[13], b = sel, out = bands13);
+    Or(a = aands13, b = bands13, out = out[13]);
+    And(a = a[14], b = notsel, out = aands14);
+    And( a = b[14], b = sel, out = bands14);
+    Or(a = aands14, b = bands14, out = out[14]);
+    And(a = a[15], b = notsel, out = aands15);
+    And( a = b[15], b = sel, out = bands15);
+    Or(a = aands15, b = bands15, out = out[15]);
+}

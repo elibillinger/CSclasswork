@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:contect=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:text="@string/beer_color_label" />
+        <Spinner
+            android:id="@+id/beer_color_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:entries="@array/beer_colors"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find_beer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:text="@string/find_beer_label" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/beers_list_label"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/brands_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/brands_no_beer_message"
+        android:textSize="18sp" />
+
+</LinearLayout>

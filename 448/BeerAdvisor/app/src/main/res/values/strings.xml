@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Beer Advisor</string>
+    <string name="find_beer_label">Find Beer</string>
+    <string name="brands_no_beer_message">No beer selected</string>
+    <string name="beer_color_label">Beer Color</string>
+    <string name="beers_list_label">Beers</string>
+    <string name="color_light">Light</string>
+    <string name="color_amber">Amber</string>
+    <string name="color_brown">Brown</string>
+    <string name="color_dark">Dark</string>
+    <string name="color_golden">Golden</string>
+    <string-array name="beer_colors">
+        <item>@string/color_light</item>
+        <item>@string/color_amber</item>
+        <item>@string/color_brown</item>
+        <item>@string/color_dark</item>
+        <item>@string/color_golden</item>
+    </string-array>
+    <string-array name="beers_light">
+        <item>Jail Pale Ale</item>
+        <item>Lager Lite</item>
+    </string-array>
+    <string-array name="beers_amber">
+        <item>Jack Amber</item>
+        <item>Red Moose</item>
+    </string-array>
+    <string-array name="beers_brown">
+        <item>Brown Bear Beer</item>
+        <item>Bock Brownie</item>
+    </string-array>
+    <string-array name="beers_dark">
+        <item>Gout Stout</item>
+        <item>Dark Daniel</item>
+    </string-array>
+    <string-array name="beers_golden">
+        <item>Lab Lager</item>
+        <item>Profeweizen</item>
+        <item>TAle</item>
+    </string-array>
+</resources>

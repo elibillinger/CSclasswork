@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">elibillinger_A1</string>
+    <string name="number_people_label">Number of People?</string>
+    <string name="num_people_hint"># People</string>
+    <string name="hungry_label">How Hungry?</string>
+    <string name="radio_button_light_label">Light</string>
+    <string name="radio_button_medium_label">Medium</string>
+    <string name="radio_button_ravenous_label">Ravenous</string>
+    <string name="pizza_needed_label">Total Pizzas Needed:</string>
+    <string name="per_pizza_label">Cost Per Pizza:</string>
+    <string name="total_cost_label">Total Cost:</string>
+    <string name="refresh_cost_btn_label">REFRESH COST</string>
+    <string name="calculate_label">CALCULATE!</string>
+    <string name="starting_cost">5.55</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:text="@string/score_label" />
+
+        <TextView
+            android:id="@+id/score_text_view"
+            tools:text="#"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="24sp"
+        tools:text="Question Text will display here"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="start"
+            android:textSize="24sp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/true_btn_label"/>
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="end"
+            android:textSize="24sp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/false_btn_label"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="start"
+            android:textSize="24sp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/previous_btn_label"/>
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/cheat_btn_label"/>
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="end"
+            android:textSize="24sp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/next_btn_label"/>
+
+    </FrameLayout>
+
+</LinearLayout>

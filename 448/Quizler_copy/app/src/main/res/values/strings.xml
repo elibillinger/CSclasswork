@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quizler</string>
+    <string name="score_label">Score:</string>
+    <string name="true_btn_label">TRUE</string>
+    <string name="false_btn_label">FALSE</string>
+    <string name="previous_btn_label">PREVIOUS</string>
+    <string name="next_btn_label">NEXT</string>
+    <string name="question_1">Colorado School of Mines is located in South Bend, IN</string>
+    <string name="question_2">A year on Venus is about 225 Earth days</string>
+    <string name="question_3">There are about 500,000 pieces of space trash orbiting the Earth</string>
+    <string name="question_4">Mount Everest is the tallest mountain in the solar system</string>
+    <string name="correct_toast">Your knowledge is undoubtedly top notch!</string>
+    <string name="incorrect_toast">You must consult the elders for additional training</string>
+    <string name="ask_cheat">Are you really sure you want to cheat?</string>
+    <string name="show_answer_text">SHOW THE ANSWER</string>
+    <string name="cheat_btn_label">CHEAT!</string>
+    <string name="cheat_toast">Cheaters never prosper</string>
+</resources>

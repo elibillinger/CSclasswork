@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">elibillinger_A4</string>
+    <string name="location_reason_message">We must access your location to plot where you are</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">elibillinger_A3</string>
+    <string name="app_title">LP Disco</string>
+    <string name="album_side_A">Side A</string>
+    <string name="album_side_B">Side B</string>
+    <string name="time_formatter">%1$s:%2$s</string>
+    <string name="album_side_formatter">%1$s (%2$s)</string>
+    <string name="menu_back_desc">Back</string>
+    <string name="menu_add_album_desc">Add New Album</string>
+    <string name="menu_add_track_desc">Add New Track</string>
+    <string name="add_album_artist_name">Artist Name</string>
+    <string name="add_album_album_title">Album Title</string>
+    <string name="add_album_year_published">Year Published</string>
+    <string name="save_album_button">Save Album</string>
+    <string name="add_track_num">Track Number</string>
+    <string name="add_track_title">Track Title</string>
+    <string name="add_track_length_min">Track Length Minutes</string>
+    <string name="add_track_length_sec">Track Length Seconds</string>
+    <string name="add_track_side">Album Side</string>
+    <string name="save_track_button">Save Track</string>
+</resources>

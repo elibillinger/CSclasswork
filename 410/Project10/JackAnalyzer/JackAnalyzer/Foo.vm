@@ -1,0 +1,15 @@
+function Foo.bar 1
+push argument 1
+neg
+push argument 0
+push constant 3
+add
+call Math.multiply 2
+pop local 0
+push local 0
+call Output.printInt 1
+pop temp 0
+push local 0
+push constant 1
+sub
+return

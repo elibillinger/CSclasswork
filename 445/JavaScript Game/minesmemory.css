@@ -1,0 +1,69 @@
+/*Dark olive green: #49640E;
+  Deep chesnut: #C2534B;
+  Blue Munsell: #508CA4;
+  Denim: #005BC1;
+  Middle Green Yellow: #A3B157;
+  */
+
+
+* {
+  font-family: georgia;
+  text-align: center;
+}
+
+body {
+  background-color: #508CA4;
+}
+h1 {
+  color: white;
+  background-color: #C2534B;
+  border: 3px dashed #005BC1;
+
+}
+#gameBoard {
+  border: 3px solid #49640E;
+  border-radius: 0px;
+}
+div {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: auto ;
+  grid-gap: 0;
+  width: 800px;
+}
+
+#strikeMessage, #pairsMessage {
+  text-align: left;
+  margin-left: 120px;
+  color: white;
+  font-weight: bold;
+}
+
+#strikeCount, #pairsCount {
+  color: white;
+  margin-top: 0px;
+  margin-left: 120px;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 2em;
+  background-color: #A3B157;
+}
+#instructions {
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 500px;
+  left: 724px;
+  width: 400px;
+  height: 120px;
+  font-size: 0.75em;
+  background-color: #C2534B;
+  color: white;
+
+}
+
+footer {
+  background-color: #005BC1;
+  color: white;
+}

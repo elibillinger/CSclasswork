@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <!-- Head section: Needs links to CSS and JS of the game -->
+    <head>
+        <title>Mines Memory</title>
+	    <meta charset="UTF-8">
+	    <meta name="author" content="Daniel McGarey">
+        <link rel="stylesheet" href="minesmemory.css">
+    </head>
+    <!-- Header section to control the title of the game, and anything in the upper region we would like to display to the user-->
+    <header>
+        <h1 id = "title">Mines Memory</h1>
+    </header>
+    <body>
+        <!-- Canvas is a placeholder for the image gallery - please keep the id to be gameBoard so that the styles still apply -->
+      <canvas id="gameBoard" width="1000" height="400">
+        <!--<script type="text/javascript" src="gallery.js"></script>-->
+      </canvas>
+        <br>
+        <div>
+          <section id = "strikes">
+            <p id = "strikeMessage">Strikes:</p>
+            <p id = "strikeCount"> 0 </p> <!-- To be filled in with jQuery as the user gets more strikes -->
+          </section>
+          <section id = "pairsMatched">
+            <p id = "pairsMessage">Pairs Matched: </p>
+            <p id = "pairsCount"> 0 </p> <!-- To be modified with jQuery as the user gets more pairs matched -->
+          </section>
+        </div>
+      <section id = "instructions">
+        <p> Welcome to Mines Memory! </p>
+        <p> The objective of this game is to flip over all pairs of Mines cards without flipping over rival cards!</p>
+        <p> Should you flip over a rival card seven times, OR match two rival cards, you lose the game!</p>
+      </section>
+    <footer>
+        <h3>Created by Eli, Jordan, Katherine, and Daniel</h3>
+    </footer>
+    </body>
+    <script src="minesmemory.js"></script>
+</html>

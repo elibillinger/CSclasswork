@@ -1,0 +1,28 @@
+// ----------------------------------------------------------------
+// From Game Programming in C++ by Sanjay Madhav
+// Copyright (C) 2017 Sanjay Madhav. All rights reserved.
+// 
+// Released under the BSD License
+// See LICENSE in root directory for full details.
+// ----------------------------------------------------------------
+
+#pragma once
+#include "Component.h"
+#include "SDL2/SDL.h"
+class SpriteComponent : public Component
+{
+public:
+	// (Lower draw order corresponds with further back)
+	SpriteComponent(class Actor* owner);
+	~SpriteComponent();
+
+	virtual void Draw(SDL_Renderer* renderer);
+	virtual void SetTexture(SDL_Texture* texture);
+
+	int GetTexHeight() const { return _nTexHeight; }
+	int GetTexWidth() const { return _nTexWidth; }
+protected:
+	SDL_Texture* _pTexture;
+	int _nTexWidth;
+	int _nTexHeight;
+};
